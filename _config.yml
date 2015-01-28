@@ -2,8 +2,8 @@
 title: Prashant Sinha
 email: prashant@ducic.ac.in
 description: Personal profile of Prashant Sinha
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://prashnts.github.io"
+baseurl: ""
+url: "http://prashnts.in"
 
 # Build settings
 markdown: kramdown
