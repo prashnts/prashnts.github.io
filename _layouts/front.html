@@ -2,14 +2,23 @@
 <html>
 {% include head.html %}
 <body class="prash">
+    <div class="backgrounds">
+    </div>
+    <section class="info">
+        <h1>Prashant Sinha</h1>
+        <ol class="unmarked">
+            <li><a href="http://pattern.ducic.ac.in/">Laboratory for Pattern Engineering</a></li>
+            <li><a href="https://ducic.ac.in/">Cluster Innovation Centre, University of Delhi</a></li>
+            <li><a href="mailto:prashant@ducic.ac.in">prashant@ducic.ac.in</a></li>
+        </ol>
+        <ol class="inline lg">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resumé</a></li>
+        </ol>
+    </section>
+    {{ content }}
 
-<div class="backgrounds">
-</div>
-
-<section class="info">
-    <h1>Prashant Sinha</h1>
-    <p>prashant@ducic.ac.in</p>
-</section>
-{{ content }}
+    <script type="text/javascript" src="/assets/js/prism.js"></script>
 </body>
 </html>
