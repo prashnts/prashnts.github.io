@@ -15,7 +15,7 @@ html,body
     margin: 0
     position: relative
 
-.prash
+.front
     .backgrounds
         position: fixed
         z-index: 1
@@ -47,28 +47,27 @@ html,body
         a
             color: #FFFFFF
 
-    ol
-        &.unmarked
-            list-style-type: none
-            padding: 0
+ol
+    &.unmarked
+        list-style-type: none
+        padding: 0
 
-        &.inline
-            list-style-type: none
-            padding: 0
-            display: inline-block
+    &.inline
+        list-style-type: none
+        padding: 0
+        display: inline-block
 
+        li
+            display: inline
+
+        &.lg
             li
-                display: inline
+                &:last-of-type
+                    margin-right: 0px
+                margin-right: 20px
 
-            &.lg
-                li
-                    &:last-of-type
-                        margin-right: 0px
-                    margin-right: 20px
-
-    a
-        text-decoration: none
-
-        &:active, &:hover
-            color: inherit
-            text-decoration: underline
+a
+    text-decoration: none
+    &:active, &:hover
+        color: inherit
+        text-decoration: underline
