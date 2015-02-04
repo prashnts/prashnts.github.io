@@ -1,15 +1,22 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <div class="hero">
+        <img src="{{ page.hero }}">
+    </div>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+    <header>
+        <h1>{{ page.title }}<small>{{ page.subtitle }}</small></h1>
+        <ul class="inline lg">
+            <li>{{ page.date | date: "%b %-d, %Y"}}</li>
+            <li>{{ page.author }}</li>
+        </ul>
+    </header>
+    <article>
+        {{ content }}
+    </article>
+    <script type="text/javascript" src="/assets/js/prism.js"></script>
+</body>
+</html>
