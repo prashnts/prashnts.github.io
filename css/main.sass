@@ -48,7 +48,30 @@ html,body
             color: #FFFFFF
 
 .post
-    header,
+    header
+        position: relative
+        height: 30%
+        height: 40vh
+        overflow: hidden
+        img
+            min-width: 100%
+            min-height: 100%
+            position: absolute
+            left: 0
+            right: 0
+            top: -50%
+            z-index: -1
+        .intro
+            margin: 0 auto
+            width: 800px
+            height: 100%
+            color: #FFFFFF
+            .bottom-fix
+                position: absolute
+                bottom: 10px
+        h1, ul
+            margin: 0
+
     article
         margin: 0 auto
         width: 800px
@@ -76,6 +99,11 @@ ol, ul
                 &:last-of-type
                     margin-right: 0px
                 margin-right: 20px
+        &.csv
+            li:after
+                content: ","
+            li:last-of-type:after
+                content: ""
 
 a
     text-decoration: none

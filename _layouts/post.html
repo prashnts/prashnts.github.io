@@ -3,16 +3,17 @@
 {% include head.html %}
 <body class="post">
 
-    <div class="hero">
-        <img src="{{ page.hero }}">
-    </div>
-
     <header>
-        <h1>{{ page.title }}<small>{{ page.subtitle }}</small></h1>
-        <ul class="inline lg">
-            <li>{{ page.date | date: "%b %-d, %Y"}}</li>
-            <li>{{ page.author }}</li>
-        </ul>
+        <img src="{{ page.hero }}">
+        <div class="intro">
+            <div class="bottom-fix">
+                <h1>{{ page.title }}</h1>
+                <ul class="inline lg csv">
+                    <li>{{ page.date | date: "%b %-d, %Y"}}</li>
+                    <li>{{ page.author }}</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <article>
         {{ content }}
