@@ -56,6 +56,7 @@ html,body
         img
             min-width: 100%
             min-height: 100%
+            width: 100%
             position: absolute
             left: 0
             right: 0
@@ -73,6 +74,9 @@ html,body
             padding: 0 10px
             background: #FFFFFF
             //background: rgba(255, 255, 255, 0.5)
+            
+            &.no-pad
+                padding: 0
 
     article
         margin: 0 auto
@@ -102,6 +106,13 @@ ol, ul
                 &:last-of-type
                     margin-right: 0px
                 margin-right: 20px
+
+        &.sm
+            li
+                &:last-of-type
+                    margin-right: 0px
+                margin-right: 2px
+
         &.csv
             li:after
                 content: ","

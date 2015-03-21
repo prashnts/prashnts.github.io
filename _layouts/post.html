@@ -10,7 +10,14 @@
                 <h1>{{ page.title }}</h1>
                 <ul class="inline lg csv">
                     <li>{{ page.date | date: "%b %-d, %Y"}}</li>
-                    <li>{{ page.author }}</li>
+                    <li>Posted in {
+                        <ul class="inline sm csv no-pad">
+                            {% for cat in page.categories %}
+                                <li>{{ cat }}</li>
+                            {% endfor %}
+                        </ul>
+                        }
+                    </li>
                 </ul>
             </div>
         </div>
