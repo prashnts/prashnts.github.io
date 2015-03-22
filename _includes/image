@@ -1,0 +1,6 @@
+<figure>
+    <a href="{{ include.url }}" target="_blank">
+        <img src="{{ include.url }}" alt="{{ include.description }}">
+        <figcaption>{{ include.description }}</figcaption>
+    </a>
+</figure>

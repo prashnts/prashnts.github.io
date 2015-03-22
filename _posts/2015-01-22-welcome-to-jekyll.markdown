@@ -1,17 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Test blog post"
 subtitle: "LOLLllllllllll"
 date:   2015-01-22 22:32:31
 categories: jekyll update
 author: "Prashant Sinha"
-hero: /assets/img/progresso_oli_2014309_lrg%20copy.jpg
+hero: /assets/img/progresso_oli_2014309_lrg copy.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 Jekyll also offers powerful support for code snippets:
+
+#Code
 
 {% highlight ruby %}
 def print_hi(name)
@@ -20,6 +22,11 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+
+{% include image url="/assets/img/progresso_oli_2014309_lrg%20copy.jpg" description="My cat, Robert Downey Jr." %}
+
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 

@@ -4,12 +4,23 @@
 @charset "utf-8"
 
 //@import "bootstrap.scss"
-@import "a81f9f64-9602-4f25-a246-50f86214cbf3.scss"
-@import "font.awesome.scss"
+@import "abb50a24-d60e-4525-8971-ba853e4ab784.scss"
+//@import "font.awesome.scss"
 @import "prism.okaidia.scss"
 
 // Some constants
 $fntsz: 12
+$bleed_margin: 10px
+$bleed_margin_neg: -10px
+
+$content_width_narrow: 85vw
+$content_width_wide: 700px
+
+$font_family_headings: Montserrat
+$font_family_text: Anonymous Pro
+
+$headings_background_hero: #0D47A1
+$headings_background_text: #0D47A1
 
 html,body
     margin: 0
@@ -33,16 +44,16 @@ html,body
         padding: 30px
 
         color: #FFFFFF
-        font-family: Roboto Slab
+        font-family: $font_family_headings
 
         &:first-of-type
             margin-top: 40vh
 
         h1, h2, h3, h4, h5, h6
-            font-family: Roboto Slab
+            font-family: $font_family_headings
 
         p, span, li
-            font-family: Oxygen Mono
+            font-family: $font_family_text
 
         a
             color: #FFFFFF
@@ -52,8 +63,10 @@ html,body
         position: relative
         height: 30%
         height: 40vh
+        min-height: 220px
         overflow: hidden
-        img
+
+        img.hero
             min-width: 100%
             min-height: 100%
             width: 100%
@@ -62,31 +75,142 @@ html,body
             right: 0
             top: 0//-50%
             z-index: -1
-        .intro
+
+        nav
+            position: absolute
             margin: 0 auto
-            width: 800px
+            padding: 20px 0 0 0
+            width: 100%
+            background: rgba(0,0,0,0.1)
+            z-index: 2
+            
+            img.icon
+                position: absolute
+                max-height: 40px
+                //left: -70px
+            .wrapper
+                position: relative
+                margin: 0 auto
+
+                .blog
+                    font-size: 40px
+                    background: $headings_background_hero
+                    color: #FFF
+
+                @media (max-width: 767px)
+                    &
+                        width: $content_width_narrow
+                @media (min-width: 768px)
+                    &
+                        width: $content_width_wide
+
+                ul
+                    margin: 4px 0
+                    a
+                        text-decoration: none
+                        li
+                            background: $headings_background_hero
+                            font-family: $font_family_text
+                            font-weight: 100
+                            color: #FFFFFF
+                            padding: 5px 10px
+                            border-bottom: 4px solid #00838F
+
+                            &:hover
+                                background: #00838F
+                                font-weight: 400
+
+        .intro
+            position: relative
+            margin: 0 auto
             height: 100%
+
             .bottom-fix
                 position: absolute
                 bottom: 10px
-        h1, ul
-            margin: 2px -10px
-            padding: 0 10px
-            background: #FFFFFF
-            //background: rgba(255, 255, 255, 0.5)
-            
-            &.no-pad
-                padding: 0
+                width: 100%
+
+            h1, h2, h3, h4, h5, ul
+                display: inline-block
+                margin: 2px $bleed_margin_neg
+                padding: 2px $bleed_margin
+                font-weight: 100
+                color: #FFFFFF
+                background: $headings_background_hero
+                max-width: 100%
+                
+                &.no-pad
+                    padding: 0
+
+            @media (max-width: 767px)
+                &
+                    width: $content_width_narrow
+            @media (min-width: 768px)
+                &
+                    width: $content_width_wide
 
     article
         margin: 0 auto
-        width: 800px
+
+        @media (max-width: 767px)
+            &
+                width: $content_width_narrow
+        @media (min-width: 768px)
+            &
+                width: $content_width_wide
+
+        p:first-of-type
+            font-weight: 700
+            line-height: 1em
+            &::first-letter
+                font-size: 45px
+                float: left
+                padding-top: 9px
+
+
     h1, h2, h3, h4, h5, h6
-        font-family: Roboto Slab
+        font-family: $font_family_headings
+        font-weight: 200
+        margin: auto auto $bleed_margin $bleed_margin_neg
+        padding: 2px $bleed_margin
+        background: $headings_background_text
+        display: inline-block
+        color: #FFFFFF
+        &:after
+            content: "\a"
+            white-space: pre
+            clear: both
+
+    hr
+        border: 1px solid #888
+        margin: 30px
 
     p, span, li
-        font-family: Oxygen Mono
-        font-size: 90%
+        font-family: $font_family_text
+
+    img
+        max-width: 100%
+
+    figure
+        margin: 0 $bleed_margin_neg
+        figcaption
+            font-family: $font_family_headings
+            font-weight: 200
+            padding: 2px $bleed_margin
+            color: #FFF
+            display: inline-block
+            background: $headings_background_text
+
+            &:before
+                content: "fig. "
+                font-family: $font_family_text
+
+    pre[class*="language-"]
+        margin: auto $bleed_margin_neg
+        border-radius: 0
+        padding: $bleed_margin
+        p, span, li, h1, h2, h3, h4, h5, h6, code
+            font-family: Consolas, Monaco, 'Andale Mono', monospace
 
 ol, ul
     &.unmarked

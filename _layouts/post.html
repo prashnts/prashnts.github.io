@@ -2,29 +2,40 @@
 <html>
 {% include head.html %}
 <body class="post">
-
     <header>
-        <img src="{{ page.hero }}">
+        <img src="{{ page.hero }}" class="hero">
+        <nav class="nav">
+            <div class="wrapper">
+                <img src="/assets/img/code_food.png" alt="Hallows - Logo" class="icon">
+                <br><br><br><br>
+                <ul class="inline sm">
+                    <a href="#"><li>Blog Entries</li></a>
+                    <a href="#"><li>Projects</li></a>
+                </ul>
+            </div>
+        </nav>
         <div class="intro">
             <div class="bottom-fix">
                 <h1>{{ page.title }}</h1>
-                <ul class="inline lg csv">
-                    <li>{{ page.date | date: "%b %-d, %Y"}}</li>
-                    <li>Posted in {
-                        <ul class="inline sm csv no-pad">
-                            {% for cat in page.categories %}
-                                <li>{{ cat }}</li>
-                            {% endfor %}
-                        </ul>
-                        }
-                    </li>
-                </ul>
             </div>
         </div>
     </header>
     <article>
         {{ content }}
+        <hr>
+        <ul class="inline lg csv">
+            <li>Posted on {{ page.date | date: "%b %-d, %Y"}}</li>
+            <li>under {
+                <ul class="inline sm csv no-pad">
+                    {% for cat in page.categories %}
+                        <li>{{ cat }}</li>
+                    {% endfor %}
+                </ul>
+                }
+            </li>
+        </ul>
     </article>
+    {% include footer.html %}
     <script type="text/javascript" src="/assets/js/prism.js"></script>
 </body>
 </html>
