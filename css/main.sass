@@ -28,13 +28,21 @@ html,body
 
 .front
     .backgrounds
-        position: fixed
-        z-index: 10
-        width: 60vw
-        height: 100vh
-        top: 0
-        right: 0
-        background: url('/assets/img/Pinstripe_Rain.png')
+        @media (min-width: 768px)
+            &
+                position: fixed
+                z-index: 10
+                width: 60vw
+                height: 100vh
+                top: 0
+                right: 0
+
+        @media (max-width: 767px)
+            &
+                position: relative
+                height: 50vh
+                width: 100vw
+
         overflow: hidden
 
         img.fill
@@ -50,17 +58,23 @@ html,body
 
 
     section
-        position: relative
-        z-index: 2
+        @media (min-width: 768px)
+            &
+                width: 36vw
+                padding: 2vw
 
-        width: 36vw
-        padding: 2vw
+            &:first-of-type
+                margin-top: 50vh
+
+        @media (max-width: 767px)
+            &
+                width: 92vw
+                padding: 4vw
 
         color: #000
         font-family: $font_family_headings
-
-        &:first-of-type
-            margin-top: 50vh
+        position: relative
+        z-index: 2
 
         h1, h2, h3, h4, h5, h6
             font-family: $font_family_headings
