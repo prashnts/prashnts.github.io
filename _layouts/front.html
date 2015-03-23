@@ -3,6 +3,8 @@
 {% include head.html %}
 <body class="front">
     <div class="backgrounds">
+        <img src="/assets/img/codeandcakes.png" alt="logo" class="icon">
+        <div class="img-fill" style="background"></div>
     </div>
     <section class="info">
         <h1>Prashant Sinha</h1>
@@ -12,11 +14,27 @@
             <li><a href="mailto:prashant@ducic.ac.in">prashant@ducic.ac.in</a></li>
         </ol>
         <ol class="inline lg">
+            <li><a href="/blog">Blog</a></li>
             <li><a href="https://github.com/prashnts">GitHub</a></li>
             <li><a href="https://raw.githubusercontent.com/PrashntS/shadow-fort/master/projects/resume/resum%C3%A8_prashant_sinha.pdf">Resumé</a></li>
         </ol>
     </section>
-    {{ content }}
+
+    <section class="blog">
+        <h2>Recent Posts</h2>
+        {% for post in site.posts limit:3 %}
+            <a href="{{post.url}}" class="post-list">
+                <h4>{{post.title}}</h4>
+                <p>{{post.excerpt}}</p>
+                <p>{{post.date | date: "%b %-d, %Y"}}</p>
+            </a>
+        {% endfor %}
+        <h3><a href="/blog">Blog Entries</a></h3>
+    </section>
+
+    <section>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span class="hide"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Code and Cake</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://prshnts.in" property="cc:attributionName" rel="cc:attributionURL">Prashant Sinha</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </section>
 
     <script type="text/javascript" src="/assets/js/prism.js"></script>
 </body>

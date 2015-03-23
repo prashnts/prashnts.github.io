@@ -3,7 +3,9 @@ title: Prashant Sinha
 email: prashant@ducic.ac.in
 description: Personal profile of Prashant Sinha
 baseurl: ""
-url: "http://prashnts.in"
+url: "http://prshnts.in"
 
 # Build settings
 markdown: kramdown
+paginate_path: "blog/page:num"
+paginate: 1
