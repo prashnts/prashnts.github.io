@@ -8,4 +8,4 @@ url: "http://prshnts.in"
 # Build settings
 markdown: kramdown
 paginate_path: "blog/page:num"
-paginate: 1
+paginate: 5

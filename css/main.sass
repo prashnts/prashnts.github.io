@@ -19,7 +19,7 @@ $content_width_wide: 700px
 $font_family_headings: Montserrat
 $font_family_text: Anonymous Pro
 
-$headings_background_hero: #0D47A1
+$headings_background_hero: #FFF
 $headings_background_text: #0D47A1
 
 html,body
@@ -85,27 +85,11 @@ html,body
         a
             color: #000
 
-        .post-list
-            h4, p
-                margin: 0
-
-            h4
-                margin-bottom: 10px
-
-            p:last-of-type
-                margin-bottom: 30px
-                margin-top: 10px
-                font-weight: 700
-
-            &:last-of-type > p:last-of-type
-                margin-bottom: 0
-
         .hide
             position: absolute
             width: 1px
             left: -9999px
             top: -99999px
-
 
 .post
     header
@@ -114,6 +98,7 @@ html,body
         height: 40vh
         min-height: 220px
         overflow: hidden
+        margin-bottom: 10px
 
         img.hero
             min-width: 100%
@@ -125,49 +110,13 @@ html,body
             top: 0//-50%
             z-index: -1
 
-        nav
+        img.icon
             position: absolute
-            margin: 0 auto
-            padding: 20px 0 0 0
-            width: 100%
-            background: rgba(0, 0, 0, 0.4)
-            z-index: 2
-            
-            img.icon
-                position: absolute
-                max-height: 40px
-                //left: -70px
-            .wrapper
-                position: relative
-                margin: 0 auto
+            max-height: 90px
+            right: 10px
+            top: 10px
 
-                .blog
-                    font-size: 40px
-                    background: $headings_background_hero
-                    color: #FFF
-
-                @media (max-width: 767px)
-                    &
-                        width: $content_width_narrow
-                @media (min-width: 768px)
-                    &
-                        width: $content_width_wide
-
-                ul
-                    margin: 4px 0
-                    a
-                        text-decoration: none
-                        li
-                            background: $headings_background_hero
-                            font-family: $font_family_text
-                            font-weight: 100
-                            color: #FFFFFF
-                            padding: 5px 10px
-                            border-bottom: 4px solid #00838F
-
-                            &:hover
-                                background: #00838F
-                                font-weight: 400
+        //background: #000
 
         .intro
             position: relative
@@ -184,7 +133,7 @@ html,body
                 margin: 2px $bleed_margin_neg
                 padding: 2px $bleed_margin
                 font-weight: 100
-                color: #FFFFFF
+                color: #000
                 background: $headings_background_hero
                 max-width: 100%
                 
@@ -211,20 +160,16 @@ html,body
         p:first-of-type
             font-weight: 700
             line-height: 1em
-            &::first-letter
-                font-size: 45px
-                float: left
-                padding-top: 9px
 
 
     h1, h2, h3, h4, h5, h6
         font-family: $font_family_headings
         font-weight: 200
-        margin: auto auto $bleed_margin $bleed_margin_neg
-        padding: 2px $bleed_margin
-        background: $headings_background_text
+        //margin: auto auto $bleed_margin $bleed_margin_neg
+        //padding: 2px $bleed_margin
+        //background: $headings_background_text
         display: inline-block
-        color: #FFFFFF
+        color: #000
         &:after
             content: "\a"
             white-space: pre
@@ -246,9 +191,9 @@ html,body
             font-family: $font_family_headings
             font-weight: 200
             padding: 2px $bleed_margin
-            color: #FFF
+            color: #000
             display: inline-block
-            background: $headings_background_text
+            //background: $headings_background_text
 
             &:before
                 content: "fig. "
@@ -260,6 +205,21 @@ html,body
         padding: $bleed_margin
         p, span, li, h1, h2, h3, h4, h5, h6, code
             font-family: Consolas, Monaco, 'Andale Mono', monospace
+
+.post-list
+    h2, h4, p
+        margin: 0
+
+    h2, h4
+        margin-bottom: 10px
+
+    p:last-of-type
+        margin-bottom: 30px
+        margin-top: 10px
+        font-weight: 700
+
+    &:last-of-type > p:last-of-type
+        margin-bottom: 0
 
 ol, ul
     &.unmarked

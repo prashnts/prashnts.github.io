@@ -3,18 +3,9 @@
 {% include head.html %}
 <body class="post">
     <header>
-        <img src="{{ page.hero }}" class="hero">
-        <nav class="nav">
-            <div class="wrapper">
-                <img src="/assets/img/code_food.png" alt="Hallows - Logo" class="icon">
-                <br><br><br><br>
-                <ul class="inline sm">
-                    <a href="#"><li>Blog Entries</li></a>
-                    <a href="#"><li>Projects</li></a>
-                </ul>
-            </div>
-        </nav>
+        <img src="/assets/img/BerkeleyAndBayAtNight.jpg" class="hero">
         <div class="intro">
+            <a href="/"><img src="/assets/img/codeandcakesdark_.png" alt="Hallows - Logo" class="icon"></a>
             <div class="bottom-fix">
                 <h1>{{ page.title }}</h1>
             </div>
@@ -35,31 +26,6 @@
             </li>
         </ul>
     </article>
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
     {% include footer.html %}
     <script type="text/javascript" src="/assets/js/prism.js"></script>
 </body>
