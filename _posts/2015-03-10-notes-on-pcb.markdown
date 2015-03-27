@@ -8,4 +8,12 @@ author:     "Prashant Sinha"
 
 ---
 
-This is a PCB Printer.
+>After three frustrating days to get my new ESP8266 WiFi work on a breadboard, I discovered that a series of loose connections were causing the module to throw Garbage.
+
+# What did not work.
+
+tl;dr: Most of the attempts didn't work.
+
+# What did work.
+
+
