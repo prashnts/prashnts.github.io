@@ -8,13 +8,10 @@ author:     "Prashant Sinha"
 
 ---
 
->After three frustrating days to get my new ESP8266 WiFi work on a breadboard, I discovered that a series of loose connections were causing the module to throw Garbage.
+>After three frustrating days to get my new ESP8266 WiFi work on a breadboard, I discovered that a series of loose connections were causing the module to throw garbage in Serial Input. So, I decided to build a PCB for the circuit. This post documents how I did it, and how would I do it.
 
-# What did work
-
-
-### Things Needed
-
+## Things Needed
+Most of the stuff can be found at the your regular electronics store.
 
 
 #### Consumables
