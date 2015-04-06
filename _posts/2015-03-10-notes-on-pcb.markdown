@@ -10,13 +10,21 @@ author:     "Prashant Sinha"
 
 >After three frustrating days to get my new ESP8266 WiFi work on a breadboard, I discovered that a series of loose connections were causing the module to throw Garbage.
 
-# What did not work
-
-tl;dr: Most of the attempts didn't work.
-
 # What did work
+
 
 ### Things Needed
 
+
+
+#### Consumables
 -   Copper Clad (Single, or Double Sided)
--   
+-   Glossy Papers, or Toner Transfer Sheets
+-   Etchant Solution (See Below)
+
+#### Other Stuff
+-   Laser Printer
+-   Beakers, Tray and Gloves
+-   Cloth Iron
+-   Sharpie
+
