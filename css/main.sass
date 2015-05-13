@@ -258,23 +258,6 @@ html,body
         color: #FFF
 
 .project-one
-    //colors
-    $mercury: #e5e5e5
-    $color_tundora_approx: #444
-    $color_tapa_approx: #777
-    $color_log_cabin_approx: #222
-    $color_tuatara_approx: #393939
-    $color_gravel_approx: #494949
-    $color_curious_blue_approx: #39c
-    $color_bahama_blue_approx: #069
-    $color_mine_shaft_approx: #333
-    $color_desert_storm_approx: #f8f8f8
-    $color_gallery_approx: #eee
-    $color_alto_approx: #dddddd
-    $color_quill_gray_approx: #d2d2d2
-    $white: #fff
-    $black_3: rgba(0,0,0,0.03)
-    $color_mountain_mist_approx: #999
 
     padding: 50px
     font: 14px/1.5 Anonymous Pro
@@ -404,6 +387,24 @@ html,body
         img.cc
             height: 40%
 
+    iframe
+        max-width: 500px
+        max-height: 282px
+
+    figure
+        margin: 0 $bleed_margin_neg
+        figcaption
+            font-family: $font_family_headings
+            font-weight: 200
+            padding: 2px $bleed_margin
+            color: #000
+            display: inline-block
+            //background: $headings_background_text
+
+            &:before
+                content: "fig. "
+                font-family: $font_family_text
+
     pre[class*="language-"]
         margin: auto $bleed_margin_neg
         border-radius: 0
@@ -430,7 +431,7 @@ html,body
             float: none
             position: static
             width: auto
-            border: 1px solid $mercury
+            border: 1px solid #222
             border-width: 1px 0
             padding: 20px 0
             margin: 0 0 20px
@@ -477,7 +478,7 @@ html,body
         body 
             padding: 0.4in
             font-size: 12pt
-            color: $color_tundora_approx
+            color: #000
 
 ol, ul
     &.unmarked
