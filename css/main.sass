@@ -276,53 +276,16 @@ html,body
     $black_3: rgba(0,0,0,0.03)
     $color_mountain_mist_approx: #999
 
-    //fonts
-    $font_0: Monaco
-    $font_1: Bitstream Vera Sans Mono
-    $font_2: Lucida Console
-    $font_3: Terminal
-    $font_4: monospace
-
-    //urls
-    $url_0: url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700)
-
     padding: 50px
-    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
-    color: $color_tapa_approx
+    font: 14px/1.5 Anonymous Pro
+    color: #777
     font-weight: 300
 
-    h1 
-        color: $color_log_cabin_approx
+    h1, h2, h3, h4, h5
+        color: #000000
         margin: 0 0 20px
         line-height: 1.1
         font-size: 28px
-
-    h2 
-        color: $color_log_cabin_approx
-        margin: 0 0 20px
-        line-height: 1.1
-        color: $color_tuatara_approx
-
-    h3 
-        color: $color_log_cabin_approx
-        margin: 0 0 20px
-        line-height: 1.1
-        color: $color_gravel_approx
-
-    h4 
-        color: $color_log_cabin_approx
-        margin: 0 0 20px
-        color: $color_gravel_approx
-
-    h5 
-        color: $color_log_cabin_approx
-        margin: 0 0 20px
-        color: $color_gravel_approx
-
-    h6 
-        color: $color_log_cabin_approx
-        margin: 0 0 20px
-        color: $color_gravel_approx
 
     p 
         margin: 0 0 20px
@@ -338,34 +301,21 @@ html,body
         width: 100%
         border-collapse: collapse
 
-    pre 
-        margin: 0 0 20px
-        font-family: $font_0, $font_1, $font_2, $font_3, $font_4
-        color: $color_mine_shaft_approx
-        font-size: 12px
-        padding: 8px 15px
-        background: $color_desert_storm_approx
-        //If you use compass, instead of the line below you could use +border-radius($radius, $vertical-radius)
-        border-radius: 5px
-        border: 1px solid $mercury
-        overflow-x: auto
-
     dl 
         margin: 0 0 20px
 
     a 
-        color: $color_curious_blue_approx
+        color: #000000
         font-weight: 400
         text-decoration: none
         &:hover 
-            color: $color_bahama_blue_approx
+            color: #000000
+            text-decoration: underline
             small 
-                color: $color_tapa_approx
-
-
+                color: #000000
         small 
             font-size: 11px
-            color: $color_tapa_approx
+            color: #000000
             margin-top: -0.6em
             display: block
 
@@ -375,30 +325,10 @@ html,body
         margin: 0 auto
 
     blockquote 
-        border-left: 1px solid $mercury
+        border-left: 1px solid #000000
         margin: 0
         padding: 0 0 0 20px
         font-style: italic
-
-    code 
-        font-family: $font_0, $font_1, $font_2, $font_3, $font_4
-        color: $color_mine_shaft_approx
-        font-size: 12px
-
-    th 
-        text-align: left
-        padding: 5px 10px
-        border-bottom: 1px solid $mercury
-        color: $color_tundora_approx
-
-    td 
-        text-align: left
-        padding: 5px 10px
-        border-bottom: 1px solid $mercury
-
-    dt 
-        color: $color_tundora_approx
-        font-weight: 700
 
     img 
         max-width: 100%
@@ -411,63 +341,42 @@ html,body
             list-style: none
             height: 40px
             padding: 0
-            background: linear-gradient(top, $color_desert_storm_approx 0,$color_alto_approx 100%)
-            //If you use compass, instead of the line below you could use +border-radius($radius, $vertical-radius)
             border-radius: 5px
-            border: 1px solid $color_quill_gray_approx
-            //If you use compass, instead of the line below you could use +box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-            box-shadow: inset $white 0 1px 0, inset $black_3 0 -1px 0
+            border: 1px solid #CCC
             width: 270px
             a 
                 line-height: 1
                 font-size: 11px
-                color: $color_mountain_mist_approx
+                color: #777
                 display: block
                 text-align: center
                 padding-top: 6px
                 height: 34px
-                &:hover 
-                    color: $color_mountain_mist_approx
-                    background: linear-gradient(top, $white 0,$color_alto_approx 100%)
-
-                &:active 
-                    -webkit-box-shadow: inset 0 2px 2px 0 $color_alto_approx
-                    -moz-box-shadow: inset 0 2px 2px 0 $color_alto_approx
-                    //If you use compass, instead of the line below you could use +box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-                    box-shadow: inset 0 2px 2px 0 $color_alto_approx
 
                 strong 
                     font-size: 14px
                     display: block
-                    color: $color_log_cabin_approx
 
 
             li + li 
                 width: 88px
-                border-left: 1px solid $white
                 + li 
                     border-right: none
                     width: 89px
 
-
-
         li 
             width: 89px
             float: left
-            border-right: 1px solid $color_quill_gray_approx
+            border-right: 1px solid #CCC
             height: 40px
             &:first-child a 
-                //If you use compass, instead of the line below you could use +border-radius($radius, $vertical-radius)
                 border-radius: 5px 0 0 5px
 
             &:last-child a 
-                //If you use compass, instead of the line below you could use +border-radius($radius, $vertical-radius)
                 border-radius: 0 5px 5px 0
 
-
-
     strong 
-        color: $color_log_cabin_approx
+        color: #000000
         font-weight: 700
 
     section 
@@ -480,7 +389,7 @@ html,body
 
     hr 
         border: 0
-        background: $mercury
+        background: #000000
         height: 1px
         margin: 0 0 20px
 
@@ -489,6 +398,16 @@ html,body
         float: left
         position: fixed
         bottom: 50px
+
+        img.icon
+            width: 60px
+
+    pre[class*="language-"]
+        margin: auto $bleed_margin_neg
+        border-radius: 0
+        padding: $bleed_margin
+        p, span, li, h1, h2, h3, h4, h5, h6, code
+            font-family: Consolas, Monaco, 'Andale Mono', monospace
 
     @media print, screen and(max-width: 960px) 
         header 
