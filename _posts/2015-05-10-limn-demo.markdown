@@ -1,7 +1,7 @@
 ---
 layout:     project
 title:      "Limn v0.1"
-excerpt:    "First prototype of my reprap based pen-plotter."
+excerpt:    "First prototype of a RepRap based pen-plotter that I'm working on."
 github:     "autonomi/limn"
 date:       2015-05-06 22:00:00
 categories: projects electronics
@@ -12,4 +12,13 @@ author:     "Prashant Sinha"
 Prototype Demo
 ==============
 
-The first protoype of limn is a RepRap 3D Printer stripped down to its essentials and 3-axis drive.
+<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/aWG2Bk5RMY4?rel=0" frameborder="0" allowfullscreen></iframe>
+
+##Drive System
+The drive system currently uses the [RAMPS]('http://reprap.org/wiki/RAMPS_1.3') Arduino Mega Shield with an [A4983]('http://reprap.org/wiki/A4983#Stepper_driver_chips') stepper motor driver. The thermostats, heater and limit-switch debounce circuits have been removed from the board. Current Bill-of-Material (BOM) includes:
+
+- Stepper Motors (Ones taken from old Printer or CNC works just fine) 5 (1x X-Axis, 1x Y-Axis, 2x Z-Axis, 1x Linear Actuator) [eBay.in](http://www.ebay.in/itm/like/181740428717?aff_source=Sok-Goog)
+- A4983 Breakout Board (Stepper Motor Driver) 4 (X, Y, Z, P Axis) [sparkfun](https://www.sparkfun.com/products/12859)
+- Staedtler Lumocolor 318 Fine 0.6mm Line Permanent Pen [Amazon.in](http://www.amazon.in/Staedtler-Lumocolor-318-Permanent-Shades/dp/B000J6D9GW?tag=googinhydr18418-21&kpid=B000J6D9GW&tag=googinkenshoo-21&ascsubtag=191623e9-9936-2ca8-c271-000040db7a77)
+
+A few of the parts were 3D Printed, and may be found in the GitHub repository.
