@@ -257,6 +257,229 @@ html,body
     a, a:visited, a:active, a:focus
         color: #FFF
 
+.project-one
+
+    padding: 50px
+    font: 14px/1.5 Anonymous Pro
+    color: #777
+    font-weight: 300
+
+    h1, h2, h3, h4, h5
+        color: #000000
+        margin: 0 0 20px
+        line-height: 1.1
+        font-size: 28px
+
+    p 
+        margin: 0 0 20px
+
+    ul 
+        margin: 0 0 20px
+
+    ol 
+        margin: 0 0 20px
+
+    table 
+        margin: 0 0 20px
+        width: 100%
+        border-collapse: collapse
+
+    dl 
+        margin: 0 0 20px
+
+    a 
+        color: #000000
+        font-weight: 400
+        text-decoration: none
+        &:hover 
+            color: #000000
+            text-decoration: underline
+            small 
+                color: #000000
+        small 
+            font-size: 11px
+            color: #000000
+            margin-top: -0.6em
+            display: block
+
+
+    .wrapper 
+        width: 860px
+        margin: 0 auto
+
+    blockquote 
+        border-left: 1px solid #000000
+        margin: 0
+        padding: 0 0 0 20px
+        font-style: italic
+
+    img 
+        max-width: 100%
+
+    header 
+        width: 270px
+        float: left
+        position: fixed
+        ul 
+            list-style: none
+            height: 40px
+            padding: 0
+            border-radius: 5px
+            border: 1px solid #CCC
+            width: 270px
+            a 
+                line-height: 1
+                font-size: 11px
+                color: #777
+                display: block
+                text-align: center
+                padding-top: 6px
+                height: 34px
+
+                strong 
+                    font-size: 14px
+                    display: block
+
+
+            li + li 
+                width: 88px
+                + li 
+                    border-right: none
+                    width: 89px
+
+        li 
+            width: 89px
+            float: left
+            border-right: 1px solid #CCC
+            height: 40px
+            &:first-child a 
+                border-radius: 5px 0 0 5px
+
+            &:last-child a 
+                border-radius: 0 5px 5px 0
+
+    strong 
+        color: #000000
+        font-weight: 700
+
+    section 
+        width: 500px
+        float: right
+        padding-bottom: 50px
+
+    small 
+        font-size: 11px
+
+    hr 
+        border: 0
+        background: #000000
+        height: 1px
+        margin: 0 0 20px
+
+    footer 
+        width: 270px
+        float: left
+        position: fixed
+        bottom: 50px
+
+        img.icon
+            width: 60px
+        img.cc
+            height: 40%
+
+    iframe
+        max-width: 500px
+        max-height: 282px
+
+    figure
+        margin: 0 $bleed_margin_neg
+        figcaption
+            font-family: $font_family_headings
+            font-weight: 200
+            padding: 2px $bleed_margin
+            color: #000
+            display: inline-block
+            //background: $headings_background_text
+
+            &:before
+                content: "fig. "
+                font-family: $font_family_text
+
+    pre[class*="language-"]
+        margin: auto $bleed_margin_neg
+        border-radius: 0
+        padding: $bleed_margin
+        p, span, li, h1, h2, h3, h4, h5, h6, code
+            font-family: Consolas, Monaco, 'Andale Mono', monospace
+
+    @media print, screen and(max-width: 960px) 
+        header 
+            float: none
+            position: static
+            width: auto
+            padding-right: 320px
+            ul 
+                position: absolute
+                right: 50px
+                top: 52px
+
+            a small 
+                display: inline
+
+
+        section 
+            float: none
+            position: static
+            width: auto
+            border: 1px solid #222
+            border-width: 1px 0
+            padding: 20px 0
+            margin: 0 0 20px
+
+        footer 
+            float: none
+            position: static
+            width: auto
+
+        div.wrapper 
+            width: auto
+            margin: 0
+
+
+    @media print, screen and(max-width: 720px) 
+        body 
+            word-wrap: break-word
+
+        header 
+            padding: 0
+            ul 
+                position: static
+
+            p.view 
+                position: static
+
+
+        pre 
+            word-wrap: normal
+
+        code 
+            word-wrap: normal
+
+
+    @media print, screen and(max-width: 480px) 
+        body 
+            padding: 15px
+
+        header ul 
+            display: none
+
+
+    @media print 
+        body 
+            padding: 0.4in
+            font-size: 12pt
+            color: #000
+
 ol, ul
     &.unmarked
         list-style-type: none

@@ -1,0 +1,15 @@
+---
+layout:     project
+title:      "Limn v0.1"
+excerpt:    "First prototype of my reprap based pen-plotter."
+github:     "autonomi/limn"
+date:       2015-05-06 22:00:00
+categories: projects electronics
+author:     "Prashant Sinha"
+
+---
+
+Prototype Demo
+==============
+
+The first protoype of limn is a RepRap 3D Printer stripped down to its essentials and 3-axis drive.
