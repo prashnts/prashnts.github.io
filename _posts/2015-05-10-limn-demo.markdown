@@ -15,10 +15,22 @@ Prototype Demo
 <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/aWG2Bk5RMY4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ##Drive System
+
+Limn follows a simple 2 + 2 axis model where the printing bed is Y axis, Print Head is X axis. The Z axis is used to position the print head accurately, while the P axis lowers the pen vertically.
+
 The drive system currently uses the [RAMPS]('http://reprap.org/wiki/RAMPS_1.3') Arduino Mega Shield with an [A4983]('http://reprap.org/wiki/A4983#Stepper_driver_chips') stepper motor driver. The thermostats, heater and limit-switch debounce circuits have been removed from the board. Current Bill-of-Material (BOM) includes:
 
 - Stepper Motors (Ones taken from old Printer or CNC works just fine) 5 (1x X-Axis, 1x Y-Axis, 2x Z-Axis, 1x Linear Actuator) [eBay.in](http://www.ebay.in/itm/like/181740428717?aff_source=Sok-Goog)
 - A4983 Breakout Board (Stepper Motor Driver) 4 (X, Y, Z, P Axis) [sparkfun](https://www.sparkfun.com/products/12859)
 - Staedtler Lumocolor 318 Fine 0.6mm Line Permanent Pen [Amazon.in](http://www.amazon.in/Staedtler-Lumocolor-318-Permanent-Shades/dp/B000J6D9GW?tag=googinhydr18418-21&kpid=B000J6D9GW&tag=googinkenshoo-21&ascsubtag=191623e9-9936-2ca8-c271-000040db7a77)
+- 12V, 5A SMPS [eBay.in](http://www.ebay.in/itm/like/271339787128?aff_source=Sok-Goog)
 
-A few of the parts were 3D Printed, and may be found in the GitHub repository.
+A few of the parts, that were 3D Printed, and may be found in the GitHub repository.
+
+{% include image url="/assets/img/blog/limn-actuator.jpg" description="The Pen Plotter Actuator uses a Stepper Motor and a limit switch in current design." %}
+
+##What Happens When
+The firmware of limn is a GCode parser and interpreter. Using GCode grammar, it moves the stepper motors of all the axes in just the precise amount for the pen to reach the given coordinates.
+
+##Plan of action
+I have several ideas about the direction in which I would want to take this project.
