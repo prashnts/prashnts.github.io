@@ -3,516 +3,64 @@
 ---
 @charset "utf-8"
 
-//@import "bootstrap.scss"
-@import "abb50a24-d60e-4525-8971-ba853e4ab784.scss"
-//@import "font.awesome.scss"
-@import "prism.okaidia.scss"
 
-// Some constants
 $fntsz: 12
 $bleed_margin: 10px
 $bleed_margin_neg: -10px
 
-$content_width_narrow: 85vw
-$content_width_wide: 700px
-
-$font_family_headings: Montserrat
-$font_family_text: Anonymous Pro
-
-$headings_background_hero: #FFF
-$headings_background_text: #0D47A1
-
 html,body
-    margin: 0
-    position: relative
-
-.front
-    .backgrounds
-        @media (min-width: 768px)
-            &
-                position: fixed
-                z-index: 10
-                width: 60vw
-                height: 100vh
-                top: 0
-                right: 0
-
-        @media (max-width: 767px)
-            &
-                position: relative
-                height: 50vh
-                width: 100vw
-
-        img.fill
-            min-height: 100%
-            min-width: 100%
-
-        .icon
-            max-width: 100%
-            max-height: 150px
-            position: absolute
-            right: 10px
-            top: 10px
-
-
-    section
-        @media (min-width: 768px)
-            &
-                width: 36vw
-                padding: 2vw
-
-            &:first-of-type
-                margin-top: 50vh
-
-        @media (max-width: 767px)
-            &
-                width: 92vw
-                padding: 4vw
-
-        color: #000
-        font-family: $font_family_headings
-        position: relative
-        z-index: 2
-
-        h1, h2, h3, h4, h5, h6
-            font-family: $font_family_headings
-
-        p, span, li
-            font-family: $font_family_text
-
-        a
-            color: #000
-
-        .hide
-            position: absolute
-            width: 1px
-            left: -9999px
-            top: -99999px
-
-.post
-    header
-        position: relative
-        height: 30%
-        height: 40vh
-        min-height: 220px
-        overflow: hidden
-        margin-bottom: 10px
-
-        img.hero
-            min-width: 100%
-            min-height: 100%
-            width: 100%
-            position: absolute
-            left: 0
-            right: 0
-            top: 0//-50%
-            z-index: -1
-
-        img.icon
-            position: absolute
-            max-height: 90px
-            right: 10px
-            top: 10px
-
-        //background: #000
-
-        .intro
-            position: relative
-            margin: 0 auto
-            height: 100%
-
-            .bottom-fix
-                position: absolute
-                bottom: 10px
-                width: 100%
-
-            h1, h2, h3, h4, h5, ul
-                display: inline-block
-                margin: 2px $bleed_margin_neg
-                padding: 2px $bleed_margin
-                font-weight: 100
-                color: #000
-                background: $headings_background_hero
-                max-width: 100%
-                
-                &.no-pad
-                    padding: 0
-
-            @media (max-width: 767px)
-                &
-                    width: $content_width_narrow
-            @media (min-width: 768px)
-                &
-                    width: $content_width_wide
-
-    article
-        margin: 0 auto
-
-        @media (max-width: 767px)
-            &
-                width: $content_width_narrow
-        @media (min-width: 768px)
-            &
-                width: $content_width_wide
-
-        p:first-of-type
-            font-weight: 700
-            line-height: 1em
-
-
-    h1, h2, h3, h4, h5, h6
-        font-family: $font_family_headings
-        font-weight: 200
-        //margin: auto auto $bleed_margin $bleed_margin_neg
-        //padding: 2px $bleed_margin
-        //background: $headings_background_text
-        //display: inline-block
-        color: #000
-        &:after
-            content: "\a"
-            white-space: pre
-            clear: both
-
-    hr
-        border: 1px solid #888
-        margin: 30px
-
-    p, span, li
-        font-family: $font_family_text
-
-    img
-        max-width: 100%
-
-    figure
-        margin: 0 $bleed_margin_neg
-        figcaption
-            font-family: $font_family_headings
-            font-weight: 200
-            padding: 2px $bleed_margin
-            color: #000
-            display: inline-block
-            //background: $headings_background_text
-
-            &:before
-                content: "fig. "
-                font-family: $font_family_text
-
-    pre[class*="language-"]
-        margin: auto $bleed_margin_neg
-        border-radius: 0
-        padding: $bleed_margin
-        p, span, li, h1, h2, h3, h4, h5, h6, code
-            font-family: Consolas, Monaco, 'Andale Mono', monospace
-
-.post-list
-    h2, h4, p
-        margin: 0
-
-    h2, h4
-        margin-bottom: 10px
-
-    p:last-of-type
-        margin-bottom: 30px
-        margin-top: 10px
-        font-weight: 700
-
-    &:last-of-type > p:last-of-type
-        margin-bottom: 0
-
-.cakes-one
-    background: #444
-    color: #FFF
-
-    header
-        position: relative
-        max-width: 20%
-        min-height: 100%
-        min-height: 100vh
-        background: rgba(0, 0, 0, 0.7)
-        overflow: scroll
-        padding: 0 16px
-        z-index: 10
-
-        img.icon
-            margin-top: 16px
-            max-height: 60px
-
-    h1, h2, h3, h4, h5, h6
-        font-family: $font_family_headings
-        font-weight: 200
-
-    #canvas-iso
-        position: fixed
-        z-index: 0
-        top: 0
-        left: 0
-
-    hr
-        border: 1px solid #888
-        margin: 30px
-
-    p, span, li
-        font-family: $font_family_text
-
-    a, a:visited, a:active, a:focus
-        color: #FFF
-
-.project-one
-
-    padding: 50px
-    font: 14px/1.5 Anonymous Pro
-    color: #777
-    font-weight: 300
-
-    h1, h2, h3, h4, h5
-        color: #000000
-        margin: 0 0 20px
-        line-height: 1.1
-        font-size: 28px
-
-    p 
-        margin: 0 0 20px
-
-    ul 
-        margin: 0 0 20px
-
-    ol 
-        margin: 0 0 20px
-
-    table 
-        margin: 0 0 20px
-        width: 100%
-        border-collapse: collapse
-
-    dl 
-        margin: 0 0 20px
-
-    a 
-        color: #000000
-        font-weight: 400
-        text-decoration: none
-        &:hover 
-            color: #000000
-            text-decoration: underline
-            small 
-                color: #000000
-        small 
-            font-size: 11px
-            color: #000000
-            margin-top: -0.6em
-            display: block
-
-
-    .wrapper 
-        width: 860px
-        margin: 0 auto
-
-    blockquote 
-        border-left: 1px solid #000000
-        margin: 0
-        padding: 0 0 0 20px
-        font-style: italic
-
-    img 
-        max-width: 100%
-
-    header 
-        width: 270px
-        float: left
-        position: fixed
-        ul 
-            list-style: none
-            height: 40px
-            padding: 0
-            border-radius: 5px
-            border: 1px solid #CCC
-            width: 270px
-            a 
-                line-height: 1
-                font-size: 11px
-                color: #777
-                display: block
-                text-align: center
-                padding-top: 6px
-                height: 34px
-
-                strong 
-                    font-size: 14px
-                    display: block
-
-
-            li + li 
-                width: 88px
-                + li 
-                    border-right: none
-                    width: 89px
-
-        li 
-            width: 89px
-            float: left
-            border-right: 1px solid #CCC
-            height: 40px
-            &:first-child a 
-                border-radius: 5px 0 0 5px
-
-            &:last-child a 
-                border-radius: 0 5px 5px 0
-
-    strong 
-        color: #000000
-        font-weight: 700
-
-    section 
-        width: 500px
-        float: right
-        padding-bottom: 50px
-
-    small 
-        font-size: 11px
-
-    hr 
-        border: 0
-        background: #000000
-        height: 1px
-        margin: 0 0 20px
-
-    footer 
-        width: 270px
-        float: left
-        position: fixed
-        bottom: 50px
-
-        img.icon
-            width: 60px
-        img.cc
-            height: 40%
-
-    iframe
-        max-width: 500px
-        max-height: 282px
-
-    figure
-        margin: 0 $bleed_margin_neg
-        figcaption
-            font-family: $font_family_headings
-            font-weight: 200
-            padding: 2px $bleed_margin
-            color: #000
-            display: inline-block
-            //background: $headings_background_text
-
-            &:before
-                content: "fig. "
-                font-family: $font_family_text
-
-    pre[class*="language-"]
-        margin: auto $bleed_margin_neg
-        border-radius: 0
-        padding: $bleed_margin
-        p, span, li, h1, h2, h3, h4, h5, h6, code
-            font-family: Consolas, Monaco, 'Andale Mono', monospace
-
-    @media print, screen and(max-width: 960px) 
-        header 
-            float: none
-            position: static
-            width: auto
-            padding-right: 320px
-            ul 
-                position: absolute
-                right: 50px
-                top: 52px
-
-            a small 
-                display: inline
-
-
-        section 
-            float: none
-            position: static
-            width: auto
-            border: 1px solid #222
-            border-width: 1px 0
-            padding: 20px 0
-            margin: 0 0 20px
-
-        footer 
-            float: none
-            position: static
-            width: auto
-
-        div.wrapper 
-            width: auto
-            margin: 0
-
-
-    @media print, screen and(max-width: 720px) 
-        body 
-            word-wrap: break-word
-
-        header 
-            padding: 0
-            ul 
-                position: static
-
-            p.view 
-                position: static
-
-
-        pre 
-            word-wrap: normal
-
-        code 
-            word-wrap: normal
-
-
-    @media print, screen and(max-width: 480px) 
-        body 
-            padding: 15px
-
-        header ul 
-            display: none
-
-
-    @media print 
-        body 
-            padding: 0.4in
-            font-size: 12pt
-            color: #000
-
-ol, ul
-    &.unmarked
-        list-style-type: none
-        padding: 0
-
-    &.inline
-        list-style-type: none
-        padding: 0
-        display: inline-block
-
-        li
-            display: inline
-
-        &.lg
-            li
-                &:last-of-type
-                    margin-right: 0px
-                margin-right: 20px
-
-        &.sm
-            li
-                &:last-of-type
-                    margin-right: 0px
-                margin-right: 2px
-
-        &.csv
-            li:after
-                content: ","
-            li:last-of-type:after
-                content: ""
+  margin: 0
+  position: relative
+  font-family: Courier, monospace
+  padding: 0 20px
+  background: #fdf6e3
+  display: flex
+  align-items: center
+  min-height: 100%
+  // justify-content: center
+
+
+h1, h2
+  margin: 0
+  max-width: 500px
+  margin-bottom: 2px
+
+h1
+  font-size: 1.5em
+  color: #586e75
+  margin-bottom: 10px
+
+h2
+  font-size: 1em
+  font-weight: 100
+  color: #657b83
+
+em
+  font-style: initial
+
+ul
+  margin: 0
+  margin-top: 50px
+  list-style-type: none
+  padding: 0
+
+  li
+    display: inline-block
+    margin-right: 10px
 
 a
-    text-decoration: none
-    &:active, &:hover
-        color: inherit
-        text-decoration: underline
+  text-decoration: none
+  color: #268bd2
+
+  &:active, &:visited
+    color: #268bd2
+
+  &:hover
+    text-decoration: underline
+    color: #268bd2
+
+strong
+  a
+    color: #6c71c4
+    &:active, &:visited, &:hover
+      color: #6c71c4

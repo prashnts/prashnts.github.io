@@ -1,6 +1,0 @@
-<figure>
-    <a href="{{ include.url }}" target="_blank">
-        <img src="{{ include.url }}" alt="{{ include.description }}">
-        {% if include.description %}<figcaption>{{ include.description }}</figcaption>{% endif %}
-    </a>
-</figure>

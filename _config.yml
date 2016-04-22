@@ -1,11 +1,4 @@
 # Site settings
-title: Prashant Sinha
-email: prashant@ducic.ac.in
-description: Personal profile of Prashant Sinha
-baseurl: ""
-url: "http://prshnts.in"
 
-# Build settings
-markdown: kramdown
-paginate_path: "blog/page:num"
-paginate: 5
+url: "https://0xc0d3.pw/"
+
