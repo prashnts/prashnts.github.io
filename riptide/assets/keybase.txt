@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/prashnts
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://0xc0d3.pw
+  * I am prashnts (https://keybase.io/prashnts) on keybase.
+  * I have a public key ASAUPSD1OAKed0UC1YOFmummrRFMpsQfinNVR6axM8-LqQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101a82927a5e077fc7ec2d8748aaf225aad3e736bd4d2c658a455de1681634526100a",
+            "host": "keybase.io",
+            "kid": "0120143d20f538029e774502d583859ae9a6ad114ca6c41f8a735547a6b133cf8ba90a",
+            "uid": "ff2c6863cf7bf1f3fd481e3301ea0c19",
+            "username": "prashnts"
+        },
+        "service": {
+            "hostname": "0xc0d3.pw",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1461536336,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1461535539,
+        "hash": "a1a96a9c833b9c27c4cbb010194ca9249d0b99094d142b85e5aa6fa638f543aaa342c8896f37000eb42b3aa14ed4bf3aa955b1178ccd6065dab3123ea819cb00",
+        "seqno": 450266
+    },
+    "prev": "1d00052f1f7fdb72ed5a46e96b549155ac4e961c99d4caa3d5eb758fc684ecf8",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgFD0g9TgCnndFAtWDhZrppq0RTKbEH4pzVUemsTPPi6kKp3BheWxvYWTFAvF7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYTgyOTI3YTVlMDc3ZmM3ZWMyZDg3NDhhYWYyMjVhYWQzZTczNmJkNGQyYzY1OGE0NTVkZTE2ODE2MzQ1MjYxMDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTQzZDIwZjUzODAyOWU3NzQ1MDJkNTgzODU5YWU5YTZhZDExNGNhNmM0MWY4YTczNTU0N2E2YjEzM2NmOGJhOTBhIiwidWlkIjoiZmYyYzY4NjNjZjdiZjFmM2ZkNDgxZTMzMDFlYTBjMTkiLCJ1c2VybmFtZSI6InByYXNobnRzIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiIweGMwZDMucHciLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNCJ9LCJjdGltZSI6MTQ2MTUzNjMzNiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDYxNTM1NTM5LCJoYXNoIjoiYTFhOTZhOWM4MzNiOWMyN2M0Y2JiMDEwMTk0Y2E5MjQ5ZDBiOTkwOTRkMTQyYjg1ZTVhYTZmYTYzOGY1NDNhYWEzNDJjODg5NmYzNzAwMGViNDJiM2FhMTRlZDRiZjNhYTk1NWIxMTc4Y2NkNjA2NWRhYjMxMjNlYTgxOWNiMDAiLCJzZXFubyI6NDUwMjY2fSwicHJldiI6IjFkMDAwNTJmMWY3ZmRiNzJlZDVhNDZlOTZiNTQ5MTU1YWM0ZTk2MWM5OWQ0Y2FhM2Q1ZWI3NThmYzY4NGVjZjgiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEA6Ja7mJuOinzw++Wl7EalDXmxfXSGty33sCXA7Mc4oerMngOLeIAfRx/pkzgzNlt8gFAnQU/Kk9345vdLVHc8DqHNpZ190eXBlIKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/prashnts
+
+==================================================================
