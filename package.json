@@ -1,0 +1,37 @@
+{
+  "name": "riptide",
+  "version": "0.0.1",
+  "description": "Github Resurrection",
+  "main": "riptide/app.coffee",
+  "scripts": {
+    "start": "brunch watch -s",
+    "build": "brunch build -p",
+    "deploy": "gh-pages-deploy"
+  },
+  "author": "Prashant Sinha",
+  "license": "MIT",
+  "dependencies": {
+    "auto-reload-brunch": "^2.2.0",
+    "brunch": "github:brunch/brunch#aaaee25",
+    "coffee-script-brunch": "^2.0.0",
+    "coffeelint-brunch": "^2.0.0",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "^2.0.0",
+    "jquery": "^2.2.3",
+    "jaded-brunch": "^2.3.0",
+    "lodash": "^4.11.1",
+    "normalize.css": "^4.1.1",
+    "stylus-brunch": "^2.6.0"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "public",
+    "cname": "0xc0d3.pw",
+    "prep": [
+      "build"
+    ],
+    "noprompt": false
+  }
+}
