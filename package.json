@@ -22,16 +22,5 @@
     "lodash": "^4.11.1",
     "normalize.css": "^4.1.1",
     "stylus-brunch": "^2.6.0"
-  },
-  "devDependencies": {
-    "gh-pages-deploy": "^0.4.2"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "public",
-    "cname": "0xc0d3.pw",
-    "prep": [
-      "build"
-    ],
-    "noprompt": false
   }
 }
