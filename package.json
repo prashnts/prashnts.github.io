@@ -6,7 +6,7 @@
   "scripts": {
     "start": "brunch watch -s",
     "build": "brunch build -p",
-    "deploy": "./deploy.sh"
+    "deploy": "sh deploy"
   },
   "author": "Prashant Sinha",
   "license": "MIT",
