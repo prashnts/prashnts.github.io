@@ -6,7 +6,7 @@
   "scripts": {
     "start": "brunch watch -s",
     "build": "brunch build -p",
-    "deploy": "gh-pages-deploy"
+    "deploy": "./deploy.sh"
   },
   "author": "Prashant Sinha",
   "license": "MIT",

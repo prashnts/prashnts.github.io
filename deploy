@@ -1,3 +1,6 @@
+#!/usr/bin/sh
+# 0xc0d3.pw
+
 git branch -f master
 git checkout master
 git reset --hard origin/develop
