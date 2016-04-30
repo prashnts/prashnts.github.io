@@ -4,9 +4,9 @@ node_js:
   - "5.1"
   - "4"
   - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
+branches:
+  only:
+    - develop
 script:
   - npm run build
 notifications:
