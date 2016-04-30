@@ -8,7 +8,7 @@ branches:
   only:
     - develop
 script:
-  - npm run build
+  - brunch b -p
 notifications:
   email:
     recipients: prashant@ducic.ac.in
