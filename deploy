@@ -1,13 +1,14 @@
 #!/usr/bin/sh
 # 0xc0d3.pw
 
+rm -rf public
 git branch -f master
 git checkout master
 git reset --hard origin/develop
-rm -rf dat etc js css img
 npm run build
 cp -r public/* .
 echo '0xc0d3.pw' > CNAME
+rm -rf public
 git add -A .
 git commit -a -m 'site update'
 git push origin master --force
