@@ -1,5 +1,5 @@
 language: node_js
-python:
+node_js:
   - "5"
   - "5.1"
   - "4"
@@ -8,7 +8,7 @@ python:
   - "4.0"
   - "0.12"
 script:
-  - npm build
+  - npm run build
 notifications:
   email:
     recipients: prashant@ducic.ac.in
