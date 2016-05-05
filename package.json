@@ -1,6 +1,6 @@
 {
   "name": "riptide",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Github Resurrection",
   "main": "riptide/app.coffee",
   "scripts": {
