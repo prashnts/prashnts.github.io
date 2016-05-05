@@ -12,7 +12,7 @@ module.exports = config:
       pattern: /^riptide\/.*\.(coffee)$/
       useCoffeelintJson: yes
     jaded:
-      staticPatterns: /^riptide\/markup\/(.*)\.jade$/
+      staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
 
   npm:
     enabled: yes
