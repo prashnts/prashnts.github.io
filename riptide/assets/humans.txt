@@ -1,7 +1,7 @@
 /* TEAM */
   Developer: Prashant Sinha
   GitHub: @prashnts
-  Website: https://0xc0d3.pw
+  Website: https://noop.pw
   Source: https://github.com/prashnts/prashnts.github.io
   From: New Delhi, India
 

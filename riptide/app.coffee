@@ -1,5 +1,5 @@
 #!/usr/bin/env coffee
-# 0xc0d3.pw
+# noop.pw
 
 App =
   init: ->

@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-# 0xc0d3.pw
+# noop.pw
 
 rm -rf public
 git branch -f master
@@ -7,7 +7,7 @@ git checkout master
 git reset --hard origin/develop
 npm run build
 cp -r public/* .
-echo '0xc0d3.pw' > CNAME
+echo 'noop.pw' > CNAME
 rm -rf public
 git add -A .
 git commit -a -m 'site update'
