@@ -1,4 +1,3 @@
-#!/usr/bin/env coffee
 # noop.pw
 
 App =

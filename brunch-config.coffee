@@ -14,6 +14,7 @@ module.exports = config:
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
 
+
   npm:
     enabled: yes
     styles:

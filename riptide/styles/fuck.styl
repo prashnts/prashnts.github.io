@@ -1,0 +1,34 @@
+// noop.pw
+@require _solarized
+
+body.fuck
+  width 100%
+  background $base3
+  // display flex
+  h1
+    width 100%
+    max-width initial
+    overflow hidden
+    display flex
+    position relative
+    font-size 80px
+    color $blue
+    font-family Sans-serif
+    font-weight 300
+    letter-spacing 2px
+
+    ul
+      margin 0 0 0 20px
+      position absolute
+      // top 0
+      li
+        display block
+        margin-bottom 30px
+
+      animation scroll 4s infinite linear
+
+@keyframes scroll
+  from
+    transform translateY(0)
+  to
+    transform translateY(-100%)
