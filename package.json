@@ -16,11 +16,12 @@
     "coffee-script-brunch": "^2.0.0",
     "coffeelint-brunch": "^2.0.0",
     "css-brunch": "^2.6.1",
+    "jaded-brunch": "^2.3.0",
     "javascript-brunch": "^2.0.0",
     "jquery": "^2.2.3",
-    "jaded-brunch": "^2.3.0",
     "lodash": "^4.11.1",
     "normalize.css": "^4.1.1",
-    "stylus-brunch": "^2.6.0"
+    "stylus-brunch": "^2.6.0",
+    "wintersmith": "^2.3.2"
   }
 }
