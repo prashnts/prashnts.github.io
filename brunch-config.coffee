@@ -14,6 +14,8 @@ module.exports = config:
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
       globals: ['DEBUG']
+    closurecompiler:
+      compilationLevel: 'ADVANCED'
 
   npm:
     enabled: yes
