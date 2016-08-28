@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "auto-reload-brunch": "^2.2.0",
-    "brunch": "github:brunch/brunch#aaaee25",
+    "brunch": "^2.8.2",
+    "clean-css-brunch": "^2.0.0",
     "coffee-script-brunch": "^2.0.0",
     "coffeelint-brunch": "^2.0.0",
     "css-brunch": "^2.6.1",
@@ -22,6 +23,7 @@
     "lodash": "^4.11.1",
     "normalize.css": "^4.1.1",
     "stylus-brunch": "^2.6.0",
+    "uglify-js-brunch": "^2.0.1",
     "wintersmith": "^2.3.2"
   }
 }

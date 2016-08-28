@@ -7,11 +7,11 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title no-op
     include ./partials/favicons.jade
-    link(rel='stylesheet', href='/css/libraries.css')
     link(rel='stylesheet', href='/css/app.css')
     link(rel='canonical', href='https://noop.pw')
-    script.
-      window.brunch = {server: 'localhost'};
+    if DEBUG
+      script.
+        window.brunch = {server: 'localhost'};
   body
     .wrapper
       h1 Prashant Sinha

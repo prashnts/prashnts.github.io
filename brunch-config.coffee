@@ -1,5 +1,5 @@
-#!/usr/bin/env coffee
-# 0xc0d3.pw
+# noop.pw
+global.DEBUG = '-p' not in global.process.argv
 
 module.exports = config:
   paths:
@@ -13,7 +13,7 @@ module.exports = config:
       useCoffeelintJson: yes
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
-
+      globals: ['DEBUG']
 
   npm:
     enabled: yes
@@ -30,10 +30,8 @@ module.exports = config:
 
   files:
     javascripts:
-      joinTo:
-        'js/libraries.js': /^(?!riptide\/)/
-        'js/app.js': /^riptide\//
+      entryPoints:
+        'riptide/app.coffee': 'js/app.js'
     stylesheets:
       joinTo:
-        'css/libraries.css': /^(?!riptide\/)/
         'css/app.css': /^riptide\//
