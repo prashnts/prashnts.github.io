@@ -1,8 +1,9 @@
 {
   "name": "riptide",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Github Resurrection",
   "main": "riptide/app.coffee",
+  "repository": "prashnts/prashnts.github.io",
   "scripts": {
     "start": "brunch watch -s",
     "build": "brunch build -p",
@@ -20,6 +21,7 @@
     "coffee-script-brunch": "^2.0.0",
     "coffeelint-brunch": "^2.0.0",
     "css-brunch": "^2.6.1",
+    "cssnano-brunch": "^1.1.6",
     "jaded-brunch": "^2.3.0",
     "javascript-brunch": "^2.0.0",
     "jeet": "^6.1.4",

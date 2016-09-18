@@ -7,7 +7,5 @@ branches:
 script:
   - brunch b -p
 notifications:
-  email:
-    recipients: prashant@ducic.ac.in
-    on_success: change
-    on_failure: change
+  email: false
+  slack: noop-fa:zbwZeeSi5kgDshj6FO4BkNZU
