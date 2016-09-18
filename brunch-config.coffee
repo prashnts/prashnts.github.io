@@ -16,13 +16,18 @@ module.exports = config:
       globals: ['DEBUG']
     closurecompiler:
       compilationLevel: 'ADVANCED'
+    stylus:
+      plugins: [
+        'jeet'
+        'axis'
+      ]
+  conventions:
+    ignored: [
+      /node_modules\/jade/
+    ]
 
   npm:
     enabled: yes
-    styles:
-      'normalize.css': [
-        'normalize.css'
-      ]
 
   modules:
     nameCleaner: (path) ->
@@ -34,5 +39,5 @@ module.exports = config:
     javascripts:
       joinTo: 'js/app.js'
     stylesheets:
-      joinTo:
-        'css/app.css': /^riptide\//
+      joinTo: 'css/app.css'
+        # 'css/app.css': /^riptide\//

@@ -1,12 +1,15 @@
 // noop.pw
 @require _solarized
 @require _typeface
+@require _axis
+
 
 html, body
   align-items center
   display flex
-  font 14px/1.5em 'Fira Code', Courier, monospace
+  font 14px/1.5em type-fira
   font-feature-settings "calt" 1
+  letter-spacing 0.5px
   margin 0
   min-height 100%
   padding 0 20px
@@ -14,7 +17,8 @@ html, body
   text-rendering optimizeLegibility
 
 body
-  background $base02
+  background $base03
+  color $base1
 
 h1, h2
   margin 0
@@ -23,13 +27,11 @@ h1, h2
 
 h1
   font-size 1.5em
-  color #586e75
   margin-bottom 10px
 
 h2
   font-size 1em
   font-weight 100
-  color #657b83
 
 em
   font-style initial
@@ -45,18 +47,11 @@ ul
     margin-right 10px
 
 a
-  text-decoration none
-  color #268bd2
-
-  &:active, &:visited
-    color #268bd2
-
-  &:hover
-    text-decoration underline
-    color #268bd2
+  link($cyan)
 
 strong
   a
-    color #6c71c4
-    &:active, &:visited, &:hover
-      color #6c71c4
+    link(#6c71c4)
+
+pre
+  font 14px/1.2em type-fira

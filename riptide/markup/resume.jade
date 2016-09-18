@@ -1,11 +1,27 @@
 extends templates/base.jade
 
 block append content
-  h1 Prashant Sinha
-  h2: em Developer at #[a(href='https://joinagora.com/') Agora NHS]
-  h2: em Senior year undergrad at #[a(href='https://ducic.ac.in/') University of Delhi]
-  h2: a(href='mailto:prashant@ducic.ac.in') prashant@ducic.ac.in
-  ul
-    li: strong: a(href='http://doom.noop.pw') tumblr
-    li: strong: a(href='https://github.com/prashnts') github
-    li: strong: a(href='/var/resume.may.nine.pdf') vitae
+  header
+    h1 Prashant Sinha
+    p Developer
+
+  section
+    h2 Web
+    ul
+      li #[i.icon.link] #[a(href='//noop.pw') noop.pw]
+      li #[i.icon.git] #[a(href='//github.com/prashnts') github.com/prashnts]
+      li #[i.icon.lock] #[a(href='//keybase.io/prashnts') keybase.io/prashnts]
+  section
+    h2 Info
+    ul
+      li #[i.icon.mail] #[a(href='mailto:prashant@noop.pw') prashant@noop.pw]
+      li #[i.icon.phone] 091 99 1013 4045
+      li #[i.icon.location] New Delhi, India
+
+  section
+    h2 Research Interests
+    p.
+      My primary research interest is in Machine Learning, Data Science,
+      Statistics, Systems Biology, and Bio Inspired Systems. The scope of
+      my projects also include Pervasive Computing, Reality Mining, and
+      Computer Vision.

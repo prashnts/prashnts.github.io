@@ -1,0 +1,28 @@
+// Axis settings
+
+$font-stack = type-fira
+$font-size  = 14
+$font-color = $base3
+
+$default-color = $blue
+$highlight-color = $cyan
+
+$img-path = ''
+$ligatures = false
+
+@import 'axis/reset'
+@import 'axis/utilities'
+@import 'axis/gradients'
+@import 'axis/images'
+@import 'axis/interaction'
+@import 'axis/layout'
+@import 'axis/typography'
+@import 'axis/code'
+@import 'axis/ui'
+@import 'axis/buttons'
+@import 'axis/forms'
+@import 'axis/tables'
+
+transition()
+  arguments = unquote('all .1s linear') unless arguments
+  transition arguments
