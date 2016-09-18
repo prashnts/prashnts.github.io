@@ -1,0 +1,16 @@
+
+fira-type(weight, sx)
+  @font-face
+    font-family 'Fira Code'
+    src url('/etc/fonts/eot/FiraCode-' + sx + '.eot')
+    src url('/etc/fonts/eot/FiraCode-' + sx + '.eot') format('embedded-opentype'),
+        url('/etc/fonts/woff2/FiraCode-' + sx + '.woff2') format('woff2'),
+        url('/etc/fonts/woff/FiraCode-' + sx + '.woff') format('woff'),
+        url('/etc/fonts/ttf/FiraCode-' + sx + '.ttf') format('truetype')
+    font-weight weight
+    font-style normal
+
+fira-type(300, 'Light')
+fira-type(400, 'Regular')
+fira-type(500, 'Medium')
+// fira-type(700, 'Bold')

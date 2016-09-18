@@ -32,8 +32,7 @@ module.exports = config:
 
   files:
     javascripts:
-      entryPoints:
-        'riptide/app.coffee': 'js/app.js'
+      joinTo: 'js/app.js'
     stylesheets:
       joinTo:
         'css/app.css': /^riptide\//
