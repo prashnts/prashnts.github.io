@@ -1,0 +1,169 @@
+---
+personal:
+  name: Prashant Sinha
+  title: Developer
+urls:
+  homepage: //noop.pw
+  github: prashnts
+  keybase: prashnts
+info:
+  email: prashant@noop.pw
+  mobile: 9910134045
+  location: New Delhi, India
+cover: |
+  My primary research interest is in Machine Learning, Data Science,
+  Statistics, Systems Biology, and Bio Inspired Systems. The scope of
+  my projects also include Pervasive Computing, Reality Mining, and
+  Computer Vision.
+experience:
+  - company: Agora Events Ltd.
+    location: London, UK
+    dates:
+      from: 2016-02-29
+      till: Present
+    position: Developer
+    tags:
+      - Machine Learning
+      - Web Development
+    description: |
+      # Event aggregation and Recommendation
+
+      In this ongoing project, I am responsible for designing and
+      building a scalable server and API for aggregation,
+      categorisation, and recommendation generation of events from
+      various sources.
+
+  - company: Oxyent Technologies
+    location: New Delhi
+    dates:
+      from: 2016-07-01
+      till: 2016-09-01
+    position: Summer Intern
+    tags:
+      - Computer Vision
+      - Information Extraction
+    description: |
+      # Computer Vision and Information Extraction
+
+      Developed and shipped a utility for digitizing waveforms and
+      extracting metadata from ECG reports, written in pure Python.
+      It is being used at Brigham and Women’s Hospital, Boston for
+      processing more than a million patient records.
+
+      Also worked on extracting normalized tabular data from scanned
+      medical records. Key challenges here involved handling skewed,
+      desaturated and otherwise low quality images.
+
+  - company: Design Innovation Centre
+    location: University of Delhi
+    dates:
+      from: 2015-06-15
+      till: 2015-08-29
+    position: Summer Intern
+    tags:
+      - Machine Learning
+      - Time Series Analysis
+      - Signal Processing
+    description: |
+      # Human Activity Recognition from Acceleration data Under Naturalistic
+        Conditions
+
+      The goal of this project was to develop a system for recognition
+      of low level human activities, such as Walking, Running,
+      Sitting, etc., using a single tri-axial accelerometer time
+      series. The undertaken challenge of this system was to
+      effectively solve the recognition task irrespective of the
+      location of sensor on human body.
+
+      Using supervised learning method, we trained a Random Forest
+      Classifier using feature vectors obtained via our model. We
+      were able to produce an accuracy of 95% through our model.
+
+  - company: West College
+    location: Scotland
+    dates:
+      from: 2015-07-14
+      till: 2015-07-19
+    position: Workshop
+    tags:
+      - Game Development
+    description: |
+      # Game Development Workshop under UK-India Education and Research Initiative
+
+  - company: University of California and Stanford
+    location: Santa Cruz
+    dates:
+      from: 2015-01-01
+      till: 2015-06-01
+    position: Research Associate
+    tags:
+      - Data Scraping
+      - Data Processing
+    description: |
+      # Aspiring Researcher Challenge
+
+      As a research associate, I was part of the team which was
+      responsible for developing a large, online experiment to study
+      the wisdom of the crowd where I formulated the algorithm for
+      scraping and formatting raw data off multiple crowdfunding
+      platforms.
+
+      **Publication**: "Investigating the 'Wisdom of Crowds' at Scale", ACM UIST
+      2015, Charlotte, NC.
+
+  - company: Survaider
+    location: New Delhi
+    dates:
+      from: 2015-01-01
+      till: 2016-02-01
+    position: Developer and UI/UX Designer
+    tags:
+      - Backend and REST API
+      - Client Interface
+      - Analytics
+    description: |
+      # Survaider Web App and Survey Builder
+
+      Development of web app backend and REST API in Python using Flask
+      and MongoEngine ORM.
+
+      Design and development of the frontend. Technology stack includes
+      usage of CoffeeScript, BackboneJS, SASS, and Socket.IO for
+      realtime content.
+
+      **Website**: [survaider.com](//survaider.com)
+education:
+  - institute: Cluster Innovation Centre
+    location: University of Delhi
+    position: Undergrad
+    dates:
+      from: 2013-08-10
+      till: 2017-06-01
+    degree: B.Tech. (IT and Mathematical Innovations)
+    major: Information Technology
+    minor:
+      - Mathematics
+      - Systems Biology
+skills:
+  development:
+    - [Python, 5]
+    - [Stylus/CSS, 4]
+    - [CoffeeScript, 4]
+    - [ES6/JavaScript, 4]
+  design:
+    - [Print Media, 3]
+    - [CAD/CAM, 3]
+    - [Illustration, 2]
+    - [User Interface, 3]
+  misc:
+    - [Scientific Computing, 4]
+    - [DevOps, 3]
+open-source:
+  - project: metaRNA
+    language: Python, C
+    repo: prashnts/metaRNA
+    description: todo.
+  - project: metaRNA
+    language: Python, C
+    repo: prashnts/metaRNA
+    description: todo.
