@@ -10,7 +10,7 @@ info:
   email: prashant@noop.pw
   mobile: 9910134045
   location: New Delhi, India
-cover: |
+cover: >
   My primary research interest is in Machine Learning, Data Science,
   Statistics, Systems Biology, and Bio Inspired Systems. The scope of
   my projects also include Pervasive Computing, Reality Mining, and
@@ -20,12 +20,11 @@ experience:
     location: London, UK
     dates:
       from: 2016-02-29
-      till: Present
     position: Developer
     tags:
       - Machine Learning
       - Web Development
-    description: |
+    description: >
       # Event aggregation and Recommendation
 
       In this ongoing project, I am responsible for designing and
@@ -42,7 +41,7 @@ experience:
     tags:
       - Computer Vision
       - Information Extraction
-    description: |
+    description: >
       # Computer Vision and Information Extraction
 
       Developed and shipped a utility for digitizing waveforms and
@@ -64,7 +63,7 @@ experience:
       - Machine Learning
       - Time Series Analysis
       - Signal Processing
-    description: |
+    description: >
       # Human Activity Recognition from Acceleration data Under Naturalistic
         Conditions
 
@@ -87,7 +86,7 @@ experience:
     position: Workshop
     tags:
       - Game Development
-    description: |
+    description: >
       # Game Development Workshop under UK-India Education and Research Initiative
 
   - company: University of California and Stanford
@@ -99,7 +98,7 @@ experience:
     tags:
       - Data Scraping
       - Data Processing
-    description: |
+    description: >
       # Aspiring Researcher Challenge
 
       As a research associate, I was part of the team which was
@@ -121,7 +120,7 @@ experience:
       - Backend and REST API
       - Client Interface
       - Analytics
-    description: |
+    description: >
       # Survaider Web App and Survey Builder
 
       Development of web app backend and REST API in Python using Flask
@@ -138,7 +137,6 @@ education:
     position: Undergrad
     dates:
       from: 2013-08-10
-      till: 2017-06-01
     degree: B.Tech. (IT and Mathematical Innovations)
     major: Information Technology
     minor:

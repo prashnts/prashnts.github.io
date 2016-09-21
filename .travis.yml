@@ -5,6 +5,7 @@ branches:
   only:
     - develop
 script:
+  - npm run test
   - brunch b -p
 notifications:
   email: false

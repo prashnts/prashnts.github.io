@@ -7,7 +7,8 @@
   "scripts": {
     "start": "brunch watch -s",
     "build": "brunch build -p",
-    "deploy": "sh deploy"
+    "deploy": "sh deploy",
+    "test": "mocha"
   },
   "author": "Prashant Sinha",
   "license": "MIT",
@@ -25,9 +26,16 @@
     "jaded-brunch": "^2.3.0",
     "javascript-brunch": "^2.0.0",
     "jeet": "^6.1.4",
+    "js-yaml": "^3.6.1",
     "lodash": "^4.11.1",
+    "marked": "^0.3.6",
+    "moment": "^2.15.1",
     "postcss-brunch": "^2.0.3",
     "stylus-brunch": "^2.7.2",
     "wintersmith": "^2.3.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
   }
 }
