@@ -1,25 +1,21 @@
 'use strict'
 {expect} = require 'chai'
 moment = require 'moment'
-Demi = require '../demi'
+
+Demi = require '../demi/demi'
 
 describe 'Demi', ->
   it 'should be a function', ->
     expect(Demi).to.be.a 'function'
 
-  it 'should instantiate with a valid yaml', ->
-    d = new Demi '- foo'
-    expect(d._doc).to.be.an 'array'
-    expect(d._doc).to.contain 'foo'
-
   describe '#constructor', ->
     it 'uses instantiated settings', ->
-      d = new Demi '', null, '*'
+      d = new Demi null, '*'
       expect(d.renderDateInterval '2016-01-01').to.contain ' * '
 
   describe '#renderDateInterval', ->
     # NOTE: Pin _now to some date otherwise these tests will break next year.
-    d = new Demi '', '2016-09-21'
+    d = new Demi '2016-09-21'
 
     it 'should be a valid function', ->
       expect(d).to.respondTo 'renderDateInterval'
