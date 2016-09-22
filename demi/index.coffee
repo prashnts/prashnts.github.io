@@ -1,12 +1,9 @@
-yaml = require 'js-yaml'
 marked = require 'marked'
 moment = require 'moment'
-fs = require 'fs'
 
 
 class Demi
-  constructor: (fcontent, today, separator = '--') ->
-    @_doc = yaml.safeLoad fcontent
+  constructor: (today, separator = '--') ->
     @_now = moment(today)
     @_sep = separator
 
