@@ -56,3 +56,10 @@ describe 'Demi', ->
 
     it 'throws when `till` is invalid', ->
       expect(-> d.renderDateInterval('2016-02-01', 'foobar')).to.throw Error
+
+  describe '#renderMarkdown', ->
+    it 'correctly renders markdown', ->
+      d = new Demi
+      input = 'Foo **bar** _baz_.'
+      known = '<p>Foo <strong>bar</strong> <em>baz</em>.</p>\n'
+      expect(d.renderMarkdown input).to.equal known

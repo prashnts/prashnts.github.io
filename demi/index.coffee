@@ -33,7 +33,7 @@ class Demi
       else
         "#{start.format('MMM Y')} #{@_sep} #{_present}"
 
-  transform: ->
+  renderMarkdown: (content) -> marked content
 
 
 module.exports = Demi
