@@ -5,29 +5,35 @@ fs = require 'fs'
 
 
 class Demi
-  constructor: (fcontent) ->
+  constructor: (fcontent, today, separator = '--') ->
     @_doc = yaml.safeLoad fcontent
-    @_now = moment()
+    @_now = moment(today)
+    @_sep = separator
 
   renderDateInterval: (from, till) ->
-    [start, end] = [moment(from), moment(till)]
-    unless start.isValid() or end.isValid()
-      throw new Error 'Invalid Dates'
+    start = moment from, moment.ISO_8601
+    end = moment till, moment.ISO_8601
+    unless from? and start.isValid()
+      throw new Error 'Invalid `from` date'
+    if till? and not end.isValid()
+      throw new Error 'Invalid `till` date'
 
     if till?
       if start.isSame(end, 'year')
         if start.isSame(end, 'month')
-          "#{start.format('D')} -- #{end.format('D MMM Y')}"
+          "#{start.format('D')} #{@_sep} #{end.format('D MMM Y')}"
         else
-          "#{start.format('MMM')} -- #{end.format('MMM Y')}"
+          "#{start.format('MMM')} #{@_sep} #{end.format('MMM Y')}"
       else
-        "#{start.format('MMM Y')} -- #{end.format('MMM Y')}"
+        "#{start.format('MMM Y')} #{@_sep} #{end.format('MMM Y')}"
     else
       _present = 'Present'
       if start.isSame(@_now, 'year')
-        "#{start.format('MMM')} -- #{_present}"
+        "#{start.format('MMM')} #{@_sep} #{_present}"
       else
-        "#{start.format('MMM Y')} -- #{_present}"
+        "#{start.format('MMM Y')} #{@_sep} #{_present}"
+
+  transform: ->
 
 
 module.exports = Demi

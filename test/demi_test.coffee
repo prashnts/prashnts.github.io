@@ -12,10 +12,14 @@ describe 'Demi', ->
     expect(d._doc).to.be.an 'array'
     expect(d._doc).to.contain 'foo'
 
+  describe '#constructor', ->
+    it 'uses instantiated settings', ->
+      d = new Demi '', null, '*'
+      expect(d.renderDateInterval '2016-01-01').to.contain ' * '
+
   describe '#renderDateInterval', ->
-    d = new Demi ''
     # NOTE: Pin _now to some date otherwise these tests will break next year.
-    d._now = moment('2016-09-21')
+    d = new Demi '', '2016-09-21'
 
     it 'should be a valid function', ->
       expect(d).to.respondTo 'renderDateInterval'
@@ -43,3 +47,12 @@ describe 'Demi', ->
     it 'does not render year in absence of `till` it being current year', ->
       r = d.renderDateInterval '2016-02-01'
       expect(r).to.equal 'Feb -- Present'
+
+    it 'throws when `from` is missing', ->
+      expect(-> d.renderDateInterval()).to.throw Error
+
+    it 'throws when `from` is invalid', ->
+      expect(-> d.renderDateInterval('foobar')).to.throw Error
+
+    it 'throws when `till` is invalid', ->
+      expect(-> d.renderDateInterval('2016-02-01', 'foobar')).to.throw Error
