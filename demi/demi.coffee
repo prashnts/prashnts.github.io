@@ -3,9 +3,9 @@ moment = require 'moment'
 
 
 class Demi
-  constructor: (today, separator = '--') ->
+  constructor: (today, separator) ->
     @_now = moment(today)
-    @_sep = separator
+    @_sep = separator or '--'
 
   renderDateInterval: (from, till) ->
     start = moment from, moment.ISO_8601
@@ -33,4 +33,33 @@ class Demi
   renderMarkdown: (content) -> marked content
 
 
-module.exports = Demi
+class Festus
+  constructor: (opts = {}) ->
+    {today, separator} = opts
+    demi = new Demi today, separator
+
+    _dtKey = opts.dateKey or 'dates'
+    _mdKey = opts.mdKey or 'description'
+    @renderDates = @getMap _dtKey, (node) ->
+      demi.renderDateInterval node.from, node.till
+    @renderMarkdown = @getMap _mdKey, demi.renderMarkdown
+
+  _mapDeep: (obj, pivot, fn) ->
+    accumulate = (dat) ->
+      _d = Object.assign {}, dat
+      for own key, value of dat
+        if key is pivot
+          _d[key] = fn value
+        else if typeof value is 'object'
+          _d[key] = accumulate value
+      _d
+    accumulate obj
+
+  getMap: (pivot, fn) -> (obj) => @_mapDeep obj, pivot, fn
+
+  render: (dict) ->
+    @renderDates @renderMarkdown dict
+
+
+
+module.exports = {Demi, Festus}
