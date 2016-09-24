@@ -1,7 +1,7 @@
 extends templates/base.jade
 
-block append content
-  .resume
+block prepend body
+  body.vita: main
     header
       h1 #{vita.personal.name}
       p #{vita.personal.title}

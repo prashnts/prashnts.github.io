@@ -4,6 +4,7 @@ moment = require 'moment'
 
 class Demi
   constructor: (today, separator) ->
+    @_init_markdn()
     @_now = moment(today)
     @_sep = separator or '--'
 
@@ -30,7 +31,23 @@ class Demi
       else
         "#{start.format('MMM Y')} #{@_sep} #{_present}"
 
-  renderMarkdown: (content) -> marked content
+  renderMarkdown: (content) => @marked content
+
+  _init_markdn: ->
+    renderer = new marked.Renderer
+    renderer.heading = (txt, level) ->
+      # Offset headings by two levels.
+      slug = txt.toLowerCase().replace /[^\w]+/g, '_'
+      lvl = level + 2
+      """
+      <h#{lvl}>
+        <a href="##{slug}" name="#{slug}">
+          <i class="anchor"></i>
+          #{txt}
+        </a>
+      </h#{lvl}>
+      """
+    @marked = (dat) -> marked dat, renderer: renderer
 
 
 class Festus

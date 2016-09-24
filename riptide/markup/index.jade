@@ -1,7 +1,9 @@
+- var body_cls = 'home'
+
 extends templates/base.jade
 
-block append content
-  .wrapper
+block prepend body
+  body.homepage: main
     h1 Prashant Sinha
     h2: em Developer at #[a(href='https://joinagora.com/') Agora NHS]
     h2: em Senior year undergrad at #[a(href='https://ducic.ac.in/') University of Delhi]
