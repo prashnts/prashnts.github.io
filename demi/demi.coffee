@@ -39,14 +39,7 @@ class Demi
       # Offset headings by two levels.
       slug = txt.toLowerCase().replace /[^\w]+/g, '_'
       lvl = level + 2
-      """
-      <h#{lvl}>
-        <a href="##{slug}" name="#{slug}">
-          <i class="anchor"></i>
-          #{txt}
-        </a>
-      </h#{lvl}>
-      """
+      "<h#{lvl}>#{txt}</h#{lvl}>"
     @marked = (dat) -> marked dat, renderer: renderer
 
 

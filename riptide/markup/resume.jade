@@ -8,8 +8,9 @@ block prepend body
 
     section
       h1 Web
-      ul: each url, service in vita.urls
-        li #[i.icon(class=service)] #{url}
+      dl: each url, service in vita.urls
+        dt= service
+        dl= url
     section
       h1 Info
       ul: each info, kind in vita.info

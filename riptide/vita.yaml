@@ -64,8 +64,7 @@ experience:
       - Time Series Analysis
       - Signal Processing
     description: |
-      # Human Activity Recognition from Acceleration data Under Naturalistic
-        Conditions
+      # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
       The goal of this project was to develop a system for recognition
       of low level human activities, such as Walking, Running,
