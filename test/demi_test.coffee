@@ -24,23 +24,23 @@ describe 'Demi', ->
 
     it 'does not render year for first if both fall under same year', ->
       r = d.renderDateInterval '2016-01-01', '2016-02-01'
-      expect(r).to.equal 'Jan -- Feb 2016'
+      expect(r).to.equal 'Jan － Feb 2016'
 
     it 'does render year for first otherwise', ->
       r = d.renderDateInterval '2015-01-01', '2016-02-01'
-      expect(r).to.equal 'Jan 2015 -- Feb 2016'
+      expect(r).to.equal 'Jan 2015 － Feb 2016'
 
     it 'renders dates if ranges are in same month', ->
       r = d.renderDateInterval '2016-02-01', '2016-02-05'
-      expect(r).to.equal '1 -- 5 Feb 2016'
+      expect(r).to.equal '1 － 5 Feb 2016'
 
     it 'renders year if `till` is not given and it isnt in current year', ->
       r = d.renderDateInterval '2015-02-01'
-      expect(r).to.equal 'Feb 2015 -- Present'
+      expect(r).to.equal 'Feb 2015 － Present'
 
     it 'does not render year in absence of `till` it being current year', ->
       r = d.renderDateInterval '2016-02-01'
-      expect(r).to.equal 'Feb -- Present'
+      expect(r).to.equal 'Feb － Present'
 
     it 'fails when `from` is missing', ->
       expect(-> d.renderDateInterval()).to.throw Error
@@ -99,7 +99,7 @@ describe 'Festus', ->
         dates: from: '2015-06-15'
         description: '_wow_'
       known =
-        dates: 'Jun 2015 -- Present'
+        dates: 'Jun 2015 － Present'
         description: '<p><em>wow</em></p>\n'
       expect(f.render input).to.deep.equal known
 
@@ -112,8 +112,8 @@ describe 'Festus', ->
           till: '2016-03-01'
         description: '_wow_'
       known =
-        dates: 'Jun 2015 -- Present'
-        foo: bar: dates: 'Feb -- Mar 2016'
+        dates: 'Jun 2015 － Present'
+        foo: bar: dates: 'Feb － Mar 2016'
         description: '<p><em>wow</em></p>\n'
       expect(f.render input).to.deep.equal known
 

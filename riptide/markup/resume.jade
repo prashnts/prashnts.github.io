@@ -6,17 +6,18 @@ block prepend body
       h1 #{vita.personal.name}
       p #{vita.personal.title}
 
-    section
-      h1 Web
-      dl: each url, service in vita.urls
-        dt= service
-        dl= url
-    section
-      h1 Info
-      ul: each info, kind in vita.info
-        li #[i.icon(class=kind)] #{info}
+    section.info
+      div
+        h1 Web
+        dl: each url, service in vita.urls
+          dt= service
+          dd= url
+      div
+        h1 Info
+        ul: each info, kind in vita.info
+          li #[i.icon(class=kind)] #{info}
 
-    section
+    section.cover
       h1 Cover
       p=vita.cover
 
@@ -43,16 +44,16 @@ block prepend body
             p.dates= edu.dates
             p.position= edu.position
           div.description
-            h1.degree= edu.degree
+            h3.degree= edu.degree
             p.major Major: #{edu.major}
             ul.minors
               each minor in edu.minor
                 li= minor
 
-    section
+    section.skills
       h1 Skills
       ul: each skset, kind in vita.skills
         li
           h2= kind
           ul: each sk in skset
-            li #{sk[0]} #[i= '*'.repeat(sk[1]) + '.'.repeat(5 - sk[1])]
+            li #{sk[0]} #[i= '●'.repeat(sk[1])]

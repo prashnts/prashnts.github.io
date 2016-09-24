@@ -6,7 +6,7 @@ class Demi
   constructor: (today, separator) ->
     @_init_markdn()
     @_now = moment(today)
-    @_sep = separator or '--'
+    @_sep = separator or '－'
 
   renderDateInterval: (from, till) ->
     start = moment from, moment.ISO_8601
