@@ -1,8 +1,7 @@
 # noop.pw
-# demi = require './demi'
-# global.vita = demi './riptide/vita.yaml'
+{renderVita} = require './demi'
+global.vita = renderVita './riptide/vita.yaml'
 global.DEBUG = '-p' not in global.process.argv
-
 
 module.exports = config:
   paths:
@@ -16,7 +15,7 @@ module.exports = config:
       useCoffeelintJson: yes
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
-      globals: ['DEBUG', 'vita']
+      globals: ['DEBUG', 'festus']
     closurecompiler:
       compilationLevel: 'ADVANCED'
     stylus:
@@ -24,10 +23,16 @@ module.exports = config:
         'jeet'
         'axis'
       ]
+
   conventions:
     ignored: [
       /node_modules\/jade/
+      /(templates|partials)\/.+\.jade$/
     ]
+
+  hooks:
+    onCompile: ->
+      global.vita = renderVita './riptide/vita.yaml'
 
   npm:
     enabled: yes

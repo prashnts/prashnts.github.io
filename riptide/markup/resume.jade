@@ -3,37 +3,55 @@ extends templates/base.jade
 block append content
   .resume
     header
-      h1 Prashant Sinha
-      p Developer
+      h1 #{vita.personal.name}
+      p #{vita.personal.title}
 
     section
-      h2 Web
-      ul
-        li #[i.icon.link] #[a(href='//noop.pw') noop.pw]
-        li #[i.icon.git] #[a(href='//github.com/prashnts') github.com/prashnts]
-        li #[i.icon.lock] #[a(href='//keybase.io/prashnts') keybase.io/prashnts]
+      h1 Web
+      ul: each url, service in vita.urls
+        li #[i.icon(class=service)] #{url}
     section
-      h2 Info
-      ul
-        li #[i.icon.mail] #[a(href='mailto:prashant@noop.pw') prashant@noop.pw]
-        li #[i.icon.phone] 091 99 1013 4045
-        li #[i.icon.location] New Delhi, India
+      h1 Info
+      ul: each info, kind in vita.info
+        li #[i.icon(class=kind)] #{info}
 
     section
-      h2 Hodor.
-      p Hodor.
+      h1 Cover
+      p=vita.cover
+
     section
-      h2 Hodor.
-      ul
+      h1 Experience
+      ul: each xp in vita.experience
         li
           aside
-            h3.org Hodor.
-            p.locn Hodor.
-            p.time Hodor.
-            p.dsgn Hodor.
-            ul.tags
-              li Hodor.
-              li Hodor.
-          div
-            h4 Hodor.
-            p Hodor.
+            h2.company= xp.company
+            p.location= xp.location
+            p.dates= xp.dates
+            p.position= xp.position
+            ul.tags: each tag in xp.tags
+              li= tag
+          div.description !{xp.description}
+
+    section
+      h1 Education
+      ul: each edu in vita.education
+        li
+          aside
+            h2.institute= edu.institute
+            p.location= edu.location
+            p.dates= edu.dates
+            p.position= edu.position
+          div.description
+            h1.degree= edu.degree
+            p.major Major: #{edu.major}
+            ul.minors
+              each minor in edu.minor
+                li= minor
+
+    section
+      h1 Skills
+      ul: each skset, kind in vita.skills
+        li
+          h2= kind
+          ul: each sk in skset
+            li #{sk[0]} #[i= '*'.repeat(sk[1]) + '.'.repeat(5 - sk[1])]

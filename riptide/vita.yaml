@@ -3,14 +3,14 @@ personal:
   name: Prashant Sinha
   title: Developer
 urls:
-  homepage: //noop.pw
+  homepage: noop.pw
   github: prashnts
   keybase: prashnts
 info:
   email: prashant@noop.pw
   mobile: 9910134045
   location: New Delhi, India
-cover: >
+cover: |
   My primary research interest is in Machine Learning, Data Science,
   Statistics, Systems Biology, and Bio Inspired Systems. The scope of
   my projects also include Pervasive Computing, Reality Mining, and
@@ -19,12 +19,12 @@ experience:
   - company: Agora Events Ltd.
     location: London, UK
     dates:
-      from: 2016-02-29
+      from: '2016-02-29'
     position: Developer
     tags:
       - Machine Learning
       - Web Development
-    description: >
+    description: |
       # Event aggregation and Recommendation
 
       In this ongoing project, I am responsible for designing and
@@ -35,13 +35,13 @@ experience:
   - company: Oxyent Technologies
     location: New Delhi
     dates:
-      from: 2016-07-01
-      till: 2016-09-01
+      from: '2016-07-01'
+      till: '2016-09-01'
     position: Summer Intern
     tags:
       - Computer Vision
       - Information Extraction
-    description: >
+    description: |
       # Computer Vision and Information Extraction
 
       Developed and shipped a utility for digitizing waveforms and
@@ -56,14 +56,14 @@ experience:
   - company: Design Innovation Centre
     location: University of Delhi
     dates:
-      from: 2015-06-15
-      till: 2015-08-29
+      from: '2015-06-15'
+      till: '2015-08-29'
     position: Summer Intern
     tags:
       - Machine Learning
       - Time Series Analysis
       - Signal Processing
-    description: >
+    description: |
       # Human Activity Recognition from Acceleration data Under Naturalistic
         Conditions
 
@@ -81,24 +81,24 @@ experience:
   - company: West College
     location: Scotland
     dates:
-      from: 2015-07-14
-      till: 2015-07-19
+      from: '2015-07-14'
+      till: '2015-07-19'
     position: Workshop
     tags:
       - Game Development
-    description: >
+    description: |
       # Game Development Workshop under UK-India Education and Research Initiative
 
   - company: University of California and Stanford
     location: Santa Cruz
     dates:
-      from: 2015-01-01
-      till: 2015-06-01
+      from: '2015-01-01'
+      till: '2015-06-01'
     position: Research Associate
     tags:
       - Data Scraping
       - Data Processing
-    description: >
+    description: |
       # Aspiring Researcher Challenge
 
       As a research associate, I was part of the team which was
@@ -113,14 +113,14 @@ experience:
   - company: Survaider
     location: New Delhi
     dates:
-      from: 2015-01-01
-      till: 2016-02-01
+      from: '2015-01-01'
+      till: '2016-02-01'
     position: Developer and UI/UX Designer
     tags:
       - Backend and REST API
       - Client Interface
       - Analytics
-    description: >
+    description: |
       # Survaider Web App and Survey Builder
 
       Development of web app backend and REST API in Python using Flask
@@ -136,7 +136,7 @@ education:
     location: University of Delhi
     position: Undergrad
     dates:
-      from: 2013-08-10
+      from: '2013-08-10'
     degree: B.Tech. (IT and Mathematical Innovations)
     major: Information Technology
     minor:
