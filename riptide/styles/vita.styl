@@ -5,7 +5,8 @@
 
 body.vita
   background $base03
-  letter-spacing 0px
+  letter-spacing 0
+  padding 0
 
   main
     max-width 800px
@@ -45,10 +46,14 @@ body.vita
       height 1px
       width 8px
 
-
   h1, h2, h3
     font-family 'Montserrat'
     color $base02
+
+  p, dl, dd, h1, h2, h3
+    margin 0
+  ul
+    reset-list()
 
   code
     padding 2px 5px
@@ -57,14 +62,11 @@ body.vita
     background alpha($base0, 0.2)
 
   dl
-    margin 0
     div
       display flex
     dt
       width 80px
       font-weight 500
-    dd
-      margin 0
 
   header
     h1
@@ -72,8 +74,6 @@ body.vita
       margin 20px 0 10px
       span
         font-weight 400
-    p
-      margin 0
 
   section
     h1
@@ -87,26 +87,16 @@ body.vita
     h2
       font-size 1.2em
 
-    p
-      text-align justify
-
-    ul
-      reset-list()
-
+  section.xp, section.edu
     > ul > li
       display flex
       margin-bottom 20px
-      // font-weight 300
       h3
-        margin 0
         font-size 1.2em
-
       aside
         width 30%
         margin-right 20px
         flex-shrink 0
-        p, h2
-          margin 0
         p.dates
           font-weight 400
         p.position
@@ -116,10 +106,13 @@ body.vita
           padding-left 9px
           text-align left
           font-weight 500
-
         ul.tags
           padding-left 12px
           color $base02
+      div.description
+        h3, p
+          margin-bottom 10px
+          text-align justify
 
   section.info
     display flex
@@ -128,24 +121,19 @@ body.vita
 
   section.cover
     padding-right 30%
-    p
-      margin 0
+    text-align justify
 
   section.skills
     > ul
       display flex
       > li
-        display block
         margin-right 30px
         flex 1
         &:last-child
           margin-right 0
-        ul
-          display flex
-          flex-direction column
-        i
-          font-style normal
-          float right
-          font-size 1.2em
-          letter-spacing 2px
-          color $blue
+    i
+      font-style normal
+      float right
+      font-size 1.2em
+      letter-spacing 2px
+      color $blue
