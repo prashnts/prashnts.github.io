@@ -25,9 +25,15 @@ body.vita
       height 10px
       background $blue
       position absolute
+      @media(max-width 768px)
+        left 30px
+        right 30px
     &:after
       bottom 0
       top auto
+
+    @media(max-width 768px)
+      padding 20px 30px
 
   a, span
     position relative
@@ -114,14 +120,35 @@ body.vita
           margin-bottom 10px
           text-align justify
 
+      @media(max-width 768px)
+        display block
+        margin 0 -30px
+        padding 10px 30px
+        &:nth-of-type(2n)
+          background tint($cyan, 60%)
+        &:nth-of-type(2n + 1)
+          background tint($blue, 80%)
+        aside
+          width auto
+        div.description
+          margin-top 5px
+          h3
+            font-weight 400
+            font-size 1.1em
+
   section.info
     display flex
+    @media(max-width 768px)
+      display block
     div
       flex 1
 
   section.cover
     padding-right 30%
     text-align justify
+
+    @media(max-width 768px)
+      padding-right 0
 
   section.skills
     > ul
@@ -130,7 +157,11 @@ body.vita
         margin-right 30px
         flex 1
         &:last-child
-          margin-right 0
+          margin 0
+      @media(max-width 768px)
+        display block
+        > li
+          margin 0 0 10px
     i
       font-style normal
       float right
