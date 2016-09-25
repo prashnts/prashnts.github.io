@@ -14,7 +14,8 @@ mixin ispan(icon, content)
 block prepend body
   body.vita: main
     header
-      h1 #{vita.personal.name}
+      - var n = vita.personal.name.split(' ')
+      h1 #[span= n[0]] #{n[1]}
       p #{vita.personal.title}
 
     section.info
@@ -58,10 +59,14 @@ block prepend body
             p.position= edu.position
           div.description
             h3.degree= edu.degree
-            p.major Major: #{edu.major}
-            ul.minors
-              each minor in edu.minor
-                li= minor
+            dl
+              div
+                dt Major
+                dd= edu.major
+              div
+                dt Minors
+                dd: ul: each minor in edu.minor
+                  li= minor
 
     section.skills
       h1 Skills

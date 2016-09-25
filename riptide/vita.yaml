@@ -27,7 +27,7 @@ experience:
       # Event aggregation and Recommendation
 
       In this ongoing project, I am responsible for designing and
-      building a scalable server and API for aggregation,
+      building a scalable server and `API` for aggregation,
       categorisation, and recommendation generation of events from
       various sources.
 
@@ -74,7 +74,7 @@ experience:
 
       Using supervised learning method, we trained a Random Forest
       Classifier using feature vectors obtained via our model. We
-      were able to produce an accuracy of 95% through our model.
+      were able to produce an accuracy of `95%` through our model.
 
   - company: West College
     location: Scotland
@@ -141,17 +141,17 @@ education:
       - Mathematics
       - Systems Biology
 skills:
-  development:
+  Development:
     - [Python, 5]
     - [Stylus/CSS, 4]
     - [CoffeeScript, 4]
     - [ES6/JavaScript, 4]
-  design:
+  Design:
     - [Print Media, 3]
     - [CAD/CAM, 3]
     - [Illustration, 2]
     - [User Interface, 3]
-  misc:
+  Misc:
     - [Scientific Computing, 4]
     - [DevOps, 3]
 open-source:
