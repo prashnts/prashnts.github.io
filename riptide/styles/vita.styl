@@ -11,9 +11,22 @@ body.vita
     max-width 800px
     margin 0 auto
     background #fff
-    padding 10px 50px
-    border-top 10px solid $blue
+    padding 20px 50px
     color $base03
+    position relative
+
+    &:before, &:after
+      content ' '
+      top 0
+      z-index 10
+      left 50px
+      right 50px
+      height 10px
+      background $blue
+      position absolute
+    &:after
+      bottom 0
+      top auto
 
   a, span
     position relative

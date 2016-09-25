@@ -129,6 +129,63 @@ experience:
       realtime content.
 
       **Website**: [survaider.com](//survaider.com)
+
+  - company: Cluster Innovation Centre
+    location: University of Delhi
+    dates:
+      from: '2015-01-01'
+      till: '2016-04-01'
+    position: Undergrad Research
+    tags:
+      - Network Analysis
+      - Computational Biology
+      - Mathematical Modelling
+    description: |
+      # Modelling and Network Analysis of Intronic miRNA Mediated Gene Expression Regulation
+
+      In this project, we developed a mathematical model for gene expression
+      regulation via intronic micro RNAs, based on emperical data and
+      experimental observations at IGIB.
+
+      As a part of study, we've also generated a miRNA - mRNA target network
+      using various available databases.
+
+  - company: Autonomi
+    location: University of Delhi
+    dates:
+      from: '2014-09-01'
+      till: '2016-05-01'
+    position: Volunteer
+    tags:
+    description: |
+      Responsibilities include maintainance and development of the web portal,
+      website and online presence of the organization.
+
+  - company: IamSME of India, PHD Chamber of Commerce
+    location: DUCIC eBusiness Circuit
+    dates:
+      from: '2014-05-15'
+      till: '2014-08-20'
+    position: Summer Intern
+    tags:
+    description: |
+      # TwoDotSeven
+
+      Developed an open-source and modular `ERP` system and `API` sub-system.
+
+  - company: Laboratory for Pattern Engineering
+    location: DUCIC eBusiness Circuit
+    dates:
+      from: '2014-02-10'
+      till: '2015-12-25'
+    position: Research Associate
+    tags:
+    description: |
+      Worked to build a classification system for geospacial features between
+      texts originated in different continents. Other responsibilities included
+      design and development of several web portals, graphic designing, media
+      and publishing tasks.
+
 education:
   - institute: Cluster Innovation Centre
     location: University of Delhi
