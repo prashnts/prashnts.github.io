@@ -13,6 +13,25 @@ body.vita
     background #fff
     padding 10px 50px
     border-top 10px solid $blue
+    color $base03
+
+  a, span
+    position relative
+    i
+      position absolute
+      left -1.5em
+      color $base0
+  a
+    color $base03
+    &:after
+      content ''
+      position absolute
+      background $base03
+      bottom -1px
+      right 0
+      height 1px
+      width 8px
+
 
   h1, h2, h3
     font-family 'Montserrat'

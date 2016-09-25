@@ -2,11 +2,10 @@
 personal:
   name: Prashant Sinha
   title: Developer
-urls:
-  homepage: noop.pw
-  github: prashnts
-  keybase: prashnts
 info:
+  homepage: https://noop.pw
+  github: https://github.com/prashnts
+  keybase: https://keybase.io/prashnts
   email: prashant@noop.pw
   mobile: 9910134045
   location: New Delhi, India

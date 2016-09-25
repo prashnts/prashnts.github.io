@@ -1,5 +1,16 @@
 extends templates/base.jade
 
+mixin ilink(icon, url)
+  - var title = url.replace(/https?:\/\//, '')
+  a(target='blank' rel='noopener noreferrer' href=url)
+    #[i.icon(class='icon-' + icon)] #{title}
+
+mixin email(email)
+  a(href='mailto:' + email): #[i.icon.icon-mail] #{email}
+
+mixin ispan(icon, content)
+  span #[i.icon(class='icon-' + icon)] #{content}
+
 block prepend body
   body.vita: main
     header
@@ -9,13 +20,15 @@ block prepend body
     section.info
       div
         h1 Web
-        dl: each url, service in vita.urls
-          dt= service
-          dd= url
+        ul
+          li: +ilink('link', vita.info.homepage)
+          li: +ilink('github', vita.info.github)
+          li: +ilink('lock', vita.info.keybase)
       div
         h1 Info
-        ul: each info, kind in vita.info
-          li #[i.icon(class=kind)] #{info}
+        ul
+          li: +email(vita.info.email)
+          li: +ispan('location', vita.info.location)
 
     section.cover
       h1 Cover
