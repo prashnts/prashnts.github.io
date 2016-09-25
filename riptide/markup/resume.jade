@@ -2,11 +2,14 @@ extends templates/base.jade
 
 mixin ilink(icon, url)
   - var title = url.replace(/https?:\/\//, '')
-  a(target='blank' rel='noopener noreferrer' href=url)
-    #[i.icon(class='icon-' + icon)] #{title}
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
 
 mixin email(email)
-  a(href='mailto:' + email): #[i.icon.icon-mail] #{email}
+  a(href='mailto:' + email)
+    i.icon.icon-mail
+    span= email
 
 mixin ispan(icon, content)
   span #[i.icon(class='icon-' + icon)] #{content}
@@ -33,7 +36,7 @@ block prepend body
 
     section.cover
       h1 Summary
-      p=vita.cover
+      p= vita.cover
 
     section.xp
       h1 Experience
