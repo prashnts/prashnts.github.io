@@ -44,7 +44,7 @@ experience:
       # Computer Vision and Information Extraction
 
       Developed and shipped a utility for digitizing waveforms and
-      extracting metadata from ECG reports, written in pure Python.
+      extracting metadata from `ECG` reports, written in pure Python.
       It is being used at Brigham and Women’s Hospital, Boston for
       processing more than a million patient records.
 
@@ -121,11 +121,11 @@ experience:
     description: |
       # Survaider Web App and Survey Builder
 
-      Development of web app backend and REST API in Python using Flask
-      and MongoEngine ORM.
+      Development of web app backend and `REST API` in Python using `Flask`
+      and `MongoEngine ORM`.
 
-      Design and development of the frontend. Technology stack includes
-      usage of CoffeeScript, BackboneJS, SASS, and Socket.IO for
+      Design and development of the frontend. Technology stack consisted
+      `CoffeeScript`, `BackboneJS`, `SASS`, and `Socket.IO` for
       realtime content.
 
       **Website**: [survaider.com](//survaider.com)
@@ -144,10 +144,10 @@ experience:
       # Modelling and Network Analysis of Intronic miRNA Mediated Gene Expression Regulation
 
       In this project, we developed a mathematical model for gene expression
-      regulation via intronic micro RNAs, based on emperical data and
+      regulation via intronic micro `RNAs`, based on emperical data and
       experimental observations at IGIB.
 
-      As a part of study, we've also generated a miRNA - mRNA target network
+      As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
   - company: Autonomi

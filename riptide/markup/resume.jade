@@ -41,8 +41,8 @@ block prepend body
         li
           aside
             h2.company= xp.company
-            p.location= xp.location
-            p.dates= xp.dates
+            p.location: +ispan('location', xp.location)
+            p.dates: +ispan('calendar', xp.dates)
             p.position= xp.position
             ul.tags: each tag in xp.tags
               li= tag
