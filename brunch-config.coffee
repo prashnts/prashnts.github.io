@@ -19,7 +19,7 @@ module.exports = config:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
       globals: ['DEBUG', 'vita', '_now']
     closurecompiler:
-      compilationLevel: 'ADVANCED'
+      compilationLevel: 'SIMPLE'
     typeset:
       tweaks: disable: ['ligatures']
     stylus:
