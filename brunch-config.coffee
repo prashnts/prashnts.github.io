@@ -1,6 +1,8 @@
 # noop.pw
+moment = require 'moment'
 {renderVita} = require './demi'
 global.vita = renderVita './riptide/vita.yaml'
+global._now = moment()
 global.DEBUG = '-p' not in global.process.argv
 
 module.exports = config:
@@ -15,9 +17,11 @@ module.exports = config:
       useCoffeelintJson: yes
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
-      globals: ['DEBUG', 'festus']
+      globals: ['DEBUG', 'vita', '_now']
     closurecompiler:
       compilationLevel: 'ADVANCED'
+    typeset:
+      tweaks: disable: ['ligatures']
     stylus:
       plugins: [
         'jeet'
@@ -48,4 +52,3 @@ module.exports = config:
       joinTo: 'js/app.js'
     stylesheets:
       joinTo: 'css/app.css'
-        # 'css/app.css': /^riptide\//

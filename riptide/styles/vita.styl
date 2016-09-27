@@ -12,11 +12,12 @@ body.vita
     max-width 800px
     margin 0 auto
     background #fff
-    padding 20px 50px 50px
+    padding 20px 50px 0
     color $base03
     position relative
+    font 14px/1.5em type-opensans
 
-    &:before, &:after
+    &:before
       content ' '
       top 0
       z-index 10
@@ -28,21 +29,19 @@ body.vita
       @media(max-width 768px)
         left 30px
         right 30px
-    &:after
-      bottom 0
-      top auto
 
     @media(max-width 768px)
-      padding 20px 30px
+      padding 20px 30px 0
 
   a, span
     position relative
     i
       position absolute
-      left -1.5em
+      left -1.8em
       color $base0
   a
     color $base03
+    border 0
     &:after
       content ''
       position absolute
@@ -51,10 +50,15 @@ body.vita
       right 0
       height 1px
       width 8px
+      transition .1s width
+    &:hover
+      &:after
+        width 100%
 
   h1, h2, h3
-    font-family 'Helvetica Neue', 'Helvetica', sans-serif
+    font-family type-opensans
     color $base02
+    font-weight 600
 
   p, dl, dd, h1, h2, h3
     margin 0
@@ -65,35 +69,41 @@ body.vita
     padding 2px 5px
     font-family type-fira
     border-radius 2px
-    background alpha($base0, 0.2)
+    background alpha($base0, .2)
 
   dl
     div
       display flex
     dt
       width 80px
-      font-weight 500
+      font-weight 600
 
   header
     h1
       font-weight 400
       margin 20px 0 10px
       span
-        font-weight 500
+        font-weight 600
 
   section
     h1
       color $blue
       display inline-block
-      padding-top 0.1em
       text-transform uppercase
       font-size 1.1em
       letter-spacing 1px
       margin 20px 0 10px
-      border-top 0.2em solid
+      position relative
+      &:before
+        content ' '
+        position absolute
+        width calc(100% - 1px)
+        height 2px
+        margin-top -2px
+        border-radius 2px
+        background $blue
     h2
       font-size 1.2em
-      font-weight 500
 
   section.xp, section.edu
     > ul > li
@@ -101,14 +111,17 @@ body.vita
       margin-bottom 20px
       h3
         font-size 1.2em
-        letter-spacing 0.5px
-        font-weight 500
+        letter-spacing .5px
+        font-weight 600
       aside
         width 30%
         margin-right 20px
         flex-shrink 0
+        p.location
+          margin 5px 0
         p.dates
           font-weight 500
+          font-family type-fira
           margin 5px 0
         p.position
           border-left 3px solid $blue
@@ -116,12 +129,12 @@ body.vita
           margin 5px 0
           padding-left 9px
           text-align left
-          font-weight 500
+          font-weight 600
         ul.tags
           padding-left 12px
           color $base02
         i
-          opacity 0.5
+          opacity .5
       div.description
         text-align justify
         h3, p
@@ -150,8 +163,11 @@ body.vita
     display flex
     @media(max-width 768px)
       display block
+      li
+        margin 4px 0
     div
       flex 1
+      font-family type-fira
 
   section.cover
     padding-right 30%
@@ -179,3 +195,28 @@ body.vita
       font-size 1.2em
       letter-spacing 2px
       color $blue
+
+  footer
+    margin-top 60px
+    background $blue
+    padding 5px 10px
+    color alpha($white, .6)
+    code
+      background alpha($base03, .4)
+    a
+      color inherit
+      &:after
+        background $base3
+    ul
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+      i
+        position relative
+        left 2px
+    code.kthx
+      display block
+      background none
+      margin 5px auto 0
+      width 30px
+      opacity .4
