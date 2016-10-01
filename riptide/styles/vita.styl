@@ -8,6 +8,9 @@ body.vita
   letter-spacing 0
   padding 0
 
+  @media print
+    background $white
+
   main
     max-width 800px
     margin 0 auto
@@ -16,6 +19,9 @@ body.vita
     color $base03
     position relative
     font 14px/1.5em type-opensans
+
+    @media print
+      font 12px/1.3em type-opensans
 
     &:before
       content ' '
@@ -201,12 +207,13 @@ body.vita
     background $blue
     padding 5px 10px
     color alpha($white, .6)
+    font-size .8em
     code
-      background alpha($base03, .4)
+      background alpha($base03, .2)
     a
       color inherit
       &:after
-        background $base3
+        background alpha($base3, .4)
     ul
       display flex
       justify-content space-between
@@ -220,3 +227,11 @@ body.vita
       margin 5px auto 0
       width 30px
       opacity .4
+
+    @media print
+      background transparent
+      color $base03
+      padding 10px 0
+      ul
+        li:first-child
+          display none

@@ -70,6 +70,8 @@ class Festus
   render: (dict) ->
     @renderDates @renderMarkdown dict
 
+  dateOverlaps: (dates) ->
+    pass
 
 
 module.exports = {Demi, Festus}

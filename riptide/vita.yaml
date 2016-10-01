@@ -15,7 +15,7 @@ cover: |
   my projects also include Pervasive Computing, Reality Mining, and
   Computer Vision.
 experience:
-  - company: Agora Events Ltd.
+  - company: Agora NHS
     location: London, UK
     dates:
       from: '2016-02-29'
@@ -23,13 +23,13 @@ experience:
     tags:
       - Machine Learning
       - Web Development
+    website: https://agoranhs.com
     description: |
       # Event aggregation and Recommendation
 
-      In this ongoing project, I am responsible for designing and
-      building a scalable server and `API` for aggregation,
-      categorisation, and recommendation generation of events from
-      various sources.
+      At Agora, I am responsible for designing and building a scalable server
+      and `API` for aggregation, categorisation, and recommendation generation
+      of events from various sources.
 
   - company: Oxyent Technologies
     location: New Delhi
@@ -37,6 +37,7 @@ experience:
       from: '2016-07-01'
       till: '2016-09-01'
     position: Summer Intern
+    website: http://oxyent.com
     tags:
       - Computer Vision
       - Information Extraction
@@ -51,6 +52,27 @@ experience:
       Also worked on extracting normalized tabular data from scanned
       medical records. Key challenges here involved handling skewed,
       desaturated and otherwise low quality images.
+
+  - company: Survaider
+    location: New Delhi
+    dates:
+      from: '2015-01-01'
+      till: '2016-02-01'
+    position: Developer and UI/UX Designer
+    website: https://survaider.com
+    tags:
+      - Backend and REST API
+      - Client Interface
+      - Analytics
+    description: |
+      # Survaider Web App and Survey Builder
+
+      Development of web app backend and `REST API` in Python using `Flask`
+      and `MongoEngine ORM`.
+
+      Design and development of the frontend. Technology stack consisted
+      `CoffeeScript`, `BackboneJS`, `SASS`, and `Socket.IO` for
+      realtime content.
 
   - company: Design Innovation Centre
     location: University of Delhi
@@ -107,28 +129,6 @@ experience:
 
       **Publication**: "Investigating the 'Wisdom of Crowds' at Scale", ACM UIST
       2015, Charlotte, NC.
-
-  - company: Survaider
-    location: New Delhi
-    dates:
-      from: '2015-01-01'
-      till: '2016-02-01'
-    position: Developer and UI/UX Designer
-    tags:
-      - Backend and REST API
-      - Client Interface
-      - Analytics
-    description: |
-      # Survaider Web App and Survey Builder
-
-      Development of web app backend and `REST API` in Python using `Flask`
-      and `MongoEngine ORM`.
-
-      Design and development of the frontend. Technology stack consisted
-      `CoffeeScript`, `BackboneJS`, `SASS`, and `Socket.IO` for
-      realtime content.
-
-      **Website**: [survaider.com](//survaider.com)
 
   - company: Cluster Innovation Centre
     location: University of Delhi
