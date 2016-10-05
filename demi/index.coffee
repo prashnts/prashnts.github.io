@@ -8,4 +8,7 @@ renderVita = (flpath) ->
   content = yaml.safeLoad fs.readFileSync flpath, 'utf-8'
   festus.render content
 
+renderPdf = ->
+
+
 module.exports = {renderVita}
