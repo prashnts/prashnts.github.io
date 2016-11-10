@@ -21,7 +21,8 @@ body.vita
     font 14px/1.5em type-opensans
 
     @media print
-      font 12px/1.3em type-opensans
+      font 11px/1.5em type-opensans
+      padding 0
 
     &:before
       content ' '
@@ -36,6 +37,9 @@ body.vita
         left 30px
         right 30px
 
+      @media print
+        display none
+
     @media(max-width 768px)
       padding 20px 30px 0
 
@@ -45,6 +49,7 @@ body.vita
       position absolute
       left -1.8em
       color $base0
+      opacity .5
   a
     color $base03
     border 0
@@ -56,8 +61,11 @@ body.vita
       right 0
       height 1px
       width 8px
-      transition .1s width
+      // transition .1s width
+      @media print
+        display none
     &:hover
+      background alpha($base03, .1)
       &:after
         width 100%
 
@@ -76,6 +84,10 @@ body.vita
     font-family type-fira
     border-radius 2px
     background alpha($base0, .2)
+
+    @media print
+      background transparent
+      padding 0
 
   dl
     div
@@ -146,7 +158,7 @@ body.vita
         h3, p
           margin-bottom 10px
 
-      @media(max-width 768px)
+      @media screen and (max-width 768px)
         display block
         margin 0 -30px
         padding 10px 30px
@@ -165,9 +177,12 @@ body.vita
             font-weight 400
             font-size 1.1em
 
+      @media print
+        page-break-inside avoid
+
   section.info
     display flex
-    @media(max-width 768px)
+    @media screen and (max-width 768px)
       display block
       li
         margin 4px 0
@@ -191,7 +206,7 @@ body.vita
         flex 1
         &:last-child
           margin 0
-      @media(max-width 768px)
+      @media screen and (max-width 768px)
         display block
         > li
           margin 0 0 10px
