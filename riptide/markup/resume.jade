@@ -48,7 +48,9 @@ block prepend body
           aside
             h2.company= xp.company
             p.location: +ispan('location', xp.location)
-            p.dates: +ispan('calendar', xp.dates)
+            p.dates
+              +ispan('calendar', xp.dates.interval)
+              span.duration #{xp.dates.duration}
             p.position= xp.position
             ul.tags: each tag in xp.tags
               li= tag
@@ -64,7 +66,7 @@ block prepend body
           aside
             h2.institute= edu.institute
             p.location= edu.location
-            p.dates= edu.dates
+            p.dates= edu.dates.interval
             p.position= edu.position
           div.description
             h3.degree= edu.degree
