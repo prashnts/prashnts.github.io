@@ -51,6 +51,40 @@ describe 'Demi', ->
     it 'fails when `till` is invalid', ->
       expect(-> d.renderDateInterval('2016-02-01', 'foobar')).to.throw Error
 
+  describe '#renderDuration', ->
+    d = new Demi '2016-09-21'
+
+    it 'should be a valid function', ->
+      expect(d).to.respondTo 'renderDuration'
+
+    it 'compensates missing `till` for `now`', ->
+      r = d.renderDuration '2016-01-01'
+      expect(r).to.equal '9 Months'
+
+    it 'does not render if the dates are less than two months apart', ->
+      r = d.renderDuration '2016-01-01', '2016-02-01'
+      expect(r).to.be.undefined
+
+    it 'renders month counts when they are more than two month apart', ->
+      r = d.renderDuration '2016-01-01', '2016-03-01'
+      expect(r).to.equal '2 Months'
+
+    it 'renders month counts until dates are ~12 months apart', ->
+      r = d.renderDuration '2016-01-01', '2016-12-29'
+      expect(r).to.equal '12 Months'
+
+    it 'renders year and month counts when dates are more than a year apart', ->
+      r = d.renderDuration '2016-01-01', '2017-08-29'
+      expect(r).to.equal '1 Year 8 Months'
+
+    it 'renders year and months correctly when dates are few years apart', ->
+      r = d.renderDuration '2016-01-01', '2019-08-29'
+      expect(r).to.equal '3 Years 8 Months'
+
+    it 'renders year and months correctly when dates are few years apart', ->
+      r = d.renderDuration '2016-01-01', '2018-01-01'
+      expect(r).to.equal '2 Years'
+
   describe '#renderMarkdown', ->
     it 'correctly renders markdown', ->
       d = new Demi
@@ -93,13 +127,15 @@ describe 'Festus', ->
       expect(out).to.not.deep.equal data
 
   describe '#render', ->
-    it 'renders dates and descriptions', ->
+    it 'renders dates, duration and descriptions', ->
       f = new Festus today: '2016-09-21'
       input =
         dates: from: '2015-06-15'
         description: '_wow_'
       known =
-        dates: 'Jun 2015 － Present'
+        dates:
+          interval: 'Jun 2015 － Present'
+          duration: '1 Year 3 Months'
         description: '<p><em>wow</em></p>\n'
       expect(f.render input).to.deep.equal known
 
@@ -109,11 +145,16 @@ describe 'Festus', ->
         dates: from: '2015-06-15'
         foo: bar: dates:
           from: '2016-02-01'
-          till: '2016-03-01'
+          till: '2016-05-01'
         description: '_wow_'
       known =
-        dates: 'Jun 2015 － Present'
-        foo: bar: dates: 'Feb － Mar 2016'
+        dates:
+          interval: 'Jun 2015 － Present'
+          duration: '3 Years 3 Months'
+        foo: bar:
+          dates:
+            interval: 'Feb － May 2016'
+            duration: '3 Months'
         description: '<p><em>wow</em></p>\n'
       expect(f.render input).to.deep.equal known
 
