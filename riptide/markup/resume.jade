@@ -15,7 +15,7 @@ mixin ispan(icon, content)
   span #[i.icon(class='icon-' + icon)] #{content}
 
 block append stylesheets
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600')
+  //- link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600')
 
 block prepend body
   body.vita: main
@@ -45,19 +45,7 @@ block prepend body
       h1 Experience
       ul: each xp in vita.experience
         li
-          aside
-            h2.company= xp.company
-            p.location: +ispan('location', xp.location)
-            p.dates
-              +ispan('calendar', xp.dates.interval)
-              span.duration #{xp.dates.duration}
-            p.position= xp.position
-            ul.tags: each tag in xp.tags
-              li= tag
-          div.description
-            !{xp.description}
-            if xp.website
-              p.website: +ilink('link', xp.website)
+          include partials/period
 
     section.edu
       h1 Education
