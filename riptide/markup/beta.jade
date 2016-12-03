@@ -1,0 +1,16 @@
+extends templates/base.jade
+
+block append stylesheets
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
+
+block prepend body
+  body.zen
+    section.slide#about
+      .content
+        p.
+          Hey there.
+        p Blah. Blah. Blah.
+        img(src='/img/icons/spock@3x.png' alt='👋' title='Hi' width=40)
+    section.slide
+      .content
+        h1 Ugh.
