@@ -24,6 +24,7 @@
     "css-brunch": "^2.6.1",
     "cssnano-brunch": "^1.1.6",
     "html-pdf": "^2.1.0",
+    "http-server": "^0.9.0",
     "jaded-brunch": "^2.3.0",
     "javascript-brunch": "^2.0.0",
     "jeet": "^6.1.4",

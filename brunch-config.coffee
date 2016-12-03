@@ -52,3 +52,6 @@ module.exports = config:
       joinTo: 'js/app.js'
     stylesheets:
       joinTo: 'css/app.css'
+
+  server:
+    command: "node_modules/.bin/http-server -c-1 -p #{process.env.PORT or 8080}"
