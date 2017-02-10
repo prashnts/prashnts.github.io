@@ -1,5 +1,15 @@
 extends templates/base.jade
 
+block prepend head
+  -
+    var page = {
+      title: 'no-op',
+      url: 'https://noop.pw',
+      description: "Prashant's homepage.",
+    }
+  +meta(page)
+
+
 block prepend body
   body.homepage: main
     h1 Prashant Sinha

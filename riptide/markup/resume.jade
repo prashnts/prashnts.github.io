@@ -1,5 +1,14 @@
 extends templates/base.jade
 
+block prepend head
+  -
+    var page = {
+      title: 'no-op / resume',
+      url: 'https://noop.pw/resume',
+      description: "Prashant's resume.",
+    }
+  +meta(page)
+
 mixin ilink(icon, url)
   - var title = url.replace(/https?:\/\//, '')
   a(rel='noopener noreferrer' href=url title=title)
