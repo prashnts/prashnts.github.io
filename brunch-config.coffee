@@ -40,6 +40,8 @@ module.exports = config:
 
   npm:
     enabled: yes
+    styles:
+      'normalize.css': ['normalize.css']
 
   modules:
     nameCleaner: (path) ->
