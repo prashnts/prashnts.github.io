@@ -71,7 +71,7 @@ describe 'Demi', ->
 
     it 'renders month counts until dates are ~12 months apart', ->
       r = d.renderDuration '2016-01-01', '2016-12-29'
-      expect(r).to.equal '12 Months'
+      expect(r).to.equal '1 Year'
 
     it 'renders year and month counts when dates are more than a year apart', ->
       r = d.renderDuration '2016-01-01', '2017-08-29'
