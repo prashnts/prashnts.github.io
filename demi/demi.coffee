@@ -42,9 +42,6 @@ class Demi
       "#{months} Months"
     else if years >= 1
       # Since we want month along with year, get the floor value.
-      #console.log Math.round duration.asYears()
-      #years = Math.round duration.asYears()
-      # Estimate (as correctly as possible!) the months.
       month_count = Math.round duration.asMonths()
       months = month_count %% 12
       years = month_count // 12
