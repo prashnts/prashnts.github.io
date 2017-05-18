@@ -53,6 +53,10 @@ class Demi
       else
         "#{years} #{year_verbose}"
 
+  renderDate: (date) ->
+    dt = moment date, moment.ISO_8601
+    dt.format 'MMM Y'
+
   renderMarkdown: (content) => @marked content
 
   _init_markdn: ->
@@ -73,8 +77,11 @@ class Festus
     _dtKey = opts.dateKey or 'dates'
     _mdKey = opts.mdKey or 'description'
     @renderDates = @getMap _dtKey, (node) ->
-      interval: demi.renderDateInterval node.from, node.till
-      duration: demi.renderDuration node.from, node.till
+      unless node.on?
+        interval: demi.renderDateInterval node.from, node.till
+        duration: demi.renderDuration node.from, node.till
+      else
+        interval: demi.renderDate node.on
     @renderMarkdown = @getMap _mdKey, demi.renderMarkdown
 
   _mapDeep: (obj, pivot, fn) ->
