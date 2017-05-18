@@ -61,12 +61,29 @@ block prepend body
               +ispan('calendar', xp.dates.interval)
               span.duration #{xp.dates.duration}
             p.position= xp.position
-            ul.tags: each tag in xp.tags
+            ul.tags: each tag in xp.tags || []
               li= tag
           div.description
             !{xp.description}
             if xp.website
               p.website: +ilink('link', xp.website)
+
+    section.talks
+      h1 Talks and Workshops
+      ul: each talk in vita.talks_and_workshops
+        li
+          aside
+            h2.conference= talk.conference
+            p.location: +ispan('location', talk.location)
+            p.dates
+              +ispan('calendar', talk.dates.interval)
+            p.position= talk.type
+            ul.tags: each tag in talk.tags || []
+              li= tag
+          div.description
+            !{talk.description}
+            if talk.website
+              p.website: +ilink('link', talk.website)
 
     section.edu
       h1 Education
@@ -74,19 +91,38 @@ block prepend body
         li
           aside
             h2.institute= edu.institute
-            p.location= edu.location
-            p.dates= edu.dates.interval
+            p.location: +ispan('location', edu.location)
+            p.dates: +ispan('calendar', edu.dates.interval)
             p.position= edu.position
           div.description
             h3.degree= edu.degree
             dl
-              div
-                dt Major
-                dd= edu.major
-              div
-                dt Minors
-                dd: ul: each minor in edu.minor
-                  li= minor
+              if edu.major
+                div
+                  dt Major
+                  dd= edu.major
+              if edu.minor
+                div
+                  dt Minors
+                  dd: ul: each minor in edu.minor
+                    li= minor
+              if edu.percentage
+                div
+                  dt Percentage
+                  dd #{edu.percentage}%
+              if edu.grade
+                div
+                  dt Grade
+                  dd= edu.grade
+
+    section.open_source
+      h1 Open Source
+      ul: each package in vita.open_source
+        li
+          div.description
+            !{package.description}
+
+            p: +ilink('git', 'https://github.com/' + package.repo)
 
     section.skills
       h1 Skills

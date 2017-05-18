@@ -59,7 +59,7 @@ experience:
       from: '2015-01-01'
       till: '2016-02-01'
     position: Developer and UI/UX Designer
-    website: https://survaider.com
+    website: http://survaider.com
     tags:
       - Backend and REST API
       - Client Interface
@@ -97,17 +97,6 @@ experience:
       Using supervised learning method, we trained a Random Forest
       Classifier using feature vectors obtained via our model. We
       were able to produce an accuracy of `95%` through our model.
-
-  - company: West College
-    location: Scotland
-    dates:
-      from: '2015-07-14'
-      till: '2015-07-19'
-    position: Workshop
-    tags:
-      - Game Development
-    description: |
-      # Game Development Workshop under UK-India Education and Research Initiative
 
   - company: University of California and Stanford
     location: Santa Cruz
@@ -186,6 +175,43 @@ experience:
       design and development of several web portals, graphic designing, media
       and publishing tasks.
 
+talks_and_workshops:
+  - conference: FOSSASIA 2017
+    location: Singapore
+    dates:
+      from: '2017-03-17'
+      till: '2017-03-19'
+    type: Talk
+    tags:
+      - Python
+      - Open Source
+    description: |
+      # Alohomora: Unlocking Magical Bits in Python
+
+      In this talk at FOSSASIA Summit, I gave a presentation covering several
+      advance patterns in the Python programming language. In the presentation I
+      introduced the audience with Metaclasses, Decorators and Patching.
+
+  - conference: West College
+    location: Glasgow, Scotland
+    dates:
+      from: '2015-07-14'
+      till: '2015-07-19'
+    type: Workshop
+    description: |
+      # Game Development Workshop under UK-India Education and Research Initiative
+
+  - conference: Autonomi
+    location: University of Delhi
+    dates:
+      from: '2015-02-28'
+      till: '2015-03-01'
+    type: Talk
+    description: |
+      # Robotics Bootcamp
+
+      Delivered sessions on Arduino programming, DAC, ADC and PWM.
+
 education:
   - institute: Cluster Innovation Centre
     location: University of Delhi
@@ -193,10 +219,26 @@ education:
     dates:
       from: '2013-08-10'
     degree: B.Tech. (IT and Mathematical Innovations)
+    percentage: 75
     major: Information Technology
     minor:
       - Mathematics
       - Systems Biology
+
+  - institute: Central Academy Sr. Sec.
+    location: Gorakhpur, India
+    degree: AISSCE (XII Std.)
+    percentage: 93.6
+    dates:
+      on: '2013-05'
+
+  - institute: Central Academy Sr. Sec.
+    location: Gorakhpur, India
+    degree: AISSE (X Std.)
+    grade: 9.8
+    dates:
+      on: '2011-05'
+
 skills:
   Development:
     - [Python, 5]
@@ -211,12 +253,34 @@ skills:
   Misc:
     - [Scientific Computing, 4]
     - [DevOps, 3]
-open-source:
-  - project: metaRNA
-    language: Python, C
-    repo: prashnts/metaRNA
-    description: todo.
-  - project: metaRNA
-    language: Python, C
-    repo: prashnts/metaRNA
-    description: todo.
+
+open_source:
+  - repo: prashnts/hues
+    description: |
+      # Hues: Colored terminal text made easy for Python
+
+      Hues is a Python package which facilitates printing ANSI encoded text to
+      terminal in unix-like systems.
+
+  - repo: prashnts/metaRNA
+    description: |
+      # metaRNA: Find target sites for the miRNAs in genomic sequences
+
+      metaRNA finds potential target sites for the microRNAs in genomic
+      sequences. It is built on miRanda, an algorithm for detection and ranking
+      of the targets of microRNA.
+
+  - repo: prashnts/pybloomfiltermmap3
+    description: |
+      # PyBloomFilter: Fast, Memory Mapped Bloom Filter
+
+      The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
+      correct library for Bloom Filters in Python.
+
+  - repo: prashnts/mongocapsule
+    description: |
+      # MongoCapsule: Encapsulated MongoEngine
+
+      MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
+      MongoEngine attributes under a single namespace and hence allows explicit
+      declaration without context switches.
