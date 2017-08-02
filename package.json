@@ -39,7 +39,7 @@
     "wintersmith": "^2.3.2"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.2",
     "mocha": "^3.0.2"
   }
 }
