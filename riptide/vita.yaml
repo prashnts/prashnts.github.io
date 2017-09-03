@@ -8,7 +8,7 @@ info:
   keybase: https://keybase.io/prashnts
   email: prashant@noop.pw
   mobile: 9910134045
-  location: New Delhi, India
+  location: Paris, France
 cover: |
   My primary research interest is in Machine Learning, Data Science,
   Statistics, Systems Biology, and Bio Inspired Systems. The scope of
@@ -213,6 +213,13 @@ talks_and_workshops:
       Delivered sessions on Arduino programming, DAC, ADC and PWM.
 
 education:
+  - institute: Centre de Recherches Interdisciplinaires
+    location: Paris Descartes
+    position: Masters
+    dates:
+      from: '2017-09-04'
+    degree: Approches Interdisciplinaires du Vivant
+
   - institute: Cluster Innovation Centre
     location: University of Delhi
     position: Undergrad

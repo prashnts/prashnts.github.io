@@ -4,7 +4,7 @@
 @require _axis
 
 body.vita
-  background $base03
+  background #eee
   letter-spacing 0
   padding 0
 
@@ -182,6 +182,7 @@ body.vita
             font-size 1.1em
 
       @media print
+        margin-bottom 10px
         page-break-inside avoid
 
   section.info
@@ -223,9 +224,8 @@ body.vita
 
   footer
     margin-top 60px
-    background $blue
-    padding 5px 10px
-    color alpha($white, .6)
+    padding 5px 0
+    color alpha(#000, .6)
     font-size .8em
     code
       background alpha($base03, .2)
