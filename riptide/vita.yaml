@@ -7,7 +7,7 @@ info:
   github: https://github.com/prashnts
   keybase: https://keybase.io/prashnts
   email: prashant@noop.pw
-  mobile: 9910134045
+  mobile: '0769822836'
   location: Paris, France
 cover: |
   My primary research interest is in Machine Learning, Data Science,
@@ -15,6 +15,47 @@ cover: |
   my projects also include Pervasive Computing, Reality Mining, and
   Computer Vision.
 experience:
+  - company: Laboratoire Jean Perrin
+    location: Université Pierre et Marie Curie, Paris
+    dates:
+      from: '2018-01-22'
+    position: Research Intern
+    tags:
+      - Theoretical Biophysics
+      - Optical Tracking
+      - Mechanotransduction
+    website: http://www.labos.upmc.fr/ljp/
+    description: |
+      # The Mechanical Sense of Paramecium
+
+      At a crossroad between physics, biology, and neuroscience, coupled with
+      experimental and theoretical biophysics, this project aims to decipher
+      the mechanism simple organisms such as Paramecium use to detect and avoid
+      obstacles in their trajectories. Using micromilled pools of defined
+      geometry and automatic tracking of paramecia, we expect to find
+      correlations between external stimuli and internal responses that give it
+      a directional sense.
+
+  - company: Laboratoire Matière et Systèmes Complexes
+    location: Université Paris Diderot, Paris
+    dates:
+      from: '2017-10-09'
+      till: '2018-01-09'
+    position: Research Intern
+    tags:
+      - Phyllotaxis
+      - Plant Biology
+      - Projection Geometry
+    website: http://www.msc.univ-paris-diderot.fr/
+    description: |
+      # Study of Diversity in Phyllotactic Patterns
+
+      Phyllotaxis is the arrangement of lateral organs in plants. In this
+      project we attempt to explain the origin of emergent patterns,
+      transitions, and irregularities in such arrangements. Using cylindrical
+      projection unrolling and unwarping, the aim was to develop a pipeline
+      allowing better study of complicated plant organs.
+
   - company: Agora Health
     location: London, UK
     dates:
@@ -214,7 +255,7 @@ talks_and_workshops:
 
 education:
   - institute: Centre de Recherches Interdisciplinaires
-    location: Paris Descartes
+    location: Université Paris Descartes
     position: Masters
     dates:
       from: '2017-09-04'
