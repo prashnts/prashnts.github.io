@@ -15,6 +15,23 @@ cover: |
   my projects also include Pervasive Computing, Reality Mining, and
   Computer Vision.
 experience:
+  - company: Physique et Mécanique des Milieux Hétérogènes
+    location: École Supérieure De Physique Et De Chimie Industrielles, Paris
+    dates:
+      from: '2018-05-22'
+    position: Research Intern
+    tags:
+      - Hydrodynamics at micro scales
+      - Fluid Dynamics
+      - Theoretical Biophysics
+    website: https://www.pmmh.espci.fr/
+    description: |
+      # Hydrodynamics of Super-Paramagnetic Micro-Beads
+      
+      In this project, we're interested to study the behaviour of magnetic
+      micro-objects under magnetic field in water. We expect to quantify
+      the hydrodynamic drag between dissimilar objects.
+
   - company: Laboratoire Jean Perrin
     location: Université Pierre et Marie Curie, Paris
     dates:
@@ -31,11 +48,17 @@ experience:
 
       At a crossroad between physics, biology, and neuroscience, coupled with
       experimental and theoretical biophysics, this project aims to decipher
-      the mechanism simple organisms such as Paramecium use to detect and avoid
+      the mechanism simple organisms such as _Paramecium_ use to detect and avoid
       obstacles in their trajectories. Using micromilled pools of defined
       geometry and automatic tracking of paramecia, we expect to find
       correlations between external stimuli and internal responses that give it
       a directional sense.
+      
+      As a research intern, I developed high-frequency image analysis and
+      hardware control pipeline to track long trajectories in real time.
+      I wrote a driver for the Microscope Objective utilising 3D Vector Space,
+      and a high-speed image aquisition and processing (~50fps) tool. Using these
+      software we were able to follow the trajectory of moving _Paramecium_.
 
   - company: Laboratoire Matière et Systèmes Complexes
     location: Université Paris Diderot, Paris
@@ -61,17 +84,18 @@ experience:
     location: London, UK
     dates:
       from: '2016-02-08'
+      till: '2018-05-20'
     position: Developer
     tags:
       - Machine Learning
       - Web Development
     website: https://agorahealth.org.uk
     description: |
-      # Event aggregation and Recommendation
+      # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
-      At Agora, I am responsible for designing and building a scalable server
-      and `API` for aggregation, categorisation, and recommendation generation
-      of events from various sources.
+      At Agora, I was responsible for designing and implementing web services
+      for aggregation, classification, and personalised recommendation of
+      events at National Health Services (NHS) in the UK.
 
   - company: Oxyent Technologies
     location: New Delhi
@@ -334,3 +358,11 @@ open_source:
       MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
       MongoEngine attributes under a single namespace and hence allows explicit
       declaration without context switches.
+  
+  - repo: prashnts/elasticsearch-synonyms
+    description: |
+      # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
+      
+      This repository contains a curated dataset of synonyms in `Solr` Format.
+      These synonyms can be used for Elasticsearch Synonym Token Filter
+      configuration. It provides a tool to lint and validate the synonym files.
