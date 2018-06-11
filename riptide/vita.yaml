@@ -26,7 +26,7 @@ experience:
       - Theoretical Biophysics
     website: https://www.pmmh.espci.fr/
     description: |
-      # Hydrodynamics of Super-Paramagnetic Beads at Low Reynolds Number
+      # Hydrodynamics of Super-Paramagnetic Micro-Beads
       
       In this project, we're interested to study the behaviour of magnetic
       micro-objects under magnetic field in water. We expect to quantify
@@ -91,8 +91,7 @@ experience:
       - Web Development
     website: https://agorahealth.org.uk
     description: |
-      # Personalised Medical Events, Conferences, and Courses Recommendation
-      for Doctors at NHS, UK
+      # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
       At Agora, I was responsible for designing and implementing web services
       for aggregation, classification, and personalised recommendation of
