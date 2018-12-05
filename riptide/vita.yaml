@@ -15,10 +15,21 @@ cover: |
   my projects also include Pervasive Computing, Reality Mining, and
   Computer Vision.
 experience:
+  - company: Centre de Recherches Interdisciplinaires
+    location: Paris
+    dates:
+      from: '2018-10-08'
+    position: Developpeur Full Stack
+    tags:
+      - Platform Developer
+      - UI/X Design
+    description: |
+      # A new tool for Collective Learning
   - company: Physique et Mécanique des Milieux Hétérogènes
     location: École Supérieure De Physique Et De Chimie Industrielles, Paris
     dates:
       from: '2018-05-22'
+      till: '2018-09-22'
     position: Research Intern
     tags:
       - Hydrodynamics at micro scales
@@ -28,9 +39,17 @@ experience:
     description: |
       # Hydrodynamics of Super-Paramagnetic Micro-Beads
       
-      In this project, we're interested to study the behaviour of magnetic
+      The primary interest in this study is the behaviour of magnetic
       micro-objects under magnetic field in water. We expect to quantify
-      the hydrodynamic drag between dissimilar objects.
+      the hydrodynamic drag between dissimilar objects. My work here
+      was to capture the motion of the beads (`r=2.4µm`) under externally
+      applied magnetic field as they attract towards each other. Strict
+      requirements of the protocol included controlled medium viscosity,
+      frame rate `>= 300 fps`, and `40-63x` magnification.
+      
+      We reached average frame rate of `~800 fps`. Using open source tools
+      `trackpy` and `scikit-image`, I developed a processing pipeline to
+      isolate, track, and calculate motion dynamics from the frames.
 
   - company: Laboratoire Jean Perrin
     location: Université Pierre et Marie Curie, Paris
