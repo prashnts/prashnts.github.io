@@ -9,6 +9,8 @@ info:
   email: prashant@noop.pw
   mobile: '0769822836'
   location: Paris, France
+  twitter: https://twitter.com/prashnts
+
 cover: |
   My primary research interest is in Machine Learning, Data Science,
   Statistics, Systems Biology, and Bio Inspired Systems. The scope of
@@ -23,8 +25,16 @@ experience:
     tags:
       - Platform Developer
       - UI/X Design
+    website: https://welearn.cri-paris.org
     description: |
-      # A new tool for Collective Learning
+      # WeLearn - A tool for Collective Learning
+
+      WeLearn helps people to collect, curate, and qualify learning Resources.
+      Resources are tagged with Wikipedia Pages, which is used to create a
+      visualisation that we aim to be a "GPS of Learning". My role as a UI/UX
+      developer is to create an interface that helps users navigate through
+      their own as well as others' curation to find their own Learning Path.
+
   - company: Physique et Mécanique des Milieux Hétérogènes
     location: École Supérieure De Physique Et De Chimie Industrielles, Paris
     dates:
@@ -38,7 +48,7 @@ experience:
     website: https://www.pmmh.espci.fr/
     description: |
       # Hydrodynamics of Super-Paramagnetic Micro-Beads
-      
+
       The primary interest in this study is the behaviour of magnetic
       micro-objects under magnetic field in water. We expect to quantify
       the hydrodynamic drag between dissimilar objects. My work here
@@ -46,7 +56,7 @@ experience:
       applied magnetic field as they attract towards each other. Strict
       requirements of the protocol included controlled medium viscosity,
       frame rate `>= 300 fps`, and `40-63x` magnification.
-      
+
       We reached average frame rate of `~800 fps`. Using open source tools
       `trackpy` and `scikit-image`, I developed a processing pipeline to
       isolate, track, and calculate motion dynamics from the frames.
@@ -72,7 +82,7 @@ experience:
       geometry and automatic tracking of paramecia, we expect to find
       correlations between external stimuli and internal responses that give it
       a directional sense.
-      
+
       As a research intern, I developed high-frequency image analysis and
       hardware control pipeline to track long trajectories in real time.
       I wrote a driver for the Microscope Objective utilising 3D Vector Space,
@@ -336,17 +346,17 @@ education:
 skills:
   Development:
     - [Python, 5]
-    - [Stylus/CSS, 4]
-    - [CoffeeScript, 4]
+    - [SCSS, 5]
+    - [CoffeeScript, 3]
     - [ES6/JavaScript, 4]
   Design:
     - [Print Media, 3]
-    - [CAD/CAM, 3]
-    - [Illustration, 2]
+    - [CAD/CAM, 2]
+    - [Illustration, 3]
     - [User Interface, 3]
   Misc:
     - [Scientific Computing, 4]
-    - [DevOps, 3]
+    - [DevOps, 1]
 
 open_source:
   - repo: prashnts/hues
@@ -378,11 +388,18 @@ open_source:
       MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
       MongoEngine attributes under a single namespace and hence allows explicit
       declaration without context switches.
-  
-  - repo: prashnts/elasticsearch-synonyms
+
+  - repo: agora-team/elasticsearch-synonyms
     description: |
       # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
-      
+
       This repository contains a curated dataset of synonyms in `Solr` Format.
       These synonyms can be used for Elasticsearch Synonym Token Filter
       configuration. It provides a tool to lint and validate the synonym files.
+
+  - repo: CyberCRI/learn-ext
+    description: |
+      # WeLearn Extension and WebApp
+
+      This repository hosts the prototype for WeLearn Browser Extension and Web App.
+      Specifically, it implements a D3/React based visualisation of Wikipedia Concept Map.
