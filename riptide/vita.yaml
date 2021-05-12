@@ -12,31 +12,35 @@ info:
   twitter: https://twitter.com/prashnts
 
 cover: |
-  My primary research interest is in Machine Learning, Data Science,
-  Statistics, Systems Biology, and Bio Inspired Systems. The scope of
-  my projects also include Pervasive Computing, Reality Mining, and
-  Computer Vision.
+  I am a software developer based in Paris. My work focuses on using programming,
+  mathematics, and design as tools to solve interesting and challenging problems.
+  My projects span a wide array of domains: Computer Vision, Machine Learning,
+  Data Visualisation, Web Applications, and Embedded systems.
+
 experience:
   - company: Centre de Recherches Interdisciplinaires
     location: Paris
     dates:
       from: '2018-10-08'
-    position: Developpeur Full Stack
+      # till: '2020-12-08'
+    position: Full Stack Developer
     tags:
       - Platform Developer
       - UI/X Design
-    website: https://welearn.cri-paris.org
+    website: https://cri-paris.org
     description: |
-      # WeLearn - A tool for Collective Learning
+      # WeLearn - A tool for collective learning
 
-      WeLearn helps people to collect, curate, and qualify learning Resources.
-      Resources are tagged with Wikipedia Pages, which is used to create a
-      visualisation that we aim to be a "GPS of Learning". My role as a UI/UX
-      developer is to create an interface that helps users navigate through
-      their own as well as others' curation to find their own Learning Path.
+      - Designed the core system architecture.
+      - Created a web visualisation of tags to facilitate navigation.
+      - Responsible for developing APIs for a Machine Learning model that classifies
+        webpages into Wikipedia Pages.
+      - Implemented Browser Extensions for Chrome and Firefox.
+      - Improved the UX and Design through a unified styling system and guidelines.
 
-  - company: Physique et Mécanique des Milieux Hétérogènes
-    location: École Supérieure De Physique Et De Chimie Industrielles, Paris
+
+  - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
+    location: Paris
     dates:
       from: '2018-05-22'
       till: '2018-09-22'
@@ -45,24 +49,20 @@ experience:
       - Hydrodynamics at micro scales
       - Fluid Dynamics
       - Theoretical Biophysics
-    website: https://www.pmmh.espci.fr/
+    website: https://www.pmmh.espci.fr
     description: |
       # Hydrodynamics of Super-Paramagnetic Micro-Beads
 
-      The primary interest in this study is the behaviour of magnetic
-      micro-objects under magnetic field in water. We expect to quantify
-      the hydrodynamic drag between dissimilar objects. My work here
-      was to capture the motion of the beads (`r=2.4µm`) under externally
-      applied magnetic field as they attract towards each other. Strict
-      requirements of the protocol included controlled medium viscosity,
-      frame rate `>= 300 fps`, and `40-63x` magnification.
+      My work here was to capture the motion of the micro beads undergoing
+      attraction due to an external magnetic field. Based on this it is possible
+      to quantify hydrodynamic drag forces on the beads.
 
-      We reached average frame rate of `~800 fps`. Using open source tools
-      `trackpy` and `scikit-image`, I developed a processing pipeline to
-      isolate, track, and calculate motion dynamics from the frames.
+      Using open source tools `trackpy` and `scikit-image`, I developed an
+      image processing pipeline to isolate, track, and calculate motion dynamics
+      from the frames. We reached an average frame rate of `~800 fps`.
 
-  - company: Laboratoire Jean Perrin
-    location: Université Pierre et Marie Curie, Paris
+  - company: Laboratoire Jean Perrin, UPMC
+    location: Paris
     dates:
       from: '2018-01-22'
       till: '2018-04-22'
@@ -71,26 +71,18 @@ experience:
       - Theoretical Biophysics
       - Optical Tracking
       - Mechanotransduction
-    website: http://www.labos.upmc.fr/ljp/
+    website: http://www.labos.upmc.fr/ljp
     description: |
       # The Mechanical Sense of Paramecium
 
-      At a crossroad between physics, biology, and neuroscience, coupled with
-      experimental and theoretical biophysics, this project aims to decipher
-      the mechanism simple organisms such as _Paramecium_ use to detect and avoid
-      obstacles in their trajectories. Using micromilled pools of defined
-      geometry and automatic tracking of paramecia, we expect to find
-      correlations between external stimuli and internal responses that give it
-      a directional sense.
+      As a research intern, I developed high-frequency, real-time image analysis
+      and hardware control pipeline to track long trajectories of _Paramecium_.
+      I wrote a driver for the microscope stage, and a high-speed image
+      aquisition and processing (~50fps) tool. Using these software we were able
+      to follow the trajectory of moving _Paramecium_.
 
-      As a research intern, I developed high-frequency image analysis and
-      hardware control pipeline to track long trajectories in real time.
-      I wrote a driver for the Microscope Objective utilising 3D Vector Space,
-      and a high-speed image aquisition and processing (~50fps) tool. Using these
-      software we were able to follow the trajectory of moving _Paramecium_.
-
-  - company: Laboratoire Matière et Systèmes Complexes
-    location: Université Paris Diderot, Paris
+  - company: Laboratoire Matière et Systèmes Complexes, Université Paris Diderot
+    location: Paris
     dates:
       from: '2017-10-09'
       till: '2018-01-09'
@@ -99,22 +91,22 @@ experience:
       - Phyllotaxis
       - Plant Biology
       - Projection Geometry
-    website: http://www.msc.univ-paris-diderot.fr/
+    website: http://www.msc.univ-paris-diderot.fr
     description: |
       # Study of Diversity in Phyllotactic Patterns
 
       Phyllotaxis is the arrangement of lateral organs in plants. In this
       project we attempt to explain the origin of emergent patterns,
       transitions, and irregularities in such arrangements. Using cylindrical
-      projection unrolling and unwarping, the aim was to develop a pipeline
+      projection unrolling and unwarping, I developed an image analysis pipeline
       allowing better study of complicated plant organs.
 
   - company: Agora Health
-    location: London, UK
+    location: London
     dates:
       from: '2016-02-08'
-      till: '2018-05-20'
-    position: Developer
+      till: '2018-04-01'
+    position: Full Stack Developer
     tags:
       - Machine Learning
       - Web Development
@@ -122,9 +114,10 @@ experience:
     description: |
       # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
-      At Agora, I was responsible for designing and implementing web services
-      for aggregation, classification, and personalised recommendation of
-      events at National Health Services (NHS) in the UK.
+      - Developed the algorithm for classification of events into medical specialities.
+      - Integrated the classification system into the web app.
+      - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
+      - Wrote a framework for event data aggregation from multiple NHS websites.
 
   - company: Oxyent Technologies
     location: New Delhi
@@ -140,9 +133,8 @@ experience:
       # Computer Vision and Information Extraction
 
       Developed and shipped a utility for digitizing waveforms and
-      extracting metadata from `ECG` reports, written in pure Python.
-      It is being used at Brigham and Women’s Hospital, Boston for
-      processing more than a million patient records.
+      extracting metadata from `ECG` reports. It is being used at Brigham and
+      Women’s Hospital, Boston for processing more than a million patient records.
 
       Also worked on extracting normalized tabular data from scanned
       medical records. Key challenges here involved handling skewed,
@@ -162,15 +154,13 @@ experience:
     description: |
       # Survaider Web App and Survey Builder
 
-      Development of web app backend and `REST API` in Python using `Flask`
-      and `MongoEngine ORM`.
+      Developed a web app backend and REST API in Python.
 
-      Design and development of the frontend. Technology stack consisted
-      `CoffeeScript`, `BackboneJS`, `SASS`, and `Socket.IO` for
-      realtime content.
+      Designed and developed a web based survey builder tool which was later
+      integrated into the core application.
 
   - company: Design Innovation Centre
-    location: University of Delhi
+    location: New Delhi
     dates:
       from: '2015-06-15'
       till: '2015-08-29'
@@ -183,11 +173,8 @@ experience:
       # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
       The goal of this project was to develop a system for recognition
-      of low level human activities, such as Walking, Running,
-      Sitting, etc., using a single tri-axial accelerometer time
-      series. The undertaken challenge of this system was to
-      effectively solve the recognition task irrespective of the
-      location of sensor on human body.
+      of low level human activities, such as Walking, Running, Sitting, etc.,
+      using a single accelerometer.
 
       Using supervised learning method, we trained a Random Forest
       Classifier using feature vectors obtained via our model. We
@@ -211,11 +198,8 @@ experience:
       scraping and formatting raw data off multiple crowdfunding
       platforms.
 
-      **Publication**: "Investigating the 'Wisdom of Crowds' at Scale", ACM UIST
-      2015, Charlotte, NC.
-
-  - company: Cluster Innovation Centre
-    location: University of Delhi
+  - company: Cluster Innovation Centre, University of Delhi
+    location: New Delhi
     dates:
       from: '2015-01-01'
       till: '2016-04-01'
@@ -234,38 +218,25 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  - company: Autonomi
-    location: University of Delhi
-    dates:
-      from: '2014-09-01'
-      till: '2016-05-01'
-    position: Volunteer
-    tags:
-    description: |
-      Responsibilities include maintainance and development of the web portal,
-      website and online presence of the organization.
-
   - company: IamSME of India, PHD Chamber of Commerce
-    location: DUCIC eBusiness Circuit
+    location: New Delhi
     dates:
       from: '2014-05-15'
       till: '2014-08-20'
     position: Summer Intern
     tags:
     description: |
-      # TwoDotSeven
-
       Developed an open-source and modular `ERP` system and `API` sub-system.
 
-  - company: Laboratory for Pattern Engineering
-    location: University of Delhi
+  - company: Laboratory for Pattern Engineering, University of Delhi
+    location: New Delhi
     dates:
       from: '2014-02-10'
       till: '2015-12-25'
     position: Research Associate
     tags:
     description: |
-      Worked to build a classification system for geospacial features between
+      Built a classification system for geospacial features between
       texts originated in different continents. Other responsibilities included
       design and development of several web portals, graphic designing, media
       and publishing tasks.
@@ -323,25 +294,8 @@ education:
       from: '2013-08-10'
       till: '2017-07-05'
     degree: B.Tech. (IT and Mathematical Innovations)
-    percentage: 77.3
     major: Information Technology
-    minor:
-      - Mathematics
-      - Systems Biology
-
-  - institute: Central Academy Sr. Sec.
-    location: Gorakhpur, India
-    degree: AISSCE (XII Std.)
-    percentage: 89.6
-    dates:
-      on: '2013-05'
-
-  - institute: Central Academy Sr. Sec.
-    location: Gorakhpur, India
-    degree: AISSE (X Std.)
-    grade: 9.8
-    dates:
-      on: '2011-05'
+    minor: Mathematics, Systems Biology
 
 skills:
   Development:
@@ -387,7 +341,7 @@ open_source:
 
       MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
       MongoEngine attributes under a single namespace and hence allows explicit
-      declaration without context switches.
+      declaration without polluting global namespace.
 
   - repo: agora-team/elasticsearch-synonyms
     description: |
@@ -397,9 +351,20 @@ open_source:
       These synonyms can be used for Elasticsearch Synonym Token Filter
       configuration. It provides a tool to lint and validate the synonym files.
 
-  - repo: CyberCRI/learn-ext
-    description: |
-      # WeLearn Extension and WebApp
 
-      This repository hosts the prototype for WeLearn Browser Extension and Web App.
-      Specifically, it implements a D3/React based visualisation of Wikipedia Concept Map.
+publications:
+  - title: Investigating the "wisdom of crowds" at scale
+    journal: ACM UIST
+    year: 2015
+  - title: Protein engineering and de novo designing of a biocatalyst
+    authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
+    journal: Journal of Molecular Recognition
+    year: 2016
+  - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
+    authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
+    journal: Gene
+    year: 2018
+  - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
+    authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
+    journal: Journal of genetics
+    year: 2019
