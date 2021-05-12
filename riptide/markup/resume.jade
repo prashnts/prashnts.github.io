@@ -39,7 +39,7 @@ block prepend body
         ul
           li: +ilink('link', vita.info.homepage)
           li: +ilink('git', vita.info.github)
-          li: +ilink('lock', vita.info.twitter)
+          li: +ilink('twitter', vita.info.twitter)
       div
         h1 Info
         ul
@@ -61,8 +61,8 @@ block prepend body
               +ispan('calendar', xp.dates.interval)
               span.duration #{xp.dates.duration}
             p.position= xp.position
-            ul.tags: each tag in xp.tags || []
-              li= tag
+            //- ul.tags: each tag in xp.tags || []
+            //-   li= tag
           div.description
             !{xp.description}
             if xp.website
@@ -104,8 +104,7 @@ block prepend body
               if edu.minor
                 div
                   dt Minors
-                  dd: ul: each minor in edu.minor
-                    li= minor
+                  dd= edu.minor
               if edu.percentage
                 div
                   dt Percentage
@@ -114,6 +113,15 @@ block prepend body
                 div
                   dt Grade
                   dd= edu.grade
+
+    section.publications
+      h1 Publications
+      ul: each pub in vita.publications
+        li
+          div
+            h3= pub.title
+            if pub.journal
+              p.subtitle #{pub.journal}, #{pub.year}
 
     section.open_source
       h1 Open Source
@@ -124,13 +132,13 @@ block prepend body
 
             p: +ilink('git', 'https://github.com/' + package.repo)
 
-    section.skills
-      h1 Skills
-      ul: each skset, kind in vita.skills
-        li
-          h2= kind
-          ul: each sk in skset
-            li #{sk[0]} #[i= '●'.repeat(sk[1])]
+    //- section.skills
+    //-   h1 Skills
+    //-   ul: each skset, kind in vita.skills
+    //-     li
+    //-       h2= kind
+    //-       ul: each sk in skset
+    //-         li #{sk[0]} #[i= '●'.repeat(sk[1])]
 
     footer
       ul
