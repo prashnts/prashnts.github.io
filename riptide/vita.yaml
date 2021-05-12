@@ -7,29 +7,117 @@ info:
   github: https://github.com/prashnts
   keybase: https://keybase.io/prashnts
   email: prashant@noop.pw
-  mobile: 9910134045
-  location: New Delhi, India
+  mobile: '0769822836'
+  location: Paris, France
+  twitter: https://twitter.com/prashnts
+
 cover: |
-  My primary research interest is in Machine Learning, Data Science,
-  Statistics, Systems Biology, and Bio Inspired Systems. The scope of
-  my projects also include Pervasive Computing, Reality Mining, and
-  Computer Vision.
+  I am a software developer based in Paris. My work focuses on using programming,
+  mathematics, and design as tools to solve interesting and challenging problems.
+  My projects span a wide array of domains: Computer Vision, Machine Learning,
+  Data Visualisation, Web Applications, and Embedded systems.
+
 experience:
-  - company: Agora NHS
-    location: London, UK
+  - company: Centre de Recherches Interdisciplinaires
+    location: Paris
     dates:
-      from: '2016-02-29'
-    position: Developer
+      from: '2018-10-08'
+      # till: '2020-12-08'
+    position: Full Stack Developer
+    tags:
+      - Platform Developer
+      - UI/X Design
+    website: https://cri-paris.org
+    description: |
+      # WeLearn - A tool for collective learning
+
+      - Designed the core system architecture.
+      - Created a web visualisation of tags to facilitate navigation.
+      - Responsible for developing APIs for a Machine Learning model that classifies
+        webpages into Wikipedia Pages.
+      - Implemented Browser Extensions for Chrome and Firefox.
+      - Improved the UX and Design through a unified styling system and guidelines.
+
+
+  - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
+    location: Paris
+    dates:
+      from: '2018-05-22'
+      till: '2018-09-22'
+    position: Research Intern
+    tags:
+      - Hydrodynamics at micro scales
+      - Fluid Dynamics
+      - Theoretical Biophysics
+    website: https://www.pmmh.espci.fr
+    description: |
+      # Hydrodynamics of Super-Paramagnetic Micro-Beads
+
+      My work here was to capture the motion of the micro beads undergoing
+      attraction due to an external magnetic field. Based on this it is possible
+      to quantify hydrodynamic drag forces on the beads.
+
+      Using open source tools `trackpy` and `scikit-image`, I developed an
+      image processing pipeline to isolate, track, and calculate motion dynamics
+      from the frames. We reached an average frame rate of `~800 fps`.
+
+  - company: Laboratoire Jean Perrin, UPMC
+    location: Paris
+    dates:
+      from: '2018-01-22'
+      till: '2018-04-22'
+    position: Research Intern
+    tags:
+      - Theoretical Biophysics
+      - Optical Tracking
+      - Mechanotransduction
+    website: http://www.labos.upmc.fr/ljp
+    description: |
+      # The Mechanical Sense of Paramecium
+
+      As a research intern, I developed high-frequency, real-time image analysis
+      and hardware control pipeline to track long trajectories of _Paramecium_.
+      I wrote a driver for the microscope stage, and a high-speed image
+      aquisition and processing (~50fps) tool. Using these software we were able
+      to follow the trajectory of moving _Paramecium_.
+
+  - company: Laboratoire Matière et Systèmes Complexes, Université Paris Diderot
+    location: Paris
+    dates:
+      from: '2017-10-09'
+      till: '2018-01-09'
+    position: Research Intern
+    tags:
+      - Phyllotaxis
+      - Plant Biology
+      - Projection Geometry
+    website: http://www.msc.univ-paris-diderot.fr
+    description: |
+      # Study of Diversity in Phyllotactic Patterns
+
+      Phyllotaxis is the arrangement of lateral organs in plants. In this
+      project we attempt to explain the origin of emergent patterns,
+      transitions, and irregularities in such arrangements. Using cylindrical
+      projection unrolling and unwarping, I developed an image analysis pipeline
+      allowing better study of complicated plant organs.
+
+  - company: Agora Health
+    location: London
+    dates:
+      from: '2016-02-08'
+      till: '2018-04-01'
+    position: Full Stack Developer
     tags:
       - Machine Learning
       - Web Development
-    website: https://agoranhs.com
+    website: https://agorahealth.org.uk
     description: |
-      # Event aggregation and Recommendation
+      # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
-      At Agora, I am responsible for designing and building a scalable server
-      and `API` for aggregation, categorisation, and recommendation generation
-      of events from various sources.
+      - Developed the algorithm for classification of events into medical specialities.
+      - Integrated the classification system into the web app.
+      - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
+      - Wrote a framework for event data aggregation from multiple NHS websites.
 
   - company: Oxyent Technologies
     location: New Delhi
@@ -45,9 +133,8 @@ experience:
       # Computer Vision and Information Extraction
 
       Developed and shipped a utility for digitizing waveforms and
-      extracting metadata from `ECG` reports, written in pure Python.
-      It is being used at Brigham and Women’s Hospital, Boston for
-      processing more than a million patient records.
+      extracting metadata from `ECG` reports. It is being used at Brigham and
+      Women’s Hospital, Boston for processing more than a million patient records.
 
       Also worked on extracting normalized tabular data from scanned
       medical records. Key challenges here involved handling skewed,
@@ -59,7 +146,7 @@ experience:
       from: '2015-01-01'
       till: '2016-02-01'
     position: Developer and UI/UX Designer
-    website: https://survaider.com
+    website: http://survaider.com
     tags:
       - Backend and REST API
       - Client Interface
@@ -67,15 +154,13 @@ experience:
     description: |
       # Survaider Web App and Survey Builder
 
-      Development of web app backend and `REST API` in Python using `Flask`
-      and `MongoEngine ORM`.
+      Developed a web app backend and REST API in Python.
 
-      Design and development of the frontend. Technology stack consisted
-      `CoffeeScript`, `BackboneJS`, `SASS`, and `Socket.IO` for
-      realtime content.
+      Designed and developed a web based survey builder tool which was later
+      integrated into the core application.
 
   - company: Design Innovation Centre
-    location: University of Delhi
+    location: New Delhi
     dates:
       from: '2015-06-15'
       till: '2015-08-29'
@@ -88,26 +173,12 @@ experience:
       # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
       The goal of this project was to develop a system for recognition
-      of low level human activities, such as Walking, Running,
-      Sitting, etc., using a single tri-axial accelerometer time
-      series. The undertaken challenge of this system was to
-      effectively solve the recognition task irrespective of the
-      location of sensor on human body.
+      of low level human activities, such as Walking, Running, Sitting, etc.,
+      using a single accelerometer.
 
       Using supervised learning method, we trained a Random Forest
       Classifier using feature vectors obtained via our model. We
       were able to produce an accuracy of `95%` through our model.
-
-  - company: West College
-    location: Scotland
-    dates:
-      from: '2015-07-14'
-      till: '2015-07-19'
-    position: Workshop
-    tags:
-      - Game Development
-    description: |
-      # Game Development Workshop under UK-India Education and Research Initiative
 
   - company: University of California and Stanford
     location: Santa Cruz
@@ -127,11 +198,8 @@ experience:
       scraping and formatting raw data off multiple crowdfunding
       platforms.
 
-      **Publication**: "Investigating the 'Wisdom of Crowds' at Scale", ACM UIST
-      2015, Charlotte, NC.
-
-  - company: Cluster Innovation Centre
-    location: University of Delhi
+  - company: Cluster Innovation Centre, University of Delhi
+    location: New Delhi
     dates:
       from: '2015-01-01'
       till: '2016-04-01'
@@ -150,73 +218,153 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  - company: Autonomi
-    location: University of Delhi
-    dates:
-      from: '2014-09-01'
-      till: '2016-05-01'
-    position: Volunteer
-    tags:
-    description: |
-      Responsibilities include maintainance and development of the web portal,
-      website and online presence of the organization.
-
   - company: IamSME of India, PHD Chamber of Commerce
-    location: DUCIC eBusiness Circuit
+    location: New Delhi
     dates:
       from: '2014-05-15'
       till: '2014-08-20'
     position: Summer Intern
     tags:
     description: |
-      # TwoDotSeven
-
       Developed an open-source and modular `ERP` system and `API` sub-system.
 
-  - company: Laboratory for Pattern Engineering
-    location: University of Delhi
+  - company: Laboratory for Pattern Engineering, University of Delhi
+    location: New Delhi
     dates:
       from: '2014-02-10'
       till: '2015-12-25'
     position: Research Associate
     tags:
     description: |
-      Worked to build a classification system for geospacial features between
+      Built a classification system for geospacial features between
       texts originated in different continents. Other responsibilities included
       design and development of several web portals, graphic designing, media
       and publishing tasks.
 
+talks_and_workshops:
+  - conference: FOSSASIA 2017
+    location: Singapore
+    dates:
+      from: '2017-03-17'
+      till: '2017-03-19'
+    type: Talk
+    tags:
+      - Python
+      - Open Source
+    description: |
+      # Alohomora: Unlocking Magical Bits in Python
+
+      In this talk at FOSSASIA Summit, I gave a presentation covering several
+      advance patterns in the Python programming language. In the presentation I
+      introduced the audience with Metaclasses, Decorators and Patching.
+
+  - conference: West College
+    location: Glasgow, Scotland
+    dates:
+      from: '2015-07-14'
+      till: '2015-07-19'
+    type: Workshop
+    description: |
+      # Game Development Workshop under UK-India Education and Research Initiative
+
+  - conference: Autonomi
+    location: University of Delhi
+    dates:
+      from: '2015-02-28'
+      till: '2015-03-01'
+    type: Talk
+    description: |
+      # Robotics Bootcamp
+
+      Delivered sessions on Arduino programming, DAC, ADC and PWM.
+
 education:
+  - institute: Centre de Recherches Interdisciplinaires
+    location: Université Paris Descartes
+    position: Masters
+    dates:
+      from: '2017-09-04'
+      till: '2018-10-04'
+    degree: Approches Interdisciplinaires du Vivant
+
   - institute: Cluster Innovation Centre
     location: University of Delhi
     position: Undergrad
     dates:
       from: '2013-08-10'
+      till: '2017-07-05'
     degree: B.Tech. (IT and Mathematical Innovations)
     major: Information Technology
-    minor:
-      - Mathematics
-      - Systems Biology
+    minor: Mathematics, Systems Biology
+
 skills:
   Development:
     - [Python, 5]
-    - [Stylus/CSS, 4]
-    - [CoffeeScript, 4]
+    - [SCSS, 5]
+    - [CoffeeScript, 3]
     - [ES6/JavaScript, 4]
   Design:
     - [Print Media, 3]
-    - [CAD/CAM, 3]
-    - [Illustration, 2]
+    - [CAD/CAM, 2]
+    - [Illustration, 3]
     - [User Interface, 3]
   Misc:
     - [Scientific Computing, 4]
-    - [DevOps, 3]
-open-source:
-  - project: metaRNA
-    language: Python, C
-    repo: prashnts/metaRNA
-    description: todo.
-  - project: metaRNA
-    language: Python, C
-    repo: prashnts/metaRNA
-    description: todo.
+    - [DevOps, 1]
+
+open_source:
+  - repo: prashnts/hues
+    description: |
+      # Hues: Colored terminal text made easy for Python
+
+      Hues is a Python package which facilitates printing ANSI encoded text to
+      terminal in unix-like systems.
+
+  - repo: prashnts/metaRNA
+    description: |
+      # metaRNA: Find target sites for the miRNAs in genomic sequences
+
+      metaRNA finds potential target sites for the microRNAs in genomic
+      sequences. It is built on miRanda, an algorithm for detection and ranking
+      of the targets of microRNA.
+
+  - repo: prashnts/pybloomfiltermmap3
+    description: |
+      # PyBloomFilter: Fast, Memory Mapped Bloom Filter
+
+      The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
+      correct library for Bloom Filters in Python.
+
+  - repo: prashnts/mongocapsule
+    description: |
+      # MongoCapsule: Encapsulated MongoEngine
+
+      MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
+      MongoEngine attributes under a single namespace and hence allows explicit
+      declaration without polluting global namespace.
+
+  - repo: agora-team/elasticsearch-synonyms
+    description: |
+      # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
+
+      This repository contains a curated dataset of synonyms in `Solr` Format.
+      These synonyms can be used for Elasticsearch Synonym Token Filter
+      configuration. It provides a tool to lint and validate the synonym files.
+
+
+publications:
+  - title: Investigating the "wisdom of crowds" at scale
+    journal: ACM UIST
+    year: 2015
+  - title: Protein engineering and de novo designing of a biocatalyst
+    authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
+    journal: Journal of Molecular Recognition
+    year: 2016
+  - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
+    authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
+    journal: Gene
+    year: 2018
+  - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
+    authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
+    journal: Journal of genetics
+    year: 2019

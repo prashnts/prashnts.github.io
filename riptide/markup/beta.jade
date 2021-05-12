@@ -1,0 +1,26 @@
+extends templates/base.jade
+
+block append stylesheets
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
+
+block prepend body
+  body.zen
+    section.slide#about
+      .content
+        p.
+          Hey there, I'm Prashant.
+        p.
+          My work focuses on using programming, mathematics, and design as tools
+          to solve interesting and challenging problems.
+          I am currently working as a developer at Agora NHS and am an undergrad
+          at University of Delhi.
+        p.
+          I can be found writing open source code and sharing memes on the web.
+
+        ul
+          li Resume
+          li GitHub
+          li Linkedin
+          li Tumblr
+
+        img(src='/img/icons/spock@3x.png' alt='👋' title='Hi' width=40)

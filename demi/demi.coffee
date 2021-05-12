@@ -31,6 +31,32 @@ class Demi
       else
         "#{start.format('MMM Y')} #{@_sep} #{_present}"
 
+  renderDuration: (from, till) ->
+    start = moment from, moment.ISO_8601
+    end = if till? then moment till, moment.ISO_8601 else @_now
+    duration = moment.duration end.diff start
+    months = Math.round duration.asMonths()
+    years = Math.round duration.asYears()
+
+    if 2 <= months < 12
+      "#{months} Months"
+    else if years >= 1
+      # Since we want month along with year, get the floor value.
+      month_count = Math.round duration.asMonths()
+      months = month_count %% 12
+      years = month_count // 12
+
+      year_verbose = if years > 1 then 'Years' else 'Year'
+      if months > 0
+        month_verbose = if months > 1 then 'Months' else 'Month'
+        "#{years} #{year_verbose} #{months} #{month_verbose}"
+      else
+        "#{years} #{year_verbose}"
+
+  renderDate: (date) ->
+    dt = moment date, moment.ISO_8601
+    dt.format 'MMM Y'
+
   renderMarkdown: (content) => @marked content
 
   _init_markdn: ->
@@ -51,7 +77,11 @@ class Festus
     _dtKey = opts.dateKey or 'dates'
     _mdKey = opts.mdKey or 'description'
     @renderDates = @getMap _dtKey, (node) ->
-      demi.renderDateInterval node.from, node.till
+      unless node.on?
+        interval: demi.renderDateInterval node.from, node.till
+        duration: demi.renderDuration node.from, node.till
+      else
+        interval: demi.renderDate node.on
     @renderMarkdown = @getMap _mdKey, demi.renderMarkdown
 
   _mapDeep: (obj, pivot, fn) ->

@@ -4,6 +4,7 @@ node_js:
 branches:
   only:
     - develop
+    - /^greenkeeper/.*$/
 script:
   - npm run test
   - brunch b -p
