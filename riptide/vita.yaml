@@ -18,11 +18,21 @@ cover: |
   Data Visualisation, Web Applications, and Embedded systems.
 
 experience:
+  - company: Partoo
+    location: Paris
+    dates:
+      from: '2021-06-28'
+    position: Full Stack Developer
+    website: https://www.partoo.co/en/
+    description: |
+      As a developer at Partoo, I am currently working on integrating
+      Google Business Messaging to our app.
+
   - company: Centre de Recherches Interdisciplinaires
     location: Paris
     dates:
       from: '2018-10-08'
-      # till: '2020-12-08'
+      till: '2021-06-25'
     position: Full Stack Developer
     tags:
       - Platform Developer
