@@ -702,11 +702,12 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-clean-css-brunch@^2.0.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/clean-css-brunch/-/clean-css-brunch-2.10.0.tgz#6a151e6509589cd341dce04981a1c75062a22d18"
+clean-css-brunch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/clean-css-brunch/-/clean-css-brunch-3.0.0.tgz#0b6c40543cad6fcef61bf32e9292ce9394dd5d0b"
+  integrity sha512-gbkVut0IXCyMjOMETb2pbe+klsMB4WAebWmeA39G9479D4CJN7+4ggF+MpdSordHm/DWKywzgC7IvJVkPW0kRA==
   dependencies:
-    clean-css "~4.0"
+    clean-css "~4.2"
 
 clean-css@^3.1.9, clean-css@^3.4.21:
   version "3.4.28"
@@ -715,11 +716,12 @@ clean-css@^3.1.9, clean-css@^3.4.21:
     commander "2.8.x"
     source-map "0.4.x"
 
-clean-css@~4.0:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.0.13.tgz#feb2a176062d72a6c3e624d9213cac6a0c485e80"
+clean-css@~4.2:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
+  integrity sha512-4ZxI6dy4lrY6FHzfiy1aEOXgu4LIsW2MhwG0VBKdcoGoH/XLFgaHSdLTGr4O8Be6A8r3MOphEiI8Gc1n0ecf3g==
   dependencies:
-    source-map "0.5.x"
+    source-map "~0.6.0"
 
 cli-boxes@^1.0.0:
   version "1.0.0"
@@ -4893,17 +4895,18 @@ source-map@0.4.x, source-map@~0.4.1:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@0.5.x, source-map@^0.5.5, source-map@^0.5.6, source-map@~0.5, source-map@~0.5.1:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
-
 source-map@^0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
-source-map@^0.6.1:
+source-map@^0.5.5, source-map@^0.5.6, source-map@~0.5, source-map@~0.5.1:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+
+source-map@^0.6.1, source-map@~0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 spdx-correct@~1.0.0:
   version "1.0.2"
