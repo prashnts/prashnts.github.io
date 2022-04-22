@@ -120,6 +120,13 @@ ansi-styles@^3.1.0:
   dependencies:
     color-convert "^1.9.0"
 
+ansi-styles@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
+  integrity sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
+  dependencies:
+    color-convert "^1.9.0"
+
 ansicolors@~0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/ansicolors/-/ansicolors-0.3.2.tgz#665597de86a9ffe3aa9bfbe6cae5c6ea426b4979"
@@ -141,6 +148,14 @@ anymatch@^1.3.0, anymatch@~1.3, anymatch@~1.3.0:
   dependencies:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
+
+anymatch@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.1.tgz#c55ecf02185e2469259399310c173ce31233b142"
+  integrity sha512-mM8522psRCqzV+6LhomX5wgp25YVibjh8Wj23I5RPkPppSVSjyKD2A2mBJmWGa+KN7f2D6LNh9jkBCeyLktzjg==
+  dependencies:
+    normalize-path "^3.0.0"
+    picomatch "^2.0.4"
 
 anysort@~1.0:
   version "1.0.1"
@@ -633,6 +648,15 @@ chalk@^2.0.1, chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
+chalk@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
 character-parser@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/character-parser/-/character-parser-1.2.1.tgz#c0dde4ab182713b919b970959a123ecc1a30fcd6"
@@ -861,6 +885,11 @@ color@^0.11.0:
     clone "^1.0.2"
     color-convert "^1.3.0"
     color-string "^0.3.0"
+
+colorette@~1.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.1.0.tgz#1f943e5a357fac10b4e0f5aaef3b14cdc1af6ec7"
+  integrity sha512-6S062WDQUXi6hOfkO/sBPVwE5ASXY4G2+b4atvhJfSsuUUhIaUKlkjLe9692Ipyt5/a+IPF5aVTu3V5gvXq5cg==
 
 colormin@^1.0.5:
   version "1.1.2"
@@ -1896,7 +1925,7 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-generic-names@^1.0.1, generic-names@^1.0.2:
+generic-names@^1.0.1, generic-names@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/generic-names/-/generic-names-1.0.3.tgz#2d786a121aee508876796939e8e3bff836c20917"
   dependencies:
@@ -2090,6 +2119,11 @@ has-flag@^1.0.0:
 has-flag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
+
+has-flag@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+  integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
 has-unicode@^2.0.0, has-unicode@~2.0.1:
   version "2.0.1"
@@ -2921,7 +2955,15 @@ loggy@^1, loggy@~1.0.2:
     chalk "^1.1.1"
     native-notifier "~0.1.0"
 
-loggy@~0.3.0, loggy@~0.3.5:
+loggy@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/loggy/-/loggy-1.0.8.tgz#82b3717b85d9d23090dd0367acfc2abc5fa6e4fb"
+  integrity sha512-3gXR0rOS4fnxVXGeiQID95/IML//jSbKx5T1GatifpzpOwDoOsTtlt25gosiBq27Mn4YnbzWB/DsKncnaLWKSg==
+  dependencies:
+    colorette "~1.1"
+    native-notifier "~0.1.6"
+
+loggy@~0.3.0:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/loggy/-/loggy-0.3.5.tgz#33f12801b1f6063966ea79d9b6a25db8fcbc4107"
   dependencies:
@@ -3200,6 +3242,13 @@ native-notifier@~0.1.0:
   dependencies:
     tag-shell "~0.1.0"
 
+native-notifier@~0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/native-notifier/-/native-notifier-0.1.6.tgz#d98c306b28b327591a74f9819dac143c8e4bcd1d"
+  integrity sha512-BwRtjqhNsS2HpeVrNmERzQqZTFxR+MoJr/RdfCwZ0ODKyc/0EcHQhwnPwZr99gT1uHgRqbDk3C5fOo70TVYlcQ==
+  dependencies:
+    tag-shell "~0.1.0"
+
 ncp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
@@ -3318,6 +3367,11 @@ normalize-path@^2.0.0, normalize-path@^2.0.1:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.1.1.tgz#1ab28b556e198363a8c1a6f7e6fa20137fe6aed9"
   dependencies:
     remove-trailing-separator "^1.0.1"
+
+normalize-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
+  integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
 normalize-range@^0.1.2:
   version "0.1.2"
@@ -3803,6 +3857,11 @@ phantomjs-prebuilt@^2.1.4:
     request-progress "^2.0.1"
     which "^1.2.10"
 
+picomatch@^2.0.4:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.1.1.tgz#ecdfbea7704adb5fe6fb47f9866c4c0e15e905c5"
+  integrity sha512-OYMyqkKzK7blWO/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05ugGTy0foQ6mqn4AHYA==
+
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -3829,15 +3888,16 @@ portfinder@^1.0.13:
     debug "^2.2.0"
     mkdirp "0.5.x"
 
-postcss-brunch@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-brunch/-/postcss-brunch-2.1.0.tgz#6db2b3629c7d6796fb707e04ebcfd3c41a0b8625"
+postcss-brunch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-brunch/-/postcss-brunch-3.0.0.tgz#d010d2da75cd52f08cf845b7b5f422e946a56b8b"
+  integrity sha512-+g2N2QI0rWChkGcON4Z0crB+akMIJWdZK01QS8BWc1erj2AwpSwqx28hkdvsenO8E8sZ3o9ouuEG2joHYY/vQg==
   dependencies:
-    anymatch "^1.3.0"
-    loggy "~0.3.5"
-    postcss "^6.0.9"
-    postcss-modules "^0.8.0"
-    progeny "^0.9.0"
+    anymatch "^3.0.0"
+    loggy "^1.0.8"
+    postcss "^7.0.24"
+    postcss-modules "^1.3.2"
+    progeny "^0.12.0"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -3985,13 +4045,15 @@ postcss-modules-values@1.3.0:
     icss-replace-symbols "^1.1.0"
     postcss "^6.0.1"
 
-postcss-modules@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-0.8.0.tgz#a9d01806dffe19c2607dee88ea1cbd80dc059992"
+postcss-modules@^1.3.2:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/postcss-modules/-/postcss-modules-1.4.1.tgz#8aa35bd3461db67e27377a7ce770d77b654a84ef"
+  integrity sha512-btTrbK+Xc3NBuYF8TPBjCMRSp5h6NoQ1iVZ6WiDQENIze6KIYCSf0+UFQuV3yJ7gRHA+4AAtF8i2jRvUpbBMMg==
   dependencies:
     css-modules-loader-core "^1.1.0"
-    generic-names "^1.0.2"
-    postcss "^6.0.1"
+    generic-names "^1.0.3"
+    lodash.camelcase "^4.3.0"
+    postcss "^7.0.1"
     string-hash "^1.1.1"
 
 postcss-modules@~0.4.0:
@@ -4117,13 +4179,22 @@ postcss@^5.0.14, postcss@^5.0.4, postcss@^5.1.2:
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.1, postcss@^6.0.9:
+postcss@^6.0.1:
   version "6.0.16"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.16.tgz#112e2fe2a6d2109be0957687243170ea5589e146"
   dependencies:
     chalk "^2.3.0"
     source-map "^0.6.1"
     supports-color "^5.1.0"
+
+postcss@^7.0.1, postcss@^7.0.24:
+  version "7.0.24"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.24.tgz#972c3c5be431b32e40caefe6c81b5a19117704c2"
+  integrity sha512-Xl0XvdNWg+CblAXzNvbSOUvgJXwSjmbAKORqyw9V2AlHrm1js2gFw9y3jibBAhpKZi8b5JzJCVh/FyzPsTtgTA==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
 
 postcss@~5.0.19:
   version "5.0.21"
@@ -4157,9 +4228,10 @@ process@~0.11.0, process@~0.11.2:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
-progeny@^0.9.0, progeny@~0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/progeny/-/progeny-0.9.0.tgz#4794d305fa185ba0b72ca49b761a3acaf2a773cc"
+progeny@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/progeny/-/progeny-0.12.0.tgz#4a4c85031a00f723b580b5929932b57d587d66d2"
+  integrity sha512-n5rRHPP2Pxeh1fL385XNTlgyYrTm8MzG+kXO3G87+vmLU5MHouzrF4D5TRKPNfCwpE4/GOwmCS4XSzCPC7hEoA==
   dependencies:
     async-each "^1.0.0"
     chalk "^1.1.3"
@@ -4172,6 +4244,15 @@ progeny@~0.5.2:
   dependencies:
     async-each "~0.1.4"
     fs-mode "^1.0.1"
+
+progeny@~0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/progeny/-/progeny-0.9.0.tgz#4794d305fa185ba0b72ca49b761a3acaf2a773cc"
+  dependencies:
+    async-each "^1.0.0"
+    chalk "^1.1.3"
+    fs-mode "^1.0.1"
+    glob "^7.0.3"
 
 progress@^1.1.8:
   version "1.1.8"
@@ -5114,6 +5195,20 @@ supports-color@^5.1.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.1.0.tgz#058a021d1b619f7ddf3980d712ea3590ce7de3d5"
   dependencies:
     has-flag "^2.0.0"
+
+supports-color@^5.3.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+  integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
+  dependencies:
+    has-flag "^3.0.0"
+
+supports-color@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-6.1.0.tgz#0764abc69c63d5ac842dd4867e8d025e880df8f3"
+  integrity sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==
+  dependencies:
+    has-flag "^3.0.0"
 
 svgo@^0.7.0:
   version "0.7.1"
