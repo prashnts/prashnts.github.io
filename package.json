@@ -34,7 +34,7 @@
     "moment": "^2.15.1",
     "normalize.css": "^7.0.0",
     "postcss-brunch": "^2.0.3",
-    "stylus-brunch": "^2.7.2",
+    "stylus-brunch": "^3.0.0",
     "typeset-brunch": "^0.1.1",
     "wintersmith": "^2.3.2"
   },
