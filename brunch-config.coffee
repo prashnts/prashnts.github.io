@@ -1,7 +1,7 @@
 # noop.pw
 moment = require 'moment'
 {renderVita} = require './demi'
-global.vita = renderVita './riptide/vita.yaml'
+global.vita = renderVita './riptide/vita-fr.yaml'
 global._now = moment()
 global.DEBUG = '-p' not in global.process.argv
 

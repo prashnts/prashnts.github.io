@@ -253,42 +253,42 @@ experience:
       design and development of several web portals, graphic designing, media
       and publishing tasks.
 
-talks_and_workshops:
-  - conference: FOSSASIA 2017
-    location: Singapore
-    dates:
-      from: '2017-03-17'
-      till: '2017-03-19'
-    type: Talk
-    tags:
-      - Python
-      - Open Source
-    description: |
-      # Alohomora: Unlocking Magical Bits in Python
+# talks_and_workshops:
+#   - conference: FOSSASIA 2017
+#     location: Singapore
+#     dates:
+#       from: '2017-03-17'
+#       till: '2017-03-19'
+#     type: Talk
+#     tags:
+#       - Python
+#       - Open Source
+#     description: |
+#       # Alohomora: Unlocking Magical Bits in Python
 
-      In this talk at FOSSASIA Summit, I gave a presentation covering several
-      advance patterns in the Python programming language. In the presentation I
-      introduced the audience with Metaclasses, Decorators and Patching.
+#       In this talk at FOSSASIA Summit, I gave a presentation covering several
+#       advance patterns in the Python programming language. In the presentation I
+#       introduced the audience with Metaclasses, Decorators and Patching.
 
-  - conference: West College
-    location: Glasgow, Scotland
-    dates:
-      from: '2015-07-14'
-      till: '2015-07-19'
-    type: Workshop
-    description: |
-      # Game Development Workshop under UK-India Education and Research Initiative
+#   - conference: West College
+#     location: Glasgow, Scotland
+#     dates:
+#       from: '2015-07-14'
+#       till: '2015-07-19'
+#     type: Workshop
+#     description: |
+#       # Game Development Workshop under UK-India Education and Research Initiative
 
-  - conference: Autonomi
-    location: University of Delhi
-    dates:
-      from: '2015-02-28'
-      till: '2015-03-01'
-    type: Talk
-    description: |
-      # Robotics Bootcamp
+#   - conference: Autonomi
+#     location: University of Delhi
+#     dates:
+#       from: '2015-02-28'
+#       till: '2015-03-01'
+#     type: Talk
+#     description: |
+#       # Robotics Bootcamp
 
-      Delivered sessions on Arduino programming, DAC, ADC and PWM.
+#       Delivered sessions on Arduino programming, DAC, ADC and PWM.
 
 education:
   - institute: Centre de Recherches Interdisciplinaires
