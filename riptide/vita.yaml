@@ -10,6 +10,7 @@ info:
   mobile: '0769822836'
   location: Paris, France
   twitter: https://twitter.com/prashnts
+  printables: https://www.printables.com/@prashnts
 
 cover: |
   I am a software developer based in Paris. My work focuses on using programming,
@@ -22,13 +23,14 @@ experience:
     location: Paris
     dates:
       from: '2021-06-28'
-    position: Full Stack Developer
+    position: Lead Developer
     website: https://www.partoo.co/en/
     description: |
-      As a developer at Partoo, I am currently working on integrating
-      Google Business Messaging to our app.
+      After contributing to the Business Messaging integrations at Partoo, I'm
+      currently working on LLM driven chatbots, and architecting infrastructure for
+      Agentic workflows.
 
-  - company: Centre de Recherches Interdisciplinaires
+  - company: Learning Planet Institute
     location: Paris
     dates:
       from: '2018-10-08'
@@ -37,16 +39,15 @@ experience:
     tags:
       - Platform Developer
       - UI/X Design
-    website: https://cri-paris.org
+    website: https://www.learningplanetinstitute.org/en/
     description: |
       # WeLearn - A tool for collective learning
 
-      - Designed the core system architecture.
-      - Created a web visualisation of tags to facilitate navigation.
-      - Responsible for developing APIs for a Machine Learning model that classifies
-        webpages into Wikipedia Pages.
-      - Implemented Browser Extensions for Chrome and Firefox.
-      - Improved the UX and Design through a unified styling system and guidelines.
+      - Responsible for architecting and developing APIs for a Machine Learning model
+        that classified webpages into Wikipedia Pages (concepts).
+      - Created visualisation (a map of concepts) that efficiently displays a users 
+        concepts with spatial cues and the ability to find other similar concepts.
+      - Developed browser extensions to injest webpages.
 
 
   - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
@@ -150,24 +151,24 @@ experience:
       medical records. Key challenges here involved handling skewed,
       desaturated and otherwise low quality images.
 
-  - company: Survaider
-    location: New Delhi
-    dates:
-      from: '2015-01-01'
-      till: '2016-02-01'
-    position: Developer and UI/UX Designer
-    website: http://survaider.com
-    tags:
-      - Backend and REST API
-      - Client Interface
-      - Analytics
-    description: |
-      # Survaider Web App and Survey Builder
+  # - company: Survaider
+  #   location: New Delhi
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2016-02-01'
+  #   position: Developer and UI/UX Designer
+  #   website: http://survaider.com
+  #   tags:
+  #     - Backend and REST API
+  #     - Client Interface
+  #     - Analytics
+  #   description: |
+  #     # Survaider Web App and Survey Builder
 
-      Developed a web app backend and REST API in Python.
+  #     Developed a web app backend and REST API in Python.
 
-      Designed and developed a web based survey builder tool which was later
-      integrated into the core application.
+  #     Designed and developed a web based survey builder tool which was later
+  #     integrated into the core application.
 
   - company: Design Innovation Centre
     location: New Delhi
@@ -190,23 +191,23 @@ experience:
       Classifier using feature vectors obtained via our model. We
       were able to produce an accuracy of `95%` through our model.
 
-  - company: University of California and Stanford
-    location: Santa Cruz
-    dates:
-      from: '2015-01-01'
-      till: '2015-06-01'
-    position: Research Associate
-    tags:
-      - Data Scraping
-      - Data Processing
-    description: |
-      # Aspiring Researcher Challenge
+  # - company: University of California and Stanford
+  #   location: Santa Cruz
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2015-06-01'
+  #   position: Research Associate
+  #   tags:
+  #     - Data Scraping
+  #     - Data Processing
+  #   description: |
+  #     # Aspiring Researcher Challenge
 
-      As a research associate, I was part of the team which was
-      responsible for developing a large, online experiment to study
-      the wisdom of the crowd where I formulated the algorithm for
-      scraping and formatting raw data off multiple crowdfunding
-      platforms.
+  #     As a research associate, I was part of the team which was
+  #     responsible for developing a large, online experiment to study
+  #     the wisdom of the crowd where I formulated the algorithm for
+  #     scraping and formatting raw data off multiple crowdfunding
+  #     platforms.
 
   - company: Cluster Innovation Centre, University of Delhi
     location: New Delhi
@@ -228,15 +229,15 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  - company: IamSME of India, PHD Chamber of Commerce
-    location: New Delhi
-    dates:
-      from: '2014-05-15'
-      till: '2014-08-20'
-    position: Summer Intern
-    tags:
-    description: |
-      Developed an open-source and modular `ERP` system and `API` sub-system.
+  # - company: IamSME of India, PHD Chamber of Commerce
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-05-15'
+  #     till: '2014-08-20'
+  #   position: Summer Intern
+  #   tags:
+  #   description: |
+  #     Developed an open-source and modular `ERP` system and `API` sub-system.
 
   - company: Laboratory for Pattern Engineering, University of Delhi
     location: New Delhi
@@ -330,6 +331,13 @@ open_source:
       Hues is a Python package which facilitates printing ANSI encoded text to
       terminal in unix-like systems.
 
+  - repo: prashnts/hues
+    description: |
+      # Hues: Colored terminal text made easy for Python
+
+      Hues is a Python package which facilitates printing ANSI encoded text to
+      terminal in unix-like systems.
+
   - repo: prashnts/metaRNA
     description: |
       # metaRNA: Find target sites for the miRNAs in genomic sequences
@@ -345,13 +353,16 @@ open_source:
       The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
       correct library for Bloom Filters in Python.
 
-  - repo: prashnts/mongocapsule
+  - repo: prashnts/disinfo
     description: |
-      # MongoCapsule: Encapsulated MongoEngine
+      # DisInfo: (Info)rmation (Dis)play
 
-      MongoCapsule is a very thin wrapper around MongoEngine. It encapsulates
-      MongoEngine attributes under a single namespace and hence allows explicit
-      declaration without polluting global namespace.
+      A weekend project for past couple of years, Disinfo tries to make it easier
+      to build animated, interactive, and physical dashboards. I use it as a sandbox
+      to explore and better understand existing technologies and patterns, such as Flex
+      layout, declarative and composable view components, and interfacing with external
+      APIs while maintaing performance on resource constrained devices. In my tests
+      the system easily achieves 60fps on a Raspberry Pi 5.
 
   - repo: agora-team/elasticsearch-synonyms
     description: |
