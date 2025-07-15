@@ -36,7 +36,7 @@ module.exports = config:
 
   hooks:
     onCompile: ->
-      global.vita = renderVita './riptide/vita.yaml'
+      global.vita = renderVita './riptide/vita-fr.yaml'
 
   npm:
     enabled: yes
