@@ -1,0 +1,387 @@
+---
+personal:
+  name: Prashant Sinha
+  title: Developer
+info:
+  homepage: https://noop.pw
+  github: https://github.com/prashnts
+  keybase: https://keybase.io/prashnts
+  email: prashant@noop.pw
+  mobile: '0769822836'
+  location: Paris, France
+  twitter: https://twitter.com/prashnts
+  printables: https://www.printables.com/@prashnts
+
+cover: |
+  Je suis développeur à Paris. Mon travail consiste à employer la programmation, les mathematique,
+  et le design comme des outils pour résoudre de problèmes complexes et intéressants.
+  Mes projets couvrent une variété de domaines : Intelligence Artificielle, Computer Vision,
+  Data Visualisation, Applications Web, et Embedded systems. J'aime aussi concevoir et imprimer
+  des objets 3D fonctionels.
+
+experience:
+  - company: Partoo
+    location: Paris
+    dates:
+      from: '2021-06-28'
+    position: Lead Developer
+    website: https://www.partoo.co/en/
+    description: |
+      After contributing to the Business Messaging integrations at Partoo, I'm
+      currently working on LLM driven chatbots, and architecting infrastructure for
+      Agentic workflows.
+
+  - company: Learning Planet Institute
+    location: Paris
+    dates:
+      from: '2018-10-08'
+      till: '2021-06-25'
+    position: Full Stack Developer
+    tags:
+      - Platform Developer
+      - UI/X Design
+    website: https://www.learningplanetinstitute.org/en/
+    description: |
+      # WeLearn - A tool for collective learning
+
+      - Responsible for architecting and developing APIs for a Machine Learning model
+        that classified webpages into Wikipedia Pages (concepts).
+      - Created visualisation (a map of concepts) that efficiently displays a users 
+        concepts with spatial cues and the ability to find other similar concepts.
+      - Developed browser extensions to ingest webpages.
+
+
+  - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
+    location: Paris
+    dates:
+      from: '2018-05-22'
+      till: '2018-09-22'
+    position: Research Intern
+    tags:
+      - Hydrodynamics at micro scales
+      - Fluid Dynamics
+      - Theoretical Biophysics
+    website: https://www.pmmh.espci.fr
+    description: |
+      # Hydrodynamics of Super-Paramagnetic Micro-Beads
+
+      My work here was to capture the motion of the micro beads undergoing
+      attraction due to an external magnetic field. Based on this it is possible
+      to quantify hydrodynamic drag forces on the beads.
+
+      Using open source tools `trackpy` and `scikit-image`, I developed an
+      image processing pipeline to isolate, track, and calculate motion dynamics
+      from the frames. We reached an average frame rate of `~800 fps`.
+
+  - company: Laboratoire Jean Perrin, UPMC
+    location: Paris
+    dates:
+      from: '2018-01-22'
+      till: '2018-04-22'
+    position: Research Intern
+    tags:
+      - Theoretical Biophysics
+      - Optical Tracking
+      - Mechanotransduction
+    website: http://www.labos.upmc.fr/ljp
+    description: |
+      # The Mechanical Sense of Paramecium
+
+      As a research intern, I developed high-frequency, real-time image analysis
+      and hardware control pipeline to track long trajectories of _Paramecium_.
+      I wrote a driver for the microscope stage, and a high-speed image
+      aquisition and processing (~50fps) tool. Using these software we were able
+      to follow the trajectory of moving _Paramecium_.
+
+  - company: Laboratoire Matière et Systèmes Complexes, Université Paris Diderot
+    location: Paris
+    dates:
+      from: '2017-10-09'
+      till: '2018-01-09'
+    position: Research Intern
+    tags:
+      - Phyllotaxis
+      - Plant Biology
+      - Projection Geometry
+    website: http://www.msc.univ-paris-diderot.fr
+    description: |
+      # Study of Diversity in Phyllotactic Patterns
+
+      Phyllotaxis is the arrangement of lateral organs in plants. In this
+      project we attempt to explain the origin of emergent patterns,
+      transitions, and irregularities in such arrangements. Using cylindrical
+      projection unrolling and unwarping, I developed an image analysis pipeline
+      allowing better study of complicated plant organs.
+
+  - company: Agora Health
+    location: London
+    dates:
+      from: '2016-02-08'
+      till: '2018-04-01'
+    position: Full Stack Developer
+    tags:
+      - Machine Learning
+      - Web Development
+    website: https://agorahealth.org.uk
+    description: |
+      # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
+
+      - Developed the algorithm for classification of events into medical specialities.
+      - Integrated the classification system into the web app.
+      - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
+      - Wrote a framework for event data aggregation from multiple NHS websites.
+
+  - company: Oxyent Technologies
+    location: New Delhi
+    dates:
+      from: '2016-07-01'
+      till: '2016-09-01'
+    position: Summer Intern
+    website: http://oxyent.com
+    tags:
+      - Computer Vision
+      - Information Extraction
+    description: |
+      # Computer Vision and Information Extraction
+
+      Developed and shipped a utility for digitizing waveforms and
+      extracting metadata from `ECG` reports. It is being used at Brigham and
+      Women’s Hospital, Boston for processing more than a million patient records.
+
+      Also worked on extracting normalized tabular data from scanned
+      medical records. Key challenges here involved handling skewed,
+      desaturated and otherwise low quality images.
+
+  # - company: Survaider
+  #   location: New Delhi
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2016-02-01'
+  #   position: Developer and UI/UX Designer
+  #   website: http://survaider.com
+  #   tags:
+  #     - Backend and REST API
+  #     - Client Interface
+  #     - Analytics
+  #   description: |
+  #     # Survaider Web App and Survey Builder
+
+  #     Developed a web app backend and REST API in Python.
+
+  #     Designed and developed a web based survey builder tool which was later
+  #     integrated into the core application.
+
+  - company: Design Innovation Centre
+    location: New Delhi
+    dates:
+      from: '2015-06-15'
+      till: '2015-08-29'
+    position: Summer Intern
+    tags:
+      - Machine Learning
+      - Time Series Analysis
+      - Signal Processing
+    description: |
+      # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
+
+      The goal of this project was to develop a system for recognition
+      of low level human activities, such as Walking, Running, Sitting, etc.,
+      using a single accelerometer.
+
+      Using supervised learning method, we trained a Random Forest
+      Classifier using feature vectors obtained via our model. We
+      were able to produce an accuracy of `95%` through our model.
+
+  # - company: University of California and Stanford
+  #   location: Santa Cruz
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2015-06-01'
+  #   position: Research Associate
+  #   tags:
+  #     - Data Scraping
+  #     - Data Processing
+  #   description: |
+  #     # Aspiring Researcher Challenge
+
+  #     As a research associate, I was part of the team which was
+  #     responsible for developing a large, online experiment to study
+  #     the wisdom of the crowd where I formulated the algorithm for
+  #     scraping and formatting raw data off multiple crowdfunding
+  #     platforms.
+
+  - company: Cluster Innovation Centre, University of Delhi
+    location: New Delhi
+    dates:
+      from: '2015-01-01'
+      till: '2016-04-01'
+    position: Undergrad Research
+    tags:
+      - Network Analysis
+      - Computational Biology
+      - Mathematical Modelling
+    description: |
+      # Modelling and Network Analysis of Intronic miRNA Mediated Gene Expression Regulation
+
+      In this project, we developed a mathematical model for gene expression
+      regulation via intronic micro `RNAs`, based on emperical data and
+      experimental observations at IGIB.
+
+      As a part of study, we've also generated a `miRNA <=> mRNA` target network
+      using various available databases.
+
+  # - company: IamSME of India, PHD Chamber of Commerce
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-05-15'
+  #     till: '2014-08-20'
+  #   position: Summer Intern
+  #   tags:
+  #   description: |
+  #     Developed an open-source and modular `ERP` system and `API` sub-system.
+
+  - company: Laboratory for Pattern Engineering, University of Delhi
+    location: New Delhi
+    dates:
+      from: '2014-02-10'
+      till: '2015-12-25'
+    position: Research Associate
+    tags:
+    description: |
+      Built a classification system for geospacial features between
+      texts originated in different continents. Other responsibilities included
+      design and development of several web portals, graphic designing, media
+      and publishing tasks.
+
+talks_and_workshops:
+  - conference: FOSSASIA 2017
+    location: Singapore
+    dates:
+      from: '2017-03-17'
+      till: '2017-03-19'
+    type: Talk
+    tags:
+      - Python
+      - Open Source
+    description: |
+      # Alohomora: Unlocking Magical Bits in Python
+
+      In this talk at FOSSASIA Summit, I gave a presentation covering several
+      advance patterns in the Python programming language. In the presentation I
+      introduced the audience with Metaclasses, Decorators and Patching.
+
+  - conference: West College
+    location: Glasgow, Scotland
+    dates:
+      from: '2015-07-14'
+      till: '2015-07-19'
+    type: Workshop
+    description: |
+      # Game Development Workshop under UK-India Education and Research Initiative
+
+  - conference: Autonomi
+    location: University of Delhi
+    dates:
+      from: '2015-02-28'
+      till: '2015-03-01'
+    type: Talk
+    description: |
+      # Robotics Bootcamp
+
+      Delivered sessions on Arduino programming, DAC, ADC and PWM.
+
+education:
+  - institute: Centre de Recherches Interdisciplinaires
+    location: Université Paris Descartes
+    position: Masters
+    dates:
+      from: '2017-09-04'
+      till: '2018-10-04'
+    degree: Approches Interdisciplinaires du Vivant
+
+  - institute: Cluster Innovation Centre
+    location: University of Delhi
+    position: Undergrad
+    dates:
+      from: '2013-08-10'
+      till: '2017-07-05'
+    degree: B.Tech. (IT and Mathematical Innovations)
+    major: Information Technology
+    minor: Mathematics, Systems Biology
+
+skills:
+  Development:
+    - [Python, 5]
+    - [SCSS, 5]
+    - [CoffeeScript, 3]
+    - [ES6/JavaScript, 4]
+  Design:
+    - [Print Media, 3]
+    - [CAD/CAM, 2]
+    - [Illustration, 3]
+    - [User Interface, 3]
+  Misc:
+    - [Scientific Computing, 4]
+    - [DevOps, 1]
+
+open_source:
+  - repo: prashnts/disinfo
+    description: |
+      # DisInfo: (Info)rmation (Dis)play
+
+      A weekend project for past couple of years, Disinfo tries to make it easier
+      to build animated, interactive, and physical dashboards. I use it as a sandbox
+      to explore and better understand existing technologies and patterns, such as Flex
+      layout, declarative and composable view components, and interfacing with external
+      APIs while maintaing performance on resource constrained devices. In my tests
+      the system easily achieves 60fps on a Raspberry Pi 5.
+
+  - repo: prashnts/pybloomfiltermmap3
+    description: |
+      # PyBloomFilter: Fast, Memory Mapped Bloom Filter
+
+      The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
+      correct library for Bloom Filters in Python. I've been maintaining this package
+      since 2016.
+
+  - repo: prashnts/hues
+    description: |
+      # Hues: Colored terminal text made easy for Python
+
+      Hues is a Python package which facilitates printing ANSI encoded text to
+      terminal in unix-like systems.
+
+  - repo: prashnts/metaRNA
+    description: |
+      # metaRNA: Find target sites for the miRNAs in genomic sequences
+
+      metaRNA finds potential target sites for the microRNAs in genomic
+      sequences. It is built on miRanda, an algorithm for detection and ranking
+      of the targets of microRNA.
+
+
+  # - repo: agora-team/elasticsearch-synonyms
+  #   description: |
+  #     # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
+
+  #     This repository contains a curated dataset of synonyms in `Solr` Format.
+  #     These synonyms can be used for Elasticsearch Synonym Token Filter
+  #     configuration. It provides a tool to lint and validate the synonym files.
+
+
+publications:
+  - title: Investigating the "wisdom of crowds" at scale
+    journal: ACM UIST
+    year: 2015
+  - title: Protein engineering and de novo designing of a biocatalyst
+    authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
+    journal: Journal of Molecular Recognition
+    year: 2016
+  - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
+    authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
+    journal: Gene
+    year: 2018
+  - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
+    authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
+    journal: Journal of genetics
+    year: 2019
