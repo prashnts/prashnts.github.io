@@ -69,22 +69,22 @@ block prepend body
             if xp.website
               p.website: +ilink('link', xp.website)
 
-    section.talks
-      h1 Talks and Workshops
-      ul: each talk in vita.talks_and_workshops
-        li
-          aside
-            h2.conference= talk.conference
-            p.location: +ispan('location', talk.location)
-            p.dates
-              +ispan('calendar', talk.dates.interval)
-            p.position= talk.type
-            ul.tags: each tag in talk.tags || []
-              li= tag
-          div.description
-            !{talk.description}
-            if talk.website
-              p.website: +ilink('link', talk.website)
+    //- section.talks
+    //-   h1 Talks and Workshops
+    //-   ul: each talk in vita.talks_and_workshops
+    //-     li
+    //-       aside
+    //-         h2.conference= talk.conference
+    //-         p.location: +ispan('location', talk.location)
+    //-         p.dates
+    //-           +ispan('calendar', talk.dates.interval)
+    //-         p.position= talk.type
+    //-         ul.tags: each tag in talk.tags || []
+    //-           li= tag
+    //-       div.description
+    //-         !{talk.description}
+    //-         if talk.website
+    //-           p.website: +ilink('link', talk.website)
 
     section.edu
       h1 Education
