@@ -10,7 +10,7 @@ info:
   mobile: '0769822836'
   location: Paris, France
   twitter: https://twitter.com/prashnts
-  printables: https://www.printables.com/@prashnts
+  printables: https://printables.com/@prashnts
 
 cover: |
   Je suis développeur à Paris. Mon travail consiste à employer la programmation, les mathematique
@@ -23,13 +23,21 @@ experience:
   - company: Partoo
     location: Paris
     dates:
-      from: '2021-06-28'
+      from: '2024-01-01'
     position: Lead Developer
-    website: https://www.partoo.co/en/
     description: |
-      After contributing to the Business Messaging integrations at Partoo, I'm
-      currently working on LLM driven chatbots, and architecting infrastructure for
+      Currently working on LLM driven chatbots, and infrastructure for
       Agentic workflows.
+
+  - company: Partoo
+    location: Paris
+    dates:
+      from: '2021-06-28'
+      till: '2023-12-31'
+    position: Full Stack Developer
+    description: |
+      My team implemented and supported the Business Messaging products at Partoo.
+    website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
     location: Paris
@@ -114,7 +122,7 @@ experience:
       allowing better study of complicated plant organs.
 
   - company: Agora Health
-    location: London
+    location: London (Remote)
     dates:
       from: '2016-02-08'
       till: '2018-04-01'
@@ -122,7 +130,7 @@ experience:
     tags:
       - Machine Learning
       - Web Development
-    website: https://agorahealth.org.uk
+    # website: https://agorahealth.org.uk
     description: |
       # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
@@ -131,26 +139,26 @@ experience:
       - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
       - Wrote a framework for event data aggregation from multiple NHS websites.
 
-  - company: Oxyent Technologies
-    location: New Delhi
-    dates:
-      from: '2016-07-01'
-      till: '2016-09-01'
-    position: Summer Intern
-    website: http://oxyent.com
-    tags:
-      - Computer Vision
-      - Information Extraction
-    description: |
-      # Computer Vision and Information Extraction
+  # - company: Oxyent Technologies
+  #   location: New Delhi
+  #   dates:
+  #     from: '2016-07-01'
+  #     till: '2016-09-01'
+  #   position: Summer Intern
+  #   website: http://oxyent.com
+  #   tags:
+  #     - Computer Vision
+  #     - Information Extraction
+  #   description: |
+  #     # Computer Vision and Information Extraction
 
-      Developed and shipped a utility for digitizing waveforms and
-      extracting metadata from `ECG` reports. It is being used at Brigham and
-      Women’s Hospital, Boston for processing more than a million patient records.
+  #     Developed and shipped a utility for digitizing waveforms and
+  #     extracting metadata from `ECG` reports. It is being used at Brigham and
+  #     Women’s Hospital, Boston for processing more than a million patient records.
 
-      Also worked on extracting normalized tabular data from scanned
-      medical records. Key challenges here involved handling skewed,
-      desaturated and otherwise low quality images.
+  #     Also worked on extracting normalized tabular data from scanned
+  #     medical records. Key challenges here involved handling skewed,
+  #     desaturated and otherwise low quality images.
 
   # - company: Survaider
   #   location: New Delhi
@@ -171,26 +179,26 @@ experience:
   #     Designed and developed a web based survey builder tool which was later
   #     integrated into the core application.
 
-  - company: Design Innovation Centre
-    location: New Delhi
-    dates:
-      from: '2015-06-15'
-      till: '2015-08-29'
-    position: Summer Intern
-    tags:
-      - Machine Learning
-      - Time Series Analysis
-      - Signal Processing
-    description: |
-      # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
+  # - company: Design Innovation Centre
+  #   location: New Delhi
+  #   dates:
+  #     from: '2015-06-15'
+  #     till: '2015-08-29'
+  #   position: Summer Intern
+  #   tags:
+  #     - Machine Learning
+  #     - Time Series Analysis
+  #     - Signal Processing
+  #   description: |
+  #     # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
-      The goal of this project was to develop a system for recognition
-      of low level human activities, such as Walking, Running, Sitting, etc.,
-      using a single accelerometer.
+  #     The goal of this project was to develop a system for recognition
+  #     of low level human activities, such as Walking, Running, Sitting, etc.,
+  #     using a single accelerometer.
 
-      Using supervised learning method, we trained a Random Forest
-      Classifier using feature vectors obtained via our model. We
-      were able to produce an accuracy of `95%` through our model.
+  #     Using supervised learning method, we trained a Random Forest
+  #     Classifier using feature vectors obtained via our model. We
+  #     were able to produce an accuracy of `95%` through our model.
 
   # - company: University of California and Stanford
   #   location: Santa Cruz
@@ -240,18 +248,18 @@ experience:
   #   description: |
   #     Developed an open-source and modular `ERP` system and `API` sub-system.
 
-  - company: Laboratory for Pattern Engineering, University of Delhi
-    location: New Delhi
-    dates:
-      from: '2014-02-10'
-      till: '2015-12-25'
-    position: Research Associate
-    tags:
-    description: |
-      Built a classification system for geospacial features between
-      texts originated in different continents. Other responsibilities included
-      design and development of several web portals, graphic designing, media
-      and publishing tasks.
+  # - company: Laboratory for Pattern Engineering, University of Delhi
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-02-10'
+  #     till: '2015-12-25'
+  #   position: Research Associate
+  #   tags:
+  #   description: |
+  #     Built a classification system for geospacial features between
+  #     texts originated in different continents. Other responsibilities included
+  #     design and development of several web portals, graphic designing, media
+  #     and publishing tasks.
 
 talks_and_workshops:
   - conference: FOSSASIA 2017
@@ -329,12 +337,10 @@ open_source:
     description: |
       # DisInfo: (Info)rmation (Dis)play
 
-      A weekend project for past couple of years, Disinfo tries to make it easier
-      to build animated, interactive, and physical dashboards. I use it as a sandbox
-      to explore and better understand existing technologies and patterns, such as Flex
-      layout, declarative and composable view components, and interfacing with external
-      APIs while maintaing performance on resource constrained devices. In my tests
-      the system easily achieves 60fps on a Raspberry Pi 5.
+      Disinfo tries to make it easier to build animated, interactive, and physical dashboards.
+      I use it as a sandbox
+      to explore and better understand existing technologies and patterns, while maintaing
+      performance on resource constrained devices.
 
   - repo: prashnts/pybloomfiltermmap3
     description: |
@@ -370,9 +376,9 @@ open_source:
 
 
 publications:
-  - title: Investigating the "wisdom of crowds" at scale
-    journal: ACM UIST
-    year: 2015
+  # - title: Investigating the "wisdom of crowds" at scale
+  #   journal: ACM UIST
+  #   year: 2015
   - title: Protein engineering and de novo designing of a biocatalyst
     authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
     journal: Journal of Molecular Recognition

@@ -53,21 +53,26 @@ block prepend body
 
     section.xp
       h1 Experience
+      - var prev_xp = null
       ul: each xp in vita.experience
+        - console.log(xp)
         li
           aside
-            h2.company= xp.company
-            p.location: +ispan('location', xp.location)
+            if !(prev_xp && prev_xp.company == xp.company)
+              h2.company= xp.company
+            p.position= xp.position
             p.dates
               +ispan('calendar', xp.dates.interval)
               span.duration #{xp.dates.duration}
-            p.position= xp.position
+            //- if !(prev_xp && prev_xp.location == xp.location)
+            p.location: +ispan('location', xp.location)
             //- ul.tags: each tag in xp.tags || []
             //-   li= tag
           div.description
             !{xp.description}
             if xp.website
               p.website: +ilink('link', xp.website)
+        - prev_xp = xp
 
     //- section.talks
     //-   h1 Talks and Workshops
@@ -92,9 +97,9 @@ block prepend body
         li
           aside
             h2.institute= edu.institute
-            p.location: +ispan('location', edu.location)
-            p.dates: +ispan('calendar', edu.dates.interval)
             p.position= edu.position
+            p.dates: +ispan('calendar', edu.dates.interval)
+            p.location: +ispan('location', edu.location)
           div.description
             h3.degree= edu.degree
             dl
