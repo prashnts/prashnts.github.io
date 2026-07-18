@@ -333,6 +333,13 @@ skills:
     - [DevOps, 1]
 
 open_source:
+  - repo: prashnts/limn
+    description: |
+      # Traceur avec changeur d'outils
+
+      Peut aligner les outils automatiquement.
+      [Publication sur Hackaday](https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger).
+    
   - repo: prashnts/disinfo
     description: |
       # DisInfo: (Info)rmation (Dis)play
