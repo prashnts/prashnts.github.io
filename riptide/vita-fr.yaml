@@ -26,8 +26,10 @@ experience:
       from: '2024-01-01'
     position: Lead Developer
     description: |
-      Currently working on LLM driven chatbots, and infrastructure for
-      Agentic workflows.
+      Currently working on infrastructure for Agentic workflows and Feedback analytics.
+      My team worked on AI Chatbots for Business Messaging which led to the creation of
+      a standardised architecture to run said workflows. It is capable of handling large
+      quantities of agentic calls. The underlying framework is Pydantic AI.
 
   - company: Partoo
     location: Paris
