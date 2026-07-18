@@ -15,11 +15,12 @@ info:
 cover: |
   Je suis développeur à Paris. Mon travail consiste à employer la programmation, les mathematique
   et le design comme des outils pour résoudre de problèmes complexes et intéressants.
-  Mes projets couvrent une variété de domaines : Intelligence Artificielle, Computer Vision,
-  Data Visualisation, Applications Web, et Embedded systems. J'aime aussi concevoir et imprimer
+  Mes projets couvrent une variété de domaines : Intelligence Artificielle, Vision artificielle,
+  Data Visualisation, Applications Web, et Systèmes Intégrés. J'aime aussi concevoir et imprimer
   des objets 3D fonctionels.
 
 experience:
+
   - company: Partoo
     location: Paris
     dates:
@@ -132,7 +133,7 @@ experience:
     tags:
       - Machine Learning
       - Web Development
-    # website: https://agorahealth.org.uk
+    website: https://agorahealth.org.uk
     description: |
       # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
@@ -141,84 +142,84 @@ experience:
       - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
       - Wrote a framework for event data aggregation from multiple NHS websites.
 
-  # - company: Oxyent Technologies
-  #   location: New Delhi
-  #   dates:
-  #     from: '2016-07-01'
-  #     till: '2016-09-01'
-  #   position: Summer Intern
-  #   website: http://oxyent.com
-  #   tags:
-  #     - Computer Vision
-  #     - Information Extraction
-  #   description: |
-  #     # Computer Vision and Information Extraction
+  - company: Oxyent Technologies
+    location: New Delhi
+    dates:
+      from: '2016-07-01'
+      till: '2016-09-01'
+    position: Summer Intern
+    website: http://oxyent.com
+    tags:
+      - Computer Vision
+      - Information Extraction
+    description: |
+      # Computer Vision and Information Extraction
 
-  #     Developed and shipped a utility for digitizing waveforms and
-  #     extracting metadata from `ECG` reports. It is being used at Brigham and
-  #     Women’s Hospital, Boston for processing more than a million patient records.
+      Developed and shipped a utility for digitizing waveforms and
+      extracting metadata from `ECG` reports. It is being used at Brigham and
+      Women's Hospital, Boston for processing more than a million patient records.
 
-  #     Also worked on extracting normalized tabular data from scanned
-  #     medical records. Key challenges here involved handling skewed,
-  #     desaturated and otherwise low quality images.
+      Also worked on extracting normalized tabular data from scanned
+      medical records. Key challenges here involved handling skewed,
+      desaturated and otherwise low quality images.
 
-  # - company: Survaider
-  #   location: New Delhi
-  #   dates:
-  #     from: '2015-01-01'
-  #     till: '2016-02-01'
-  #   position: Developer and UI/UX Designer
-  #   website: http://survaider.com
-  #   tags:
-  #     - Backend and REST API
-  #     - Client Interface
-  #     - Analytics
-  #   description: |
-  #     # Survaider Web App and Survey Builder
+  - company: Survaider
+    location: New Delhi
+    dates:
+      from: '2015-01-01'
+      till: '2016-02-01'
+    position: Developer and UI/UX Designer
+    website: http://survaider.com
+    tags:
+      - Backend and REST API
+      - Client Interface
+      - Analytics
+    description: |
+      # Survaider Web App and Survey Builder
 
-  #     Developed a web app backend and REST API in Python.
+      Developed a web app backend and REST API in Python.
 
-  #     Designed and developed a web based survey builder tool which was later
-  #     integrated into the core application.
+      Designed and developed a web based survey builder tool which was later
+      integrated into the core application.
 
-  # - company: Design Innovation Centre
-  #   location: New Delhi
-  #   dates:
-  #     from: '2015-06-15'
-  #     till: '2015-08-29'
-  #   position: Summer Intern
-  #   tags:
-  #     - Machine Learning
-  #     - Time Series Analysis
-  #     - Signal Processing
-  #   description: |
-  #     # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
+  - company: Design Innovation Centre
+    location: New Delhi
+    dates:
+      from: '2015-06-15'
+      till: '2015-08-29'
+    position: Summer Intern
+    tags:
+      - Machine Learning
+      - Time Series Analysis
+      - Signal Processing
+    description: |
+      # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
-  #     The goal of this project was to develop a system for recognition
-  #     of low level human activities, such as Walking, Running, Sitting, etc.,
-  #     using a single accelerometer.
+      The goal of this project was to develop a system for recognition
+      of low level human activities, such as Walking, Running, Sitting, etc.,
+      using a single accelerometer.
 
-  #     Using supervised learning method, we trained a Random Forest
-  #     Classifier using feature vectors obtained via our model. We
-  #     were able to produce an accuracy of `95%` through our model.
+      Using supervised learning method, we trained a Random Forest
+      Classifier using feature vectors obtained via our model. We
+      were able to produce an accuracy of `95%` through our model.
 
-  # - company: University of California and Stanford
-  #   location: Santa Cruz
-  #   dates:
-  #     from: '2015-01-01'
-  #     till: '2015-06-01'
-  #   position: Research Associate
-  #   tags:
-  #     - Data Scraping
-  #     - Data Processing
-  #   description: |
-  #     # Aspiring Researcher Challenge
+  - company: University of California and Stanford
+    location: Santa Cruz
+    dates:
+      from: '2015-01-01'
+      till: '2015-06-01'
+    position: Research Associate
+    tags:
+      - Data Scraping
+      - Data Processing
+    description: |
+      # Aspiring Researcher Challenge
 
-  #     As a research associate, I was part of the team which was
-  #     responsible for developing a large, online experiment to study
-  #     the wisdom of the crowd where I formulated the algorithm for
-  #     scraping and formatting raw data off multiple crowdfunding
-  #     platforms.
+      As a research associate, I was part of the team which was
+      responsible for developing a large, online experiment to study
+      the wisdom of the crowd where I formulated the algorithm for
+      scraping and formatting raw data off multiple crowdfunding
+      platforms.
 
   - company: Cluster Innovation Centre, University of Delhi
     location: New Delhi
@@ -240,28 +241,28 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  # - company: IamSME of India, PHD Chamber of Commerce
-  #   location: New Delhi
-  #   dates:
-  #     from: '2014-05-15'
-  #     till: '2014-08-20'
-  #   position: Summer Intern
-  #   tags:
-  #   description: |
-  #     Developed an open-source and modular `ERP` system and `API` sub-system.
+  - company: IamSME of India, PHD Chamber of Commerce
+    location: New Delhi
+    dates:
+      from: '2014-05-15'
+      till: '2014-08-20'
+    position: Summer Intern
+    tags:
+    description: |
+      Developed an open-source and modular `ERP` system and `API` sub-system.
 
-  # - company: Laboratory for Pattern Engineering, University of Delhi
-  #   location: New Delhi
-  #   dates:
-  #     from: '2014-02-10'
-  #     till: '2015-12-25'
-  #   position: Research Associate
-  #   tags:
-  #   description: |
-  #     Built a classification system for geospacial features between
-  #     texts originated in different continents. Other responsibilities included
-  #     design and development of several web portals, graphic designing, media
-  #     and publishing tasks.
+  - company: Laboratory for Pattern Engineering, University of Delhi
+    location: New Delhi
+    dates:
+      from: '2014-02-10'
+      till: '2015-12-25'
+    position: Research Associate
+    tags:
+    description: |
+      Built a classification system for geospacial features between
+      texts originated in different continents. Other responsibilities included
+      design and development of several web portals, graphic designing, media
+      and publishing tasks.
 
 talks_and_workshops:
   - conference: FOSSASIA 2017
@@ -333,6 +334,7 @@ skills:
   Misc:
     - [Scientific Computing, 4]
     - [DevOps, 1]
+    - [Embedded, 1]
 
 open_source:
   - repo: prashnts/limn
@@ -347,16 +349,15 @@ open_source:
       # DisInfo: (Info)rmation (Dis)play
 
       Disinfo tries to make it easier to build animated, interactive, and physical dashboards.
-      I use it as a sandbox
-      to explore and better understand existing technologies and patterns, while maintaing
-      performance on resource constrained devices.
+      I use it as a sandbox to explore and better understand existing technologies and patterns,
+      while maintaing performance on resource constrained devices.
 
   - repo: prashnts/pybloomfiltermmap3
     description: |
       # PyBloomFilter: Fast, Memory Mapped Bloom Filter
 
       The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
-      correct library for Bloom Filters in Python. I've been maintaining this package
+      correct library for Bloom Filters in Python. I've maintained this package
       since 2016.
 
   - repo: prashnts/hues
@@ -385,9 +386,9 @@ open_source:
 
 
 publications:
-  # - title: Investigating the "wisdom of crowds" at scale
-  #   journal: ACM UIST
-  #   year: 2015
+  - title: Investigating the "wisdom of crowds" at scale
+    journal: ACM UIST
+    year: 2015
   - title: Protein engineering and de novo designing of a biocatalyst
     authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
     journal: Journal of Molecular Recognition
