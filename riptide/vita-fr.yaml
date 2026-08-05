@@ -1,7 +1,7 @@
 ---
 personal:
   name: Prashant Sinha
-  title: Developer
+  title: Developpeur
 info:
   homepage: https://noop.pw
   github: https://github.com/prashnts
@@ -19,27 +19,38 @@ cover: |
   Data Visualisation, Applications Web, et Systèmes Intégrés. J'aime aussi concevoir et imprimer
   des objets 3D fonctionels.
 
+  <!-- Machine translated text are marked with the model and prompt used. -->
+  <!-- System Prompt:
+        You're a computer science major with vast array of surface-level knowledge.
+        To help you graduate, I'm asking interesting and/or mundane questions. Be humble if you don't
+        quite know the answer. Just like a student goes to a library, you do your research on topics
+        that you're not very good at it yet.
+  -->
+
+
 experience:
 
   - company: Partoo
     location: Paris
     dates:
       from: '2024-01-01'
-    position: Lead Developer
+    position: Lead Developpeur
     description: |
-      Currently working on infrastructure for Agentic workflows and Feedback analytics.
-      My team worked on AI Chatbots for Business Messaging which led to the creation of
-      a standardised architecture to run said workflows. It is capable of handling large
-      quantities of agentic calls. The underlying framework is Pydantic AI.
+      Je travaille actuellement sur l'infrastructure pour les flux de travail agentiques artificielle
+      et l'analyse des retours. Mon équipe a travaillé sur les chatbots d'IA pour les messageries
+      professionnelles, ce qui a conduit à la création d'une architecture standardisée permettant
+      d'exécuter ces flux de travail. Elle est capable de gérer de grandes quantités d'appels.
+      Le cadre sous-jacent est Pydantic AI.
+      <!-- nemotron-3-nano, "Translate the following to French:" -->
 
   - company: Partoo
     location: Paris
     dates:
       from: '2021-06-28'
       till: '2023-12-31'
-    position: Full Stack Developer
+    position: Developpeur Full Stack
     description: |
-      My team implemented and supported the Business Messaging products at Partoo.
+      Mon équipe a implémenté et assuré le support des produits de Business Messaging chez Partoo.
     website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
@@ -47,19 +58,19 @@ experience:
     dates:
       from: '2018-10-08'
       till: '2021-06-25'
-    position: Full Stack Developer
+    position: Developpeur Full Stack
     tags:
       - Platform Developer
       - UI/X Design
     website: https://www.learningplanetinstitute.org/en/
     description: |
-      # WeLearn - A tool for collective learning
+      # WeLearn - Un outil pour l'apprentissage collectif
+      
+      - Responsable de l'architecture et du développement d'API pour un modèle d'apprentissage automatique qui classe les pages web en pages Wikipédia (concepts).
+      - Création d'une visualisation (une carte de concepts) permettant d'afficher efficacement les concepts d'un utilisateur avec des repères spatiaux et la possibilité de trouver d'autres concepts similaires.
+      - Développement d'extensions de navigateur pour ingérer des pages web.
 
-      - Responsible for architecting and developing APIs for a Machine Learning model
-        that classified webpages into Wikipedia Pages (concepts).
-      - Created visualisation (a map of concepts) that efficiently displays a users 
-        concepts with spatial cues and the ability to find other similar concepts.
-      - Developed browser extensions to ingest webpages.
+      <!-- nemotron-3-nano, "Translate the following to French:" -->
 
 
   - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
@@ -67,29 +78,33 @@ experience:
     dates:
       from: '2018-05-22'
       till: '2018-09-22'
-    position: Research Intern
+    position: Chercheur Stagiaire
     tags:
       - Hydrodynamics at micro scales
       - Fluid Dynamics
       - Theoretical Biophysics
     website: https://www.pmmh.espci.fr
     description: |
-      # Hydrodynamics of Super-Paramagnetic Micro-Beads
+      # Hydrodynamique des Super-Paramagnetic Micro-Beads
 
-      My work here was to capture the motion of the micro beads undergoing
-      attraction due to an external magnetic field. Based on this it is possible
-      to quantify hydrodynamic drag forces on the beads.
+      Mon travail consistait à capturer le mouvement des micro-billes subissant
+      une attraction due au champ magnétique externe. A partir de cela, il est
+      possible de quantifier les forces hydrodynamiques agissant sur les micro-billes.
 
-      Using open source tools `trackpy` and `scikit-image`, I developed an
-      image processing pipeline to isolate, track, and calculate motion dynamics
-      from the frames. We reached an average frame rate of `~800 fps`.
+      En utilisant les outils open source `trackpy` et `scikit-image`, j'ai développé
+      un pipeline de traitement d'images pour isoler, suivre et calculer les
+      dynamiques du mouvement à partir des images. Nous avons atteint une cadence 
+      moyenne de `~800` fps.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
   - company: Laboratoire Jean Perrin, UPMC
     location: Paris
     dates:
       from: '2018-01-22'
       till: '2018-04-22'
-    position: Research Intern
+    position: Chercheur Stagiaire
     tags:
       - Theoretical Biophysics
       - Optical Tracking
@@ -98,77 +113,92 @@ experience:
     description: |
       # The Mechanical Sense of Paramecium
 
-      As a research intern, I developed high-frequency, real-time image analysis
-      and hardware control pipeline to track long trajectories of _Paramecium_.
-      I wrote a driver for the microscope stage, and a high-speed image
-      aquisition and processing (~50fps) tool. Using these software we were able
-      to follow the trajectory of moving _Paramecium_.
+      En tant que chercheur stagiaire, j'ai développé une analyse d'images à
+      haute fréquence et en temps réel ainsi qu'un pipeline de contrôle matériel
+      pour suivre des trajectoires longues d'une _Paramécie_.
+
+      J'ai également développé un pilote pour la platforme du microscope et un outil
+      d'acquisition et du traitement d'images à grande vitesse (~50 fps).
+
+      Ces logiciels nous ont permis de suivre la trajectoire des _Paramécies_ en mouvement.
+      
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
   - company: Laboratoire Matière et Systèmes Complexes, Université Paris Diderot
     location: Paris
     dates:
       from: '2017-10-09'
       till: '2018-01-09'
-    position: Research Intern
+    position: Chercheur Stagiaire
     tags:
       - Phyllotaxis
       - Plant Biology
       - Projection Geometry
     website: http://www.msc.univ-paris-diderot.fr
     description: |
-      # Study of Diversity in Phyllotactic Patterns
+      # Étude de la diversité des motifs Phyllotactic
 
-      Phyllotaxis is the arrangement of lateral organs in plants. In this
-      project we attempt to explain the origin of emergent patterns,
-      transitions, and irregularities in such arrangements. Using cylindrical
-      projection unrolling and unwarping, I developed an image analysis pipeline
-      allowing better study of complicated plant organs.
+      La phyllotaxie est l'arrangement des organes latéraux chez les plantes. Dans ce
+      projet, nous essayons d'expliquer l'origine des motifs émergents,
+      des transitions et des irrégularités dans ces arrangements. En utilisant une
+      projection cylindrique déroulante et déformante, j'ai développé un pipeline
+      d'analyse d'image permettant une étude plus approfondie des organes végétaux complexes.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
   - company: Agora Health
     location: London (Remote)
     dates:
       from: '2016-02-08'
       till: '2018-04-01'
-    position: Full Stack Developer
+    position: Developpeur Full Stack
     tags:
       - Machine Learning
       - Web Development
     website: https://agorahealth.org.uk
     description: |
-      # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
+      # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS, Royaume-Uni
 
-      - Developed the algorithm for classification of events into medical specialities.
-      - Integrated the classification system into the web app.
-      - Implemented an event recommendation engine leveraging Elasticsearch and stored features.
-      - Wrote a framework for event data aggregation from multiple NHS websites.
+      - Développement de l'algorithme de classification des événements par spécialités médicales.
+      - Intégration du système de classification dans l'application web.
+      - Mise en œuvre d'un moteur de recommandation d'événements s'appuyant sur Elasticsearch et des caractéristiques (feature vectors) stockées.
+      - Conception d'un framework pour l'agrégation de données d'événements provenant de plusieurs sites web du NHS.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
+
 
   - company: Oxyent Technologies
     location: New Delhi
     dates:
       from: '2016-07-01'
       till: '2016-09-01'
-    position: Summer Intern
+    position: Chercheur Stagiaire
     website: http://oxyent.com
     tags:
       - Computer Vision
       - Information Extraction
     description: |
-      # Computer Vision and Information Extraction
+      # Vision par ordinateur et extraction d'informations
 
-      Developed and shipped a utility for digitizing waveforms and
-      extracting metadata from `ECG` reports. It is being used at Brigham and
-      Women's Hospital, Boston for processing more than a million patient records.
+      Développement et déploiement d'un utilitaire de numérisation 
+      d'onde et d'extraction de métadonnées à partir de rapports ECG. L'outil 
+      est utilisé au Brigham and Women's Hospital de Boston pour le traitement 
+      de plus d'un million de dossiers patients.
 
-      Also worked on extracting normalized tabular data from scanned
-      medical records. Key challenges here involved handling skewed,
-      desaturated and otherwise low quality images.
+      J'ai également travaillé à l'extraction de données tabulaires normalisées à
+      partir d'enregistrements médicaux scannés. Les défis majeurs consistaient à
+      gérer les images inclinées, désaturées et de faible qualité.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
   - company: Survaider
     location: New Delhi
     dates:
       from: '2015-01-01'
       till: '2016-02-01'
-    position: Developer and UI/UX Designer
+    position: Developpeur et Designer UI/UX 
     website: http://survaider.com
     tags:
       - Backend and REST API
@@ -177,76 +207,89 @@ experience:
     description: |
       # Survaider Web App and Survey Builder
 
-      Developed a web app backend and REST API in Python.
+      Développment d'un backend d'application web et une API REST en Python.
 
-      Designed and developed a web based survey builder tool which was later
-      integrated into the core application.
+      Conception et développment d'un outil constructeur d'enquêtes basé sur le Web,
+      par la suite intégré dans l'application principale.
+
+      <!-- nemotron-3-nano, "Translate the following to French:" -->
+
 
   - company: Design Innovation Centre
     location: New Delhi
     dates:
       from: '2015-06-15'
       till: '2015-08-29'
-    position: Summer Intern
+    position: Chercheur Stagiaire
     tags:
       - Machine Learning
       - Time Series Analysis
       - Signal Processing
     description: |
-      # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
+      # Reconnaissance des activités humaines à partir de données d'accélération dans des conditions naturelles
 
-      The goal of this project was to develop a system for recognition
-      of low level human activities, such as Walking, Running, Sitting, etc.,
-      using a single accelerometer.
+      L'objectif de ce projet était de développer un système de reconnaissance 
+      d'activités humaines de bas niveau, telles que la marche, la course, 
+      la position assise, etc., en utilisant un seul accéléromètre.
 
-      Using supervised learning method, we trained a Random Forest
-      Classifier using feature vectors obtained via our model. We
-      were able to produce an accuracy of `95%` through our model.
+      En utilisant une méthode d'apprentissage supervisé, nous avons entraîné 
+      un classifieur Random Forest à l'aide de vecteurs de caractéristiques 
+      obtenus via notre modèle. Nous avons pu atteindre une précision de 
+      `95 %` grâce à notre modèle.
+      
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
   - company: University of California and Stanford
     location: Santa Cruz
     dates:
       from: '2015-01-01'
       till: '2015-06-01'
-    position: Research Associate
+    position: Assistant de Recherche
     tags:
       - Data Scraping
       - Data Processing
     description: |
       # Aspiring Researcher Challenge
 
-      As a research associate, I was part of the team which was
-      responsible for developing a large, online experiment to study
-      the wisdom of the crowd where I formulated the algorithm for
-      scraping and formatting raw data off multiple crowdfunding
-      platforms.
+      En tant qu'assistant de recherche, j'ai fait partie de l'équipe 
+      responsable du développement d'une vaste expérience en ligne visant 
+      à étudier la sagesse des foules (wisdom of crowd), au cours de laquelle j'ai conçu 
+      l'algorithme d'extraction (scraping) et de formatage des données 
+      brutes provenant de plusieurs plateformes de financement participatif.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
+
 
   - company: Cluster Innovation Centre, University of Delhi
     location: New Delhi
     dates:
       from: '2015-01-01'
       till: '2016-04-01'
-    position: Undergrad Research
+    position: Chercheur Stagiaire
     tags:
       - Network Analysis
       - Computational Biology
       - Mathematical Modelling
     description: |
-      # Modelling and Network Analysis of Intronic miRNA Mediated Gene Expression Regulation
+      # Modélisation et analyse de réseau de la régulation de l'expression génique médiée par les miARN introniques
 
-      In this project, we developed a mathematical model for gene expression
-      regulation via intronic micro `RNAs`, based on emperical data and
-      experimental observations at IGIB.
+      Dans le cadre de ce projet, nous avons développé un modèle mathématique pour la 
+      régulation de l'expression génique via les micro-ARN (miARN) introniques, basé 
+      sur des données empiriques et des observations expérimentales réalisées à l'IGIB (Institute of Genomics and Integrative Biology).
 
-      As a part of study, we've also generated a `miRNA <=> mRNA` target network
-      using various available databases.
+      Dans le cadre de l'étude, nous avons également généré un réseau de cibles 
+      `miARN <=> ARNm` en utilisant diverses bases de données disponibles.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
   - company: IamSME of India, PHD Chamber of Commerce
     location: New Delhi
     dates:
       from: '2014-05-15'
       till: '2014-08-20'
-    position: Summer Intern
+    position: Stagiaire
     tags:
     description: |
       Developed an open-source and modular `ERP` system and `API` sub-system.
@@ -256,13 +299,16 @@ experience:
     dates:
       from: '2014-02-10'
       till: '2015-12-25'
-    position: Research Associate
+    position: Assistant de Recherche
     tags:
     description: |
-      Built a classification system for geospacial features between
-      texts originated in different continents. Other responsibilities included
-      design and development of several web portals, graphic designing, media
-      and publishing tasks.
+      Développement d'un système de classification de caractéristiques géospatiales à partir
+      de textes provenant de différents continents. Mes autres missions incluaient la
+      conception et le développement de plusieurs portails web, ainsi que des tâches
+      de graphisme, de média et d'édition.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+
 
 talks_and_workshops:
   - conference: FOSSASIA 2017
@@ -348,41 +394,49 @@ open_source:
     description: |
       # DisInfo: (Info)rmation (Dis)play
 
-      Disinfo tries to make it easier to build animated, interactive, and physical dashboards.
-      I use it as a sandbox to explore and better understand existing technologies and patterns,
-      while maintaing performance on resource constrained devices.
+      Disinfo tente de faciliter la création de tableaux de bord animés, interactifs et physiques.
+      Je l'utilise comme un terrain de jeu pour explorer et mieux comprendre les technologies et les patterns existants,
+      tout en maintenant les performances sur des appareils aux ressources limitées.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
   - repo: prashnts/pybloomfiltermmap3
     description: |
-      # PyBloomFilter: Fast, Memory Mapped Bloom Filter
+      # PyBloomFilter : Bloom Filter rapide et memory-mapped (mmap)
 
-      The goal of `PyBloomFilter` is to provide a fast, simple, scalable and
-      correct library for Bloom Filters in Python. I've maintained this package
-      since 2016.
+      L'objectif de `PyBloomFilter` est de fournir une bibliothèque de Bloom Filters pour Python qui soit rapide,
+      simple, scalable et correcte. Je maintiens ce package depuis 2016.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
   - repo: prashnts/hues
     description: |
-      # Hues: Colored terminal text made easy for Python
+      # Hues : Le texte de terminal coloré simplifié pour Python
+      
+      Hues est un package Python qui facilite l'affichage de texte encodé en ANSI dans le terminal sur les systèmes unix.
 
-      Hues is a Python package which facilitates printing ANSI encoded text to
-      terminal in unix-like systems.
+      <!-- nemotron-3-nano, "Translate the following to French:" -->
 
   - repo: prashnts/metaRNA
     description: |
-      # metaRNA: Find target sites for the miRNAs in genomic sequences
+      # metaRNA : Trouver les target sites pour les miARNs dans les séquences génomiques
 
-      metaRNA finds potential target sites for the microRNAs in genomic
-      sequences. It is built on miRanda, an algorithm for detection and ranking
-      of the targets of microRNA.
+      metaRNA trouve des target sites potentiels pour les micro-ARNs dans les séquences
+      génomiques. Il est basé sur miRanda, un algorithme pour la détection et le ranking
+      des targets de micro-ARN.
+
+      <!-- nemotron-3-nano, "Translate the following to French:" -->
 
 
-  # - repo: agora-team/elasticsearch-synonyms
-  #   description: |
-  #     # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
+  - repo: agora-team/elasticsearch-synonyms
+    description: |
+      # Elasticsearch-Synonyms : Utilitaires pour travailler avec le Synonym Filter dans Elasticsearch
 
-  #     This repository contains a curated dataset of synonyms in `Solr` Format.
-  #     These synonyms can be used for Elasticsearch Synonym Token Filter
-  #     configuration. It provides a tool to lint and validate the synonym files.
+      Ce repository contient un curated dataset de synonymes au format `Solr`.
+      Ces synonymes peuvent être utilisés pour la configuration du Elasticsearch Synonym Token Filter. 
+      Il fournit un outil pour linter et valider les fichiers de synonymes.
+
+      <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
 
 
 publications:
