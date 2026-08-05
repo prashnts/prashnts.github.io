@@ -15,7 +15,7 @@ info:
 cover: |
   Je suis développeur à Paris. Mon travail consiste à employer la programmation, les mathematique
   et le design comme des outils pour résoudre de problèmes complexes et intéressants.
-  Mes projets couvrent une variété de domaines : Intelligence Artificielle, Vision artificielle,
+  Mes projets couvrent une variété des domaines : Intelligence Artificielle, Vision artificielle,
   Data Visualisation, Applications Web, et Systèmes Intégrés. J'aime aussi concevoir et imprimer
   des objets 3D fonctionels.
 
@@ -34,7 +34,7 @@ experience:
     location: Paris
     dates:
       from: '2024-01-01'
-    position: Lead Developpeur
+    position: Lead Développeur
     description: |
       Je travaille actuellement sur l'infrastructure pour les flux de travail agentiques artificielle
       et l'analyse des retours. Mon équipe a travaillé sur les chatbots d'IA pour les messageries
@@ -48,7 +48,7 @@ experience:
     dates:
       from: '2021-06-28'
       till: '2023-12-31'
-    position: Developpeur Full Stack
+    position: Développeur Full Stack
     description: |
       Mon équipe a implémenté et assuré le support des produits de Business Messaging chez Partoo.
     website: https://www.partoo.co/en/
@@ -58,7 +58,7 @@ experience:
     dates:
       from: '2018-10-08'
       till: '2021-06-25'
-    position: Developpeur Full Stack
+    position: Développeur Full Stack
     tags:
       - Platform Developer
       - UI/X Design
@@ -66,7 +66,7 @@ experience:
     description: |
       # WeLearn - Un outil pour l'apprentissage collectif
       
-      - Responsable de l'architecture et du développement d'API pour un modèle d'apprentissage automatique qui classe les pages web en pages Wikipédia (concepts).
+      - Responsable de l'architecture et du développement d'API pour un modèle d'apprentissage automatique qui classe les pages web en pages Wikipedia (concepts).
       - Création d'une visualisation (une carte de concepts) permettant d'afficher efficacement les concepts d'un utilisateur avec des repères spatiaux et la possibilité de trouver d'autres concepts similaires.
       - Développement d'extensions de navigateur pour ingérer des pages web.
 
@@ -149,17 +149,17 @@ experience:
 
 
   - company: Agora Health
-    location: London (Remote)
+    location: Londres (Remote)
     dates:
       from: '2016-02-08'
       till: '2018-04-01'
-    position: Developpeur Full Stack
+    position: Développeur Full Stack
     tags:
       - Machine Learning
       - Web Development
     website: https://agorahealth.org.uk
     description: |
-      # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS, Royaume-Uni
+      # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS au Royaume-Uni
 
       - Développement de l'algorithme de classification des événements par spécialités médicales.
       - Intégration du système de classification dans l'application web.
@@ -180,10 +180,10 @@ experience:
       - Computer Vision
       - Information Extraction
     description: |
-      # Vision par ordinateur et extraction d'informations
+      # Vision Artificielle et extraction d'informations
 
-      Développement et déploiement d'un utilitaire de numérisation 
-      d'onde et d'extraction de métadonnées à partir de rapports ECG. L'outil 
+      Développement d'un utilitaire de numérisation d'onde et d'extraction de
+      métadonnées à partir de rapports ECG. L'outil 
       est utilisé au Brigham and Women's Hospital de Boston pour le traitement 
       de plus d'un million de dossiers patients.
 
@@ -198,14 +198,14 @@ experience:
     dates:
       from: '2015-01-01'
       till: '2016-02-01'
-    position: Developpeur et Designer UI/UX 
+    position: Développeur et Designer UI/UX 
     website: http://survaider.com
     tags:
       - Backend and REST API
       - Client Interface
       - Analytics
     description: |
-      # Survaider Web App and Survey Builder
+      # Survaider Web App et Survey Builder
 
       Développment d'un backend d'application web et une API REST en Python.
 
@@ -234,8 +234,7 @@ experience:
 
       En utilisant une méthode d'apprentissage supervisé, nous avons entraîné 
       un classifieur Random Forest à l'aide de vecteurs de caractéristiques 
-      obtenus via notre modèle. Nous avons pu atteindre une précision de 
-      `95 %` grâce à notre modèle.
+      obtenus via notre modèle, qui nous a permis d'atteindre une précision de `95 %`.
       
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
@@ -278,7 +277,7 @@ experience:
       régulation de l'expression génique via les micro-ARN (miARN) introniques, basé 
       sur des données empiriques et des observations expérimentales réalisées à l'IGIB (Institute of Genomics and Integrative Biology).
 
-      Dans le cadre de l'étude, nous avons également généré un réseau de cibles 
+      Dans le cadre de cette étude, nous avons également généré un réseau de cibles 
       `miARN <=> ARNm` en utilisant diverses bases de données disponibles.
 
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
@@ -387,7 +386,7 @@ open_source:
     description: |
       # Traceur avec changeur d'outils
 
-      Peut aligner les outils automatiquement.
+      Peut calibrer les outils automatiquement.
       [Publication sur Hackaday](https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger).
     
   - repo: prashnts/disinfo
@@ -413,17 +412,17 @@ open_source:
     description: |
       # Hues : Le texte de terminal coloré simplifié pour Python
       
-      Hues est un package Python qui facilite l'affichage de texte encodé en ANSI dans le terminal sur les systèmes unix.
+      Hues est un package Python qui facilite l'affichage de textes encodés en ANSI dans le terminal sur les systèmes unix.
 
       <!-- nemotron-3-nano, "Translate the following to French:" -->
 
   - repo: prashnts/metaRNA
     description: |
-      # metaRNA : Trouver les target sites pour les miARNs dans les séquences génomiques
+      # metaRNA : Trouver les target sites pour les miARN dans les séquences génomiques
 
-      metaRNA trouve des target sites potentiels pour les micro-ARNs dans les séquences
+      metaRNA trouve des target sites potentiels pour les micro-ARN dans les séquences
       génomiques. Il est basé sur miRanda, un algorithme pour la détection et le ranking
-      des targets de micro-ARN.
+      des cibles de micro-ARN.
 
       <!-- nemotron-3-nano, "Translate the following to French:" -->
 
