@@ -22,7 +22,7 @@ module.exports = config:
     closurecompiler:
       compilationLevel: 'SIMPLE'
     typeset:
-      tweaks: disable: ['hyphenate']
+      tweaks: disable: ['hyphenate', 'ligatures']
     stylus:
       plugins: [
         'jeet'
