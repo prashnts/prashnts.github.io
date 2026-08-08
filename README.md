@@ -10,6 +10,14 @@ You may be looking for source of my [resume](https://noop.pw/resume).
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/prashnts/prashnts.github.io)
 
 ## Quickstart
+
+**IMPORTANT**
+
+- The package dependencies are quite old and several projects have diverged significantly.
+- While I currently do not intend to upgrade everything, a DockerFile is provided to isolate supply chain risks while running locally.
+- Use docker compose to run the development server and ignore the following instructions.
+
+
 - Install packages. Use `npm install`, or `yarn install` if you use `yarnpkg`.
 - Build site using `npm run build`. The static content will be in `public` directory.
 - To use live-reload and in-built dev server, use `npm run start`.
