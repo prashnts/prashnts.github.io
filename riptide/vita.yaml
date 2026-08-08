@@ -10,7 +10,7 @@ info:
   mobile: '0769822836'
   location: Paris, France
   twitter: https://twitter.com/prashnts
-  printables: https://www.printables.com/@prashnts
+  printables: https://printables.com/@prashnts
 
 cover: |
   I am a software developer based in Paris. My work focuses on using programming,
@@ -23,13 +23,23 @@ experience:
   - company: Partoo
     location: Paris
     dates:
-      from: '2021-06-28'
+      from: '2024-01-01'
     position: Lead Developer
-    website: https://www.partoo.co/en/
     description: |
-      After contributing to the Business Messaging integrations at Partoo, I'm
-      currently working on LLM driven chatbots, and architecting infrastructure for
-      Agentic workflows.
+      Currently working on infrastructure for Agentic workflows and Feedback analytics.
+      My team worked on AI Chatbots for Business Messaging which led to the creation of
+      a standardised architecture to run said workflows. It is capable of handling large
+      quantities of agentic calls. The underlying framework is Pydantic AI.
+
+  - company: Partoo
+    location: Paris
+    dates:
+      from: '2021-06-28'
+      till: '2023-12-31'
+    position: Full Stack Developer
+    description: |
+      My team developed and supported the Business Messaging products at Partoo
+    website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
     location: Paris
@@ -152,24 +162,24 @@ experience:
       medical records. Key challenges here involved handling skewed,
       desaturated and otherwise low quality images.
 
-  # - company: Survaider
-  #   location: New Delhi
-  #   dates:
-  #     from: '2015-01-01'
-  #     till: '2016-02-01'
-  #   position: Developer and UI/UX Designer
-  #   website: http://survaider.com
-  #   tags:
-  #     - Backend and REST API
-  #     - Client Interface
-  #     - Analytics
-  #   description: |
-  #     # Survaider Web App and Survey Builder
+  - company: Survaider
+    location: New Delhi
+    dates:
+      from: '2015-01-01'
+      till: '2016-02-01'
+    position: Developer and UI/UX Designer
+    website: http://survaider.com
+    tags:
+      - Backend and REST API
+      - Client Interface
+      - Analytics
+    description: |
+      # Survaider Web App and Survey Builder
 
-  #     Developed a web app backend and REST API in Python.
+      Developed a web app backend and REST API in Python.
 
-  #     Designed and developed a web based survey builder tool which was later
-  #     integrated into the core application.
+      Designed and developed a web based survey builder tool which was later
+      integrated into the core application.
 
   - company: Design Innovation Centre
     location: New Delhi
@@ -192,23 +202,23 @@ experience:
       Classifier using feature vectors obtained via our model. We
       were able to produce an accuracy of `95%` through our model.
 
-  # - company: University of California and Stanford
-  #   location: Santa Cruz
-  #   dates:
-  #     from: '2015-01-01'
-  #     till: '2015-06-01'
-  #   position: Research Associate
-  #   tags:
-  #     - Data Scraping
-  #     - Data Processing
-  #   description: |
-  #     # Aspiring Researcher Challenge
+  - company: University of California and Stanford
+    location: Santa Cruz
+    dates:
+      from: '2015-01-01'
+      till: '2015-06-01'
+    position: Research Associate
+    tags:
+      - Data Scraping
+      - Data Processing
+    description: |
+      # Aspiring Researcher Challenge
 
-  #     As a research associate, I was part of the team which was
-  #     responsible for developing a large, online experiment to study
-  #     the wisdom of the crowd where I formulated the algorithm for
-  #     scraping and formatting raw data off multiple crowdfunding
-  #     platforms.
+      As a research associate, I was part of the team which was
+      responsible for developing a large, online experiment to study
+      the wisdom of the crowd where I formulated the algorithm for
+      scraping and formatting raw data off multiple crowdfunding
+      platforms.
 
   - company: Cluster Innovation Centre, University of Delhi
     location: New Delhi
@@ -230,15 +240,15 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  # - company: IamSME of India, PHD Chamber of Commerce
-  #   location: New Delhi
-  #   dates:
-  #     from: '2014-05-15'
-  #     till: '2014-08-20'
-  #   position: Summer Intern
-  #   tags:
-  #   description: |
-  #     Developed an open-source and modular `ERP` system and `API` sub-system.
+  - company: IamSME of India, PHD Chamber of Commerce
+    location: New Delhi
+    dates:
+      from: '2014-05-15'
+      till: '2014-08-20'
+    position: Summer Intern
+    tags:
+    description: |
+      Developed an open-source and modular `ERP` system and `API` sub-system.
 
   - company: Laboratory for Pattern Engineering, University of Delhi
     location: New Delhi
@@ -325,6 +335,14 @@ skills:
     - [DevOps, 1]
 
 open_source:
+  - repo: prashnts/limn
+    description: |
+      # Pen Plotter with automatic Toolchanger
+
+      The plotter can use up to 5 pen/tools per session and has fully automated tool calibration.
+      [Build details available on Hackaday](https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger).
+    
+
   - repo: prashnts/disinfo
     description: |
       # DisInfo: (Info)rmation (Dis)play
@@ -359,14 +377,13 @@ open_source:
       sequences. It is built on miRanda, an algorithm for detection and ranking
       of the targets of microRNA.
 
+  - repo: agora-team/elasticsearch-synonyms
+    description: |
+      # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
 
-  # - repo: agora-team/elasticsearch-synonyms
-  #   description: |
-  #     # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
-
-  #     This repository contains a curated dataset of synonyms in `Solr` Format.
-  #     These synonyms can be used for Elasticsearch Synonym Token Filter
-  #     configuration. It provides a tool to lint and validate the synonym files.
+      This repository contains a curated dataset of synonyms in `Solr` Format.
+      These synonyms can be used for Elasticsearch Synonym Token Filter
+      configuration. It provides a tool to lint and validate the synonym files.
 
 
 publications:

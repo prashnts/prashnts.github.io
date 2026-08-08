@@ -8,6 +8,8 @@ body.vita
   letter-spacing 0
   padding 0
 
+  $accent = $violet
+
   @media print
     background $white
 
@@ -31,7 +33,7 @@ body.vita
       left 50px
       right 50px
       height 10px
-      background $blue
+      background $accent
       position absolute
       @media(max-width 768px)
         left 30px
@@ -91,21 +93,39 @@ body.vita
 
   dl
     div
-      display flex
+      display block
     dt
       width 80px
       font-weight 600
 
   header
+    display flex
+    justify-content space-between
+    align-items center
+
+    a.locale_sw
+      background $violet
+      padding 4px 5px
+      border-radius 3px
+      color #fff
+
+      &:after
+        content unset
+
+      @media print
+        display none
+
+
     h1
       font-weight 400
       margin 20px 0 10px
       span
         font-weight 600
 
+
   section
     h1
-      color $blue
+      color $accent
       display inline-block
       text-transform uppercase
       font-size 1.1em
@@ -117,9 +137,10 @@ body.vita
         position absolute
         width calc(100% - 1px)
         height 2px
-        margin-top -2px
+        bottom 0
+        margin-bottom -2px
         border-radius 2px
-        background $blue
+        background $accent
     h2
       font-size 1.2em
       border-left 3px solid $base2
@@ -180,9 +201,9 @@ body.vita
         margin 0 -30px
         padding 10px 30px
         &:nth-of-type(2n)
-          background tint($cyan, 60%)
+          //background tint($cyan, 60%)
         &:nth-of-type(2n + 1)
-          background tint($blue, 80%)
+          //background tint($accent, 80%)
         aside
           width auto
           i
@@ -233,7 +254,7 @@ body.vita
       float right
       font-size 1.2em
       letter-spacing 2px
-      color $blue
+      color $accent
 
   footer
     margin-top 60px

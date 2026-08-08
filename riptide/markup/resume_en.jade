@@ -5,7 +5,7 @@ block prepend head
     var page = {
       title: 'no-op / resume',
       url: 'https://noop.pw/resume',
-      description: "Le CV de Prashant.",
+      description: "Prashant's resume.",
     }
   +meta(page)
 
@@ -27,37 +27,37 @@ block append stylesheets
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
 
 block prepend body
-  body.vita.locale_fr: main
+  body.vita.locale_en: main
     header
-      - var n = vita.personal.name.split(' ')
+      - var n = vita_en.personal.name.split(' ')
       div
         h1 #[span= n[0]] #{n[1]}
-        p #{vita.personal.title}
+        p #{vita_en.personal.title}
       div
-        a.locale_sw(href='/resume_en') English Version ➔
+        a.locale_sw(href='/resume') Version Français ➔
 
     section.info
       div
         h1 Web
         ul
-          li: +ilink('link', vita.info.homepage)
-          li: +ilink('git', vita.info.github)
-          //- li: +ilink('twitter', vita.info.twitter)
-          li: +ilink('link', vita.info.printables)
+          li: +ilink('link', vita_en.info.homepage)
+          li: +ilink('git', vita_en.info.github)
+          //- li: +ilink('twitter', vita_en.info.twitter)
+          li: +ilink('link', vita_en.info.printables)
       div
         h1 Info
         ul
-          li: +email(vita.info.email)
-          li: +ispan('location', vita.info.location)
+          li: +email(vita_en.info.email)
+          li: +ispan('location', vita_en.info.location)
 
     section.cover
-      h1 Aperçu
-      p !{vita.cover}
+      h1 Summary
+      p !{vita_en.cover}
 
     section.xp
-      h1 Expérience
+      h1 Experience
       - var prev_xp = null
-      ul: each xp in vita.experience
+      ul: each xp in vita_en.experience
         li
           aside
             if !(prev_xp && prev_xp.company == xp.company)
@@ -77,8 +77,8 @@ block prepend body
         - prev_xp = xp
 
     //- section.talks
-    //-   h1 Conférences et ateliers
-    //-   ul: each talk in vita.talks_and_workshops
+    //-   h1 Talks and Workshops
+    //-   ul: each talk in vita_en.talks_and_workshops
     //-     li
     //-       aside
     //-         h2.conference= talk.conference
@@ -94,8 +94,8 @@ block prepend body
     //-           p.website: +ilink('link', talk.website)
 
     section.edu
-      h1 Éducation
-      ul: each edu in vita.education
+      h1 Education
+      ul: each edu in vita_en.education
         li
           aside
             h2.institute= edu.institute
@@ -107,11 +107,11 @@ block prepend body
             dl
               if edu.major
                 div
-                  dt Spécialisation
+                  dt Major
                   dd= edu.major
               if edu.minor
                 div
-                  dt Secondaires
+                  dt Minors
                   dd= edu.minor
               if edu.percentage
                 div
@@ -124,7 +124,7 @@ block prepend body
 
     section.publications
       h1 Publications
-      ul: each pub in vita.publications
+      ul: each pub in vita_en.publications
         li
           div
             h3= pub.title
@@ -133,7 +133,7 @@ block prepend body
 
     section.open_source
       h1 Open Source
-      ul: each package in vita.open_source
+      ul: each package in vita_en.open_source
         li
           div.description
             !{package.description}
@@ -142,7 +142,7 @@ block prepend body
 
     //- section.skills
     //-   h1 Skills
-    //-   ul: each skset, kind in vita.skills
+    //-   ul: each skset, kind in vita_en.skills
     //-     li
     //-       h2= kind
     //-       ul: each sk in skset
@@ -150,6 +150,6 @@ block prepend body
 
     footer
       ul
-        li Robot ? Jetez un œil au #[a(href='https://github.com/prashnts/prashnts.github.io/blob/develop/riptide/vita-fr.yaml'): code source YAML] de ce document.
-        li Généré #[code #{_now.format('D MMM Y')}]
+        li Robot? Check out #[a(href='https://github.com/prashnts/prashnts.github.io/blob/develop/riptide/vita.yaml'): code YAML source] of this document.
+        li Generated #[code #{_now.format('D MMM Y')}]
       code.kthx :wq

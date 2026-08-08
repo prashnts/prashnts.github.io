@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "4282:8080"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development

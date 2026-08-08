@@ -1,7 +1,8 @@
 # noop.pw
 moment = require 'moment'
 {renderVita} = require './demi'
-global.vita = renderVita './riptide/vita-fr.yaml'
+global.vita = renderVita './riptide/vita-fr.yaml', 'fr'
+global.vita_en = renderVita './riptide/vita.yaml', 'en'
 global._now = moment()
 global.DEBUG = '-p' not in global.process.argv
 
@@ -17,11 +18,11 @@ module.exports = config:
       useCoffeelintJson: yes
     jaded:
       staticPatterns: /^riptide\/markup\/([\d\w]*)\.jade$/
-      globals: ['DEBUG', 'vita', '_now']
+      globals: ['DEBUG', 'vita', '_now', 'vita_en']
     closurecompiler:
       compilationLevel: 'SIMPLE'
     typeset:
-      tweaks: disable: ['ligatures']
+      tweaks: disable: ['hyphenate']
     stylus:
       plugins: [
         'jeet'
@@ -36,7 +37,8 @@ module.exports = config:
 
   hooks:
     onCompile: ->
-      global.vita = renderVita './riptide/vita-fr.yaml'
+      global.vita = renderVita './riptide/vita-fr.yaml', 'fr'
+      global.vita_en = renderVita './riptide/vita.yaml', 'en'
 
   npm:
     enabled: yes

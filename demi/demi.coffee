@@ -3,10 +3,11 @@ moment = require 'moment'
 
 
 class Demi
-  constructor: (today, separator) ->
+  constructor: (today, separator, locale) ->
     @_init_markdn()
     @_now = moment(today)
     @_sep = separator or '－'
+    @_locale = locale
 
   renderDateInterval: (from, till) ->
     start = moment from, moment.ISO_8601
@@ -25,7 +26,7 @@ class Demi
       else
         "#{start.format('MMM Y')} #{@_sep} #{end.format('MMM Y')}"
     else
-      _present = 'Present'
+      _present =  if @_locale == 'fr' then 'actuel' else 'Present'
       if start.isSame(@_now, 'year')
         "#{start.format('MMM')} #{@_sep} #{_present}"
       else
@@ -39,16 +40,24 @@ class Demi
     years = Math.round duration.asYears()
 
     if 2 <= months < 12
-      "#{months} Months"
+      if @_locale == 'fr' then "#{months} mois" else "#{months} Months"
     else if years >= 1
       # Since we want month along with year, get the floor value.
       month_count = Math.round duration.asMonths()
       months = month_count %% 12
       years = month_count // 12
 
-      year_verbose = if years > 1 then 'Years' else 'Year'
+      # year_verbose = if years > 1 then 'Years' else 'Year'
+      if @_locale == 'fr'
+        year_verbose = if years > 1 then 'ans' else 'an'
+      else
+        year_verbose = if years > 1 then 'Years' else 'Year'
+
       if months > 0
-        month_verbose = if months > 1 then 'Months' else 'Month'
+        if @_locale == 'fr'
+          month_verbose = if months > 1 then 'mois' else 'mois'
+        else
+          month_verbose = if months > 1 then 'Months' else 'Month'
         "#{years} #{year_verbose} #{months} #{month_verbose}"
       else
         "#{years} #{year_verbose}"
@@ -71,8 +80,9 @@ class Demi
 
 class Festus
   constructor: (opts = {}) ->
-    {today, separator} = opts
-    demi = new Demi today, separator
+    {today, separator, locale} = opts
+    moment.locale locale
+    demi = new Demi today, separator, locale
 
     _dtKey = opts.dateKey or 'dates'
     _mdKey = opts.mdKey or 'description'
@@ -97,8 +107,8 @@ class Festus
 
   getMap: (pivot, fn) -> (obj) => @_mapDeep obj, pivot, fn
 
-  render: (dict) ->
-    @renderDates @renderMarkdown dict
+  render: (dict, locale) ->
+    @renderDates @renderMarkdown dict, locale
 
   dateOverlaps: (dates) ->
     pass
