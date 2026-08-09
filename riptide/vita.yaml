@@ -31,6 +31,10 @@ experience:
       a standardised architecture to run said workflows. It is capable of handling large
       quantities of agentic calls. The underlying framework is Pydantic AI.
 
+    links:
+      - title: Landing Page
+        url: https://www.partoo.co/fr/entreprises/ai-chatbot/
+
   - company: Partoo
     location: Paris
     dates:
@@ -51,6 +55,11 @@ experience:
       - Platform Developer
       - UI/X Design
     website: https://www.learningplanetinstitute.org/en/
+    links:
+      - title: Official Project Blog
+        url: https://projects.learningplanetinstitute.org/projects/map-your-online-learning/summary
+      - title: Landing Page (Archive)
+        url: https://welearn-preview.netlify.app/pages/onboarding.html
     description: |
       # WeLearn - A tool for collective learning
 
@@ -94,6 +103,9 @@ experience:
       - Optical Tracking
       - Mechanotransduction
     website: http://www.labos.upmc.fr/ljp
+    links:
+      - title: Project Repository
+        url: https://github.com/prashnts/corvus-drive
     description: |
       # The Mechanical Sense of Paramecium
 
@@ -133,6 +145,9 @@ experience:
       - Machine Learning
       - Web Development
     website: https://agorahealth.org.uk
+    links:
+      - title: Landing Page (Archive)
+        url: https://web.archive.org/web/20210622111249/https://agorahealth.org.uk/
     description: |
       # Personalised Medical Events, Conferences, and Courses Recommendation for Doctors at NHS, UK
 
@@ -151,6 +166,11 @@ experience:
     tags:
       - Computer Vision
       - Information Extraction
+    links:
+      - title: ECG Analysis (Repository)
+        url: https://github.com/prashnts/ekgstore-beta
+      - title: Document Analysis (Repository)
+        url: https://github.com/prashnts/apollo-cad/tree/master
     description: |
       # Computer Vision and Information Extraction
 
@@ -169,6 +189,11 @@ experience:
       till: '2016-02-01'
     position: Developer and UI/UX Designer
     website: http://survaider.com
+    links:
+      - title: Survey Builder (Repository)
+        url: https://github.com/prashnts/survaider-builder
+      - title: Landing Page (Archive)
+        url: https://web.archive.org/web/20190829213915/https://www.survaider.com/
     tags:
       - Backend and REST API
       - Client Interface
@@ -191,6 +216,9 @@ experience:
       - Machine Learning
       - Time Series Analysis
       - Signal Processing
+    links:
+      - title: Presentation and Repository
+        url: https://github.com/prashnts/MPU-9250
     description: |
       # Human Activity Recognition from Acceleration data Under Naturalistic Conditions
 
@@ -230,6 +258,13 @@ experience:
       - Network Analysis
       - Computational Biology
       - Mathematical Modelling
+    links:
+      - title: Presentation
+        url: https://miriam.noop.pw/
+      - title: Analysis (Repository)
+        url: https://github.com/prashnts/mir-to-gene
+      - title: Presentation (Source)
+        url: https://github.com/prashnts/miriam-explore
     description: |
       # Modelling and Network Analysis of Intronic miRNA Mediated Gene Expression Regulation
 
@@ -247,6 +282,9 @@ experience:
       till: '2014-08-20'
     position: Summer Intern
     tags:
+    links:
+      - title: Thunderbird Sync Extension
+        url: https://github.com/prashnts/thunder-sync/tree/master
     description: |
       Developed an open-source and modular `ERP` system and `API` sub-system.
 
@@ -257,6 +295,11 @@ experience:
       till: '2015-12-25'
     position: Research Associate
     tags:
+    links:
+      - title: Archive Page
+        url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
+      - title: ERP System (Repository)
+        url: https://github.com/prashnts/TwoDotSeven
     description: |
       Built a classification system for geospacial features between
       texts originated in different continents. Other responsibilities included

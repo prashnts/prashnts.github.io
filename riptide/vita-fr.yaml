@@ -28,7 +28,6 @@ cover: |
 
 
 experience:
-
   - company: Partoo
     location: Paris
     dates:
@@ -41,6 +40,9 @@ experience:
       d'exécuter ces flux de travail. Elle est capable de gérer de grandes quantités d'appels.
       Le cadre sous-jacent est Pydantic AI.
       <!-- nemotron-3-nano, "Translate the following to French:" -->
+    links:
+      - title: Landing Page
+        url: https://www.partoo.co/fr/entreprises/ai-chatbot/
 
   - company: Partoo
     location: Paris
@@ -50,10 +52,6 @@ experience:
     position: Développeur Full Stack
     description: |
       Mon équipe a implémenté et assuré le support des produits de Business Messaging chez Partoo.
-
-    links:
-      - title: Landing Page
-        url: https://www.partoo.co/fr/entreprises/ai-chatbot/
     website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
@@ -171,7 +169,6 @@ experience:
     links:
       - title: Landing Page (Archive)
         url: https://web.archive.org/web/20210622111249/https://agorahealth.org.uk/
-  
     website: https://agorahealth.org.uk
     description: |
       # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS au Royaume-Uni
@@ -221,7 +218,7 @@ experience:
     position: Développeur et Designer UI/UX 
     website: http://survaider.com
     links:
-      - title: Survey Builder (Archive)
+      - title: Survey Builder (Repository)
         url: https://github.com/prashnts/survaider-builder
       - title: Landing Page (Archive)
         url: https://web.archive.org/web/20190829213915/https://www.survaider.com/
@@ -251,9 +248,8 @@ experience:
       - Time Series Analysis
       - Signal Processing
     links:
-      - title: Presentation et Archive
+      - title: Presentation et Repository
         url: https://github.com/prashnts/MPU-9250
-        
     description: |
       # Reconnaissance des activités humaines à partir de données d'accélération dans des conditions naturelles
 
@@ -302,11 +298,10 @@ experience:
     links:
       - title: Presentation
         url: https://miriam.noop.pw/
-      - title: Repository 
-        url: https://github.com/prashnts/miRmap
-        
-        
-
+      - title: Analysis (Repository)
+        url: https://github.com/prashnts/mir-to-gene
+      - title: Presentation (Source)
+        url: https://github.com/prashnts/miriam-explore
     description: |
       # Modélisation et analyse de réseau de la régulation de l'expression génique médiée par les miARN introniques
 
@@ -330,8 +325,6 @@ experience:
     links:
       - title: Thunderbird Sync Extension
         url: https://github.com/prashnts/thunder-sync/tree/master
-      - title: ERP System
-        url: https://github.com/prashnts/TwoDotSeven
     description: |
       Developed an open-source and modular `ERP` system and `API` sub-system.
 
@@ -345,7 +338,8 @@ experience:
     links:
       - title: Archive Page
         url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
-
+      - title: ERP System (Repository)
+        url: https://github.com/prashnts/TwoDotSeven
     description: |
       Développement d'un système de classification de caractéristiques géospatiales à partir
       de textes provenant de différents continents. Mes autres missions incluaient la
