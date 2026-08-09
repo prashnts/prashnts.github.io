@@ -11,7 +11,12 @@ block prepend head
 
 mixin ilink(icon, url)
   - var title = url.replace(/https?:\/\//, '')
-  a(rel='noopener noreferrer' href=url title=title)
+  a(rel='noopener noreferrer' href=url title=title target='_blank')
+    i.icon(class='icon-' + icon)
+    span= title
+
+mixin title_link(icon, title, url)
+  a(rel='noopener noreferrer' href=url title=title target='_blank')
     i.icon(class='icon-' + icon)
     span= title
 
@@ -72,6 +77,10 @@ block prepend body
             //-   li= tag
           div.description
             !{xp.description}
+            if xp.links
+              div.extra_links
+                ul: each link in  xp.links
+                  li: +title_link('link', link.title, link.url)
             if xp.website
               p.website: +ilink('link', xp.website)
         - prev_xp = xp

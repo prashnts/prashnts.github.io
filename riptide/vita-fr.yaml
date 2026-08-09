@@ -50,6 +50,10 @@ experience:
     position: Développeur Full Stack
     description: |
       Mon équipe a implémenté et assuré le support des produits de Business Messaging chez Partoo.
+
+    links:
+      - title: Landing Page
+        url: https://www.partoo.co/fr/entreprises/ai-chatbot/
     website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
@@ -62,6 +66,11 @@ experience:
       - Platform Developer
       - UI/X Design
     website: https://www.learningplanetinstitute.org/en/
+    links:
+      - title: Official Project Blog
+        url: https://projects.learningplanetinstitute.org/projects/map-your-online-learning/summary
+      - title: Landing Page (Archive)
+        url: https://welearn-preview.netlify.app/pages/onboarding.html
     description: |
       # WeLearn - Un outil pour l'apprentissage collectif
       
@@ -108,6 +117,9 @@ experience:
       - Theoretical Biophysics
       - Optical Tracking
       - Mechanotransduction
+    links:
+      - title: Project Repository
+        url: https://github.com/prashnts/corvus-drive
     website: http://www.labos.upmc.fr/ljp
     description: |
       # The Mechanical Sense of Paramecium
@@ -156,6 +168,10 @@ experience:
     tags:
       - Machine Learning
       - Web Development
+    links:
+      - title: Landing Page (Archive)
+        url: https://web.archive.org/web/20210622111249/https://agorahealth.org.uk/
+  
     website: https://agorahealth.org.uk
     description: |
       # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS au Royaume-Uni
@@ -178,6 +194,11 @@ experience:
     tags:
       - Computer Vision
       - Information Extraction
+    links:
+      - title: ECG Analysis (Repository)
+        url: https://github.com/prashnts/ekgstore-beta
+      - title: Document Analysis (Repository)
+        url: https://github.com/prashnts/apollo-cad/tree/master
     description: |
       # Vision Artificielle et extraction d'informations
 
@@ -199,6 +220,11 @@ experience:
       till: '2016-02-01'
     position: Développeur et Designer UI/UX 
     website: http://survaider.com
+    links:
+      - title: Survey Builder (Archive)
+        url: https://github.com/prashnts/survaider-builder
+      - title: Landing Page (Archive)
+        url: https://web.archive.org/web/20190829213915/https://www.survaider.com/
     tags:
       - Backend and REST API
       - Client Interface
@@ -224,6 +250,10 @@ experience:
       - Machine Learning
       - Time Series Analysis
       - Signal Processing
+    links:
+      - title: Presentation et Archive
+        url: https://github.com/prashnts/MPU-9250
+        
     description: |
       # Reconnaissance des activités humaines à partir de données d'accélération dans des conditions naturelles
 
@@ -269,6 +299,14 @@ experience:
       - Network Analysis
       - Computational Biology
       - Mathematical Modelling
+    links:
+      - title: Presentation
+        url: https://miriam.noop.pw/
+      - title: Repository 
+        url: https://github.com/prashnts/miRmap
+        
+        
+
     description: |
       # Modélisation et analyse de réseau de la régulation de l'expression génique médiée par les miARN introniques
 
@@ -289,6 +327,11 @@ experience:
       till: '2014-08-20'
     position: Stagiaire
     tags:
+    links:
+      - title: Thunderbird Sync Extension
+        url: https://github.com/prashnts/thunder-sync/tree/master
+      - title: ERP System
+        url: https://github.com/prashnts/TwoDotSeven
     description: |
       Developed an open-source and modular `ERP` system and `API` sub-system.
 
@@ -299,6 +342,10 @@ experience:
       till: '2015-12-25'
     position: Assistant de Recherche
     tags:
+    links:
+      - title: Archive Page
+        url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
+
     description: |
       Développement d'un système de classification de caractéristiques géospatiales à partir
       de textes provenant de différents continents. Mes autres missions incluaient la
