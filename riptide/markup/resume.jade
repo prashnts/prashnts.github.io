@@ -59,11 +59,18 @@ block prepend body
       h1 Aperçu
       p !{vita.cover}
 
-    section.xp
-      h1 Expérience
+    section.xp.pro#section_xp
+      div.flexheader
+        h1 Expérience
+
+        span#filter_academic
+          input(type="checkbox" )#filter_checkbox
+          span Expérience Universitaire
+
       - var prev_xp = null
       ul: each xp in vita.experience
-        li
+        - pro = xp.professional ? 'pro' : 'academic'
+        li(class= pro)
           aside
             if !(prev_xp && prev_xp.company == xp.company)
               h2.company= xp.company

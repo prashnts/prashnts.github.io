@@ -22,6 +22,7 @@ cover: |
 experience:
   - company: Partoo
     location: Paris
+    professional: yes
     dates:
       from: '2024-01-01'
     position: Lead Developer
@@ -37,6 +38,7 @@ experience:
 
   - company: Partoo
     location: Paris
+    professional: yes
     dates:
       from: '2021-06-28'
       till: '2023-12-31'
@@ -47,6 +49,7 @@ experience:
 
   - company: Learning Planet Institute
     location: Paris
+    professional: yes
     dates:
       from: '2018-10-08'
       till: '2021-06-25'
@@ -136,7 +139,8 @@ experience:
       allowing better study of complicated plant organs.
 
   - company: Agora Health
-    location: London
+    location: London (Remote)
+    professional: yes
     dates:
       from: '2016-02-08'
       till: '2018-04-01'
@@ -158,6 +162,7 @@ experience:
 
   - company: Oxyent Technologies
     location: New Delhi
+    professional: yes
     dates:
       from: '2016-07-01'
       till: '2016-09-01'
@@ -184,6 +189,7 @@ experience:
 
   - company: Survaider
     location: New Delhi
+    professional: yes
     dates:
       from: '2015-01-01'
       till: '2016-02-01'
@@ -231,7 +237,7 @@ experience:
       were able to produce an accuracy of `95%` through our model.
 
   - company: University of California and Stanford
-    location: Santa Cruz
+    location: Santa Cruz (Remote)
     dates:
       from: '2015-01-01'
       till: '2015-06-01'
