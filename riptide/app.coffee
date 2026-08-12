@@ -2,7 +2,6 @@
 
 App =
   init: ->
-    @toggle_exp
     console.log "init success"
 
     filter_btn = document.getElementById 'filter_academic'
