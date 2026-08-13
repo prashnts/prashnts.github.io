@@ -98,23 +98,23 @@ body.vita
       width 80px
       font-weight 600
 
+  a.btn_42
+    background $violet
+    padding 4px 5px
+    border-radius 3px
+    color #fff
+
+    &:after
+      content unset
+
+    @media print
+      display none
+
+
   header
     display flex
     justify-content space-between
     align-items center
-
-    a.locale_sw
-      background $violet
-      padding 4px 5px
-      border-radius 3px
-      color #fff
-
-      &:after
-        content unset
-
-      @media print
-        display none
-
 
     h1
       font-weight 400
@@ -147,35 +147,84 @@ body.vita
       line-height normal
       margin 5px 0 0 -12px
       padding-left 10px
-
-  #filter_academic
-    display inline-flex
-    gap 5px
-    background $yellow
-    padding 4px 5px
-    border-radius 3px
-    color #fff
-
-
   
-  div.flexheader
+  #filtered
+    input
+      position sticky
+      display none
+      top 5px
+      left -2000px
+      visibility hidden
+
+  .controls
+    position sticky
+    top 0
+    z-index 1000
+    margin 20px 0 10px -5px
+
     display flex
     justify-content space-between
     align-items center
+    padding 5px 8px 10px 5px
+    backdrop-filter blur(2px) brightness(1.1)
+    border-radius 3px
+
+    > div
+      gap 5px
+      display flex
+      @media print
+        display none
+      
+    @media print
+      backdrop-filter none
+
+    h1
+      margin 0
+
+    .fbtn
+      padding 4px 5px 4px 5px
+      border-radius 3px
+      color #fff
+      cursor pointer
+
+      &:before
+        content "⎕"
+        margin-right 5px
+
+    .fbtn.uni
+      background $yellow
+    .fbtn.pro
+      background $blue
 
 
-  section.xp.pro
-    li.academic
+  section.xp
+    li.academic, li.pro
       display none
+
+  #filter_checkbox:checked ~ .academic
+    display flex !important
+  
+  #filter_checkbox:checked ~ .controls .fbtn.uni
+    opacity 0.8
+    &:before
+      content "✓"
+
+  #filter_professional:checked ~ .pro
+    display flex !important
+  
+  #filter_professional:checked ~ .controls .fbtn.pro
+    opacity 0.8
+    &:before
+      content "✓"
     
 
   li.pro
-    h2.company
-      border-left 3px solid $violet
+    h2.company, p.position
+      border-left 3px solid $blue !important
 
   li.academic
-    h2.company
-      border-left 3px solid $yellow
+    h2.company, p.position
+      border-left 3px solid $yellow !important
 
   section.xp, section.edu, section.talks, section.open_source, section.publications
     > ul > li

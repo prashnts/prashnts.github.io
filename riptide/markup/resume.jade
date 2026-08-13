@@ -38,8 +38,10 @@ block prepend body
       div
         h1 #[span= n[0]] #{n[1]}
         p #{vita.personal.title}
-      div
-        a.locale_sw(href='/resume_en') English Version ➔
+      div.controls
+        div
+          a.btn_42(href='#' onclick="window.print()") ⌘ Print
+          a.btn_42(href='/resume_en') English Version ➔
 
     section.info
       div
@@ -59,38 +61,39 @@ block prepend body
       h1 Aperçu
       p !{vita.cover}
 
-    section.xp.pro#section_xp
-      div.flexheader
-        h1 Expérience
-
-        span#filter_academic
-          input(type="checkbox" )#filter_checkbox
-          span Expérience Universitaire
-
-      - var prev_xp = null
-      ul: each xp in vita.experience
-        - pro = xp.professional ? 'pro' : 'academic'
-        li(class= pro)
-          aside
-            if !(prev_xp && prev_xp.company == xp.company)
-              h2.company= xp.company
-            p.position= xp.position
-            p.dates
-              +ispan('calendar', xp.dates.interval)
-              span.duration #{xp.dates.duration}
-            //- if !(prev_xp && prev_xp.location == xp.location)
-            p.location: +ispan('location', xp.location)
-            //- ul.tags: each tag in xp.tags || []
-            //-   li= tag
-          div.description
-            !{xp.description}
-            if xp.links
-              div.extra_links
-                ul: each link in  xp.links
-                  li: +title_link('link', link.title, link.url)
-            if xp.website
-              p.website: +ilink('link', xp.website)
-        - prev_xp = xp
+    section.xp
+      ul#filtered
+        input(type="checkbox")#filter_checkbox
+        input(type="checkbox" checked)#filter_professional
+        div.controls
+          h1 Expérience
+          div
+            label(for="filter_checkbox").fbtn.uni Expérience Universitaire
+            label(for="filter_professional").fbtn.pro Expérience Professionel
+        - var prev_xp = null
+        - each xp in vita.experience
+          - pro = xp.professional ? 'pro' : 'academic'
+          li(class= pro)
+            aside
+              if !(prev_xp && prev_xp.company == xp.company)
+                h2.company= xp.company
+              p.position= xp.position
+              p.dates
+                +ispan('calendar', xp.dates.interval)
+                span.duration #{xp.dates.duration}
+              //- if !(prev_xp && prev_xp.location == xp.location)
+              p.location: +ispan('location', xp.location)
+              //- ul.tags: each tag in xp.tags || []
+              //-   li= tag
+            div.description
+              !{xp.description}
+              if xp.links
+                div.extra_links
+                  ul: each link in  xp.links
+                    li: +title_link('link', link.title, link.url)
+              if xp.website
+                p.website: +ilink('link', xp.website)
+          - prev_xp = xp
 
     //- section.talks
     //-   h1 Conférences et ateliers
@@ -110,7 +113,8 @@ block prepend body
     //-           p.website: +ilink('link', talk.website)
 
     section.edu
-      h1 Éducation
+      div.controls
+        h1 Éducation
       ul: each edu in vita.education
         li
           aside
@@ -139,7 +143,8 @@ block prepend body
                   dd= edu.grade
 
     section.publications
-      h1 Publications
+      div.controls
+        h1 Publications
       ul: each pub in vita.publications
         li
           div
@@ -148,7 +153,8 @@ block prepend body
               p.subtitle #{pub.journal}, #{pub.year}
 
     section.open_source
-      h1 Open Source
+      div.controls
+        h1 Open Source
       ul: each package in vita.open_source
         li
           div.description
