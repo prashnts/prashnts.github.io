@@ -357,6 +357,8 @@ education:
       from: '2017-09-04'
       till: '2018-10-04'
     degree: Approches Interdisciplinaires du Vivant
+    major: Applied research expertise through placements in scientific labs
+    minor: Research Ethics and its associated methodologies
 
   - institute: Cluster Innovation Centre
     location: University of Delhi
@@ -371,17 +373,21 @@ education:
 skills:
   Development:
     - [Python, 5]
-    - [SCSS, 5]
-    - [CoffeeScript, 3]
-    - [ES6/JavaScript, 4]
+    - [JavaScript, 5]
+    - [Linux, 3]
+    - [Embedded Systems, 3]
+    - [Distributed Computing, 3]
   Design:
-    - [Print Media, 3]
-    - [CAD/CAM, 2]
-    - [Illustration, 3]
-    - [User Interface, 3]
+    - [Systems Design, 3]
+    - [3D Printing, 5]
+    - [Hardware Prototyping, 3]
+    - [UI/UX, 4]
   Misc:
     - [Scientific Computing, 4]
-    - [DevOps, 1]
+    - [Reverse Engineering, 2]
+    - [Clean-Room Design, 2]
+    - [DevOps, 2]
+
 
 open_source:
   - repo: prashnts/limn

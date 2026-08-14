@@ -162,13 +162,13 @@ block prepend body
 
             p: +ilink('git', 'https://github.com/' + package.repo)
 
-    //- section.skills
-    //-   h1 Skills
-    //-   ul: each skset, kind in vita_en.skills
-    //-     li
-    //-       h2= kind
-    //-       ul: each sk in skset
-    //-         li #{sk[0]} #[i= '●'.repeat(sk[1])]
+    section.skills
+      h1 Skills
+      ul: each skset, kind in vita_en.skills
+        li
+          h2= kind
+          ul: each sk in skset
+            li #{sk[0]} #[i= '●'.repeat(sk[1])]
 
     footer
       ul
