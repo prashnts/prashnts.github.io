@@ -148,7 +148,7 @@ experience:
     website: http://www.msc.univ-paris-diderot.fr
     links:
       - title: Presentation
-        link: /var/phylotaxis-presentation.pdf
+        url: /var/phylotaxis-presentation.pdf
     description: |
       # Study of Diversity in Phyllotactic Patterns
 
