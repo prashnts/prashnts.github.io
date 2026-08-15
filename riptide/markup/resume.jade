@@ -102,22 +102,23 @@ block prepend body
                 p.website: +ilink('link', xp.website)
           - prev_xp = xp
 
-    //- section.talks
-    //-   h1 Conférences et ateliers
-    //-   ul: each talk in vita.talks_and_workshops
-    //-     li
-    //-       aside
-    //-         h2.conference= talk.conference
-    //-         p.location: +ispan('location', talk.location)
-    //-         p.dates
-    //-           +ispan('calendar', talk.dates.interval)
-    //-         p.position= talk.type
-    //-         ul.tags: each tag in talk.tags || []
-    //-           li= tag
-    //-       div.description
-    //-         !{talk.description}
-    //-         if talk.website
-    //-           p.website: +ilink('link', talk.website)
+    section.talks
+      div.controls
+        h1 Conférences et ateliers
+      ul: each talk in vita.talks_and_workshops
+        li
+          aside
+            h2.conference= talk.conference
+            p.location: +ispan('location', talk.location)
+            p.dates
+              +ispan('calendar', talk.dates.interval)
+            p.position= talk.type
+            //- ul.tags: each tag in talk.tags || []
+            //-   li= tag
+          div.description
+            !{talk.description}
+            if talk.website
+              p.website: +ilink('link', talk.website)
 
     section.edu
       div.controls
@@ -179,7 +180,7 @@ block prepend body
             p: +ilink('git', 'https://github.com/' + package.repo)
             if package.links
               each link in package.links
-                div: +ilink('link', link)
+                div: +title_link('link', link.title, link.link)
 
     section.skills
       div.controls

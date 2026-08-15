@@ -96,6 +96,9 @@ experience:
       - Fluid Dynamics
       - Theoretical Biophysics
     website: https://www.pmmh.espci.fr
+    links:
+      - title: Presentation
+        url: /var/pmmh-poster.pdf
     description: |
       # Hydrodynamics of Super-Paramagnetic Micro-Beads
 
@@ -121,6 +124,8 @@ experience:
     links:
       - title: Project Repository
         url: https://github.com/prashnts/corvus-drive
+      - title: Youtube Video
+        url: https://www.youtube.com/watch?v=2gTXb3rWKzA
     description: |
       # The Mechanical Sense of Paramecium
 
@@ -324,42 +329,42 @@ experience:
       design and development of several web portals, graphic designing, media
       and publishing tasks.
 
-# talks_and_workshops:
-#   - conference: FOSSASIA 2017
-#     location: Singapore
-#     dates:
-#       from: '2017-03-17'
-#       till: '2017-03-19'
-#     type: Talk
-#     tags:
-#       - Python
-#       - Open Source
-#     description: |
-#       # Alohomora: Unlocking Magical Bits in Python
+talks_and_workshops:
+  - conference: FOSSASIA 2017
+    location: Singapore
+    dates:
+      from: '2017-03-17'
+      till: '2017-03-19'
+    type: Talk
+    tags:
+      - Python
+      - Open Source
+    description: |
+      # Alohomora: Unlocking Magical Bits in Python
 
-#       In this talk at FOSSASIA Summit, I gave a presentation covering several
-#       advance patterns in the Python programming language. In the presentation I
-#       introduced the audience with Metaclasses, Decorators and Patching.
+      In this talk at FOSSASIA Summit, I gave a presentation covering several
+      advance patterns in the Python programming language. In the presentation I
+      introduced the audience with Metaclasses, Decorators and Patching.
 
-#   - conference: West College
-#     location: Glasgow, Scotland
-#     dates:
-#       from: '2015-07-14'
-#       till: '2015-07-19'
-#     type: Workshop
-#     description: |
-#       # Game Development Workshop under UK-India Education and Research Initiative
+  - conference: West College
+    location: Glasgow, Scotland
+    dates:
+      from: '2015-07-14'
+      till: '2015-07-19'
+    type: Workshop
+    description: |
+      # Game Development Workshop under UK-India Education and Research Initiative
 
-#   - conference: Autonomi
-#     location: University of Delhi
-#     dates:
-#       from: '2015-02-28'
-#       till: '2015-03-01'
-#     type: Talk
-#     description: |
-#       # Robotics Bootcamp
+  - conference: Autonomi
+    location: University of Delhi
+    dates:
+      from: '2015-02-28'
+      till: '2015-03-01'
+    type: Talk
+    description: |
+      # Robotics Bootcamp
 
-#       Delivered sessions on Arduino programming, DAC, ADC and PWM.
+      Delivered sessions on Arduino programming, DAC, ADC and PWM.
 
 education:
   - institute: Centre de Recherches Interdisciplinaires
@@ -405,8 +410,12 @@ skills:
 open_source:
   - repo: prashnts/limn
     links:
-      - https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
-      - https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
+      - title: Youtube Demo
+        link: https://www.youtube.com/watch?v=6deuipWtRt8
+      - title: Hackaday Blog
+        link: https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
+      - title: 3D Printable Project
+        link: https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
     description: |
       # Pen Plotter with automatic Toolchanger
 
@@ -416,7 +425,8 @@ open_source:
 
   - repo: prashnts/disinfo
     links:
-      - https://www.printables.com/model/1609188-disinfo-128x196-pixel-led-matrix-array
+      - title: 3D Printable Project
+        link: https://www.printables.com/model/1609188-disinfo-128x196-pixel-led-matrix-array
     description: |
       # DisInfo: (Info)rmation (Dis)play
 
@@ -486,5 +496,6 @@ publications:
     pdf: https://dl.acm.org/doi/pdf/10.1145/2815585.2815725
   - title: Human Physical Activity Recognition from Acceleration Data under Naturalistic Conditions
     authors: A Parmar, P Sinha
+    academic: yes
     year: 2015
     pdf: /var/har-paper-draft.pdf
