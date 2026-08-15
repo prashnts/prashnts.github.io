@@ -270,6 +270,8 @@ experience:
       - Time Series Analysis
       - Signal Processing
     links:
+      - title: Paper Draft
+        url: /var/har-paper-draft.pdf
       - title: Presentation et Repository
         url: https://github.com/prashnts/MPU-9250
     description: |
@@ -388,25 +390,25 @@ talks_and_workshops:
       advance patterns in the Python programming language. In the presentation I
       introduced the audience with Metaclasses, Decorators and Patching.
 
-  - conference: West College
-    location: Glasgow, Scotland
-    dates:
-      from: '2015-07-14'
-      till: '2015-07-19'
-    type: Workshop
-    description: |
-      # Game Development Workshop under UK-India Education and Research Initiative
+  # - conference: West College
+  #   location: Glasgow, Scotland
+  #   dates:
+  #     from: '2015-07-14'
+  #     till: '2015-07-19'
+  #   type: Workshop
+  #   description: |
+  #     # Game Development Workshop under UK-India Education and Research Initiative
 
-  - conference: Autonomi
-    location: University of Delhi
-    dates:
-      from: '2015-02-28'
-      till: '2015-03-01'
-    type: Talk
-    description: |
-      # Robotics Bootcamp
+  # - conference: Autonomi
+  #   location: University of Delhi
+  #   dates:
+  #     from: '2015-02-28'
+  #     till: '2015-03-01'
+  #   type: Talk
+  #   description: |
+  #     # Robotics Bootcamp
 
-      Delivered sessions on Arduino programming, DAC, ADC and PWM.
+  #     Delivered sessions on Arduino programming, DAC, ADC and PWM.
 
 education:
   - institute: Centre de Recherches Interdisciplinaires
@@ -539,8 +541,3 @@ publications:
     year: 2015
     doi: 10.1145/2815585.2815725
     pdf: https://dl.acm.org/doi/pdf/10.1145/2815585.2815725
-  - title: Human Physical Activity Recognition from Acceleration Data under Naturalistic Conditions
-    authors: A Parmar, P Sinha
-    academic: yes
-    year: 2015
-    pdf: /var/har-paper-draft.pdf

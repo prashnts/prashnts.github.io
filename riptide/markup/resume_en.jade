@@ -87,7 +87,7 @@ block prepend body
               p.position= xp.position
               p.dates
                 +ispan('calendar', xp.dates.interval)
-                span.duration #{xp.dates.duration}
+                //- span.duration #{xp.dates.duration}
               //- if !(prev_xp && prev_xp.location == xp.location)
               p.location: +ispan('location', xp.location)
               //- ul.tags: each tag in xp.tags || []
