@@ -1,7 +1,7 @@
 ---
 personal:
   name: Prashant Sinha
-  title: Developer
+  title: Lead Developer
 info:
   homepage: https://noop.pw
   github: https://github.com/prashnts
@@ -11,6 +11,17 @@ info:
   location: Paris, France
   twitter: https://twitter.com/prashnts
   printables: https://printables.com/@prashnts
+
+  spoken_languages:
+    - label: English
+      level: Bilingual
+      icon: 🇬🇧
+    - label: French
+      level: C1 (Advanced)
+      icon: 🇫🇷
+    - label: Hindi
+      level: Bilingual
+      icon: 🇮🇳
 
 cover: |
   I am a software developer based in Paris. My work focuses on using programming,
@@ -373,6 +384,7 @@ education:
 skills:
   Development:
     - [Python, 5]
+    - [Agentic AI, 4]
     - [JavaScript, 5]
     - [Linux, 3]
     - [Embedded Systems, 3]

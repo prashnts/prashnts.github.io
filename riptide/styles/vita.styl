@@ -53,6 +53,9 @@ body.vita
       left -1.8em
       color $base0
       opacity .5
+      &.emoji
+        opacity .8
+        left -1.5em
   a
     color $base03
     border 0
@@ -319,7 +322,7 @@ body.vita
       @media screen and (max-width 768px)
         display block
         margin 0 -30px
-        padding 10px 30px
+        padding 0px 30px
         &:nth-of-type(2n)
           //background tint($cyan, 60%)
         &:nth-of-type(2n + 1)
@@ -332,7 +335,7 @@ body.vita
           margin-top 5px
           text-align left
           h3
-            font-weight 400
+            font-weight 600
             font-size 1.1em
 
       @media print
@@ -363,18 +366,32 @@ body.vita
       > li
         margin-right 30px
         flex 1
+
         &:last-child
           margin 0
       @media screen and (max-width 768px)
         display block
         > li
           margin 0 0 10px
-    i
-      font-style normal
-      float right
-      font-size 1.2em
-      letter-spacing 2px
-      color $accent
+      i
+        font-style normal
+        font-size 1.2em
+        letter-spacing 2px
+        color $accent
+      span.skill
+        font-style normal
+      li.skill
+        display flex
+        justify-content space-between
+
+        .labels
+          display flex
+          color $base01
+          position relative
+
+          .dots
+            position absolute
+            right 0
 
   footer
     margin-top 60px
