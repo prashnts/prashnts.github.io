@@ -165,6 +165,9 @@ experience:
       - Plant Biology
       - Projection Geometry
     website: http://www.msc.univ-paris-diderot.fr
+    links:
+      - title: Presentation
+        link: /var/phylotaxis-presentation.pdf
     description: |
       # Étude de la diversité des motifs Phyllotactic
 
