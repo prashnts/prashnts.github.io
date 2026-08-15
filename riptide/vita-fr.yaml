@@ -106,11 +106,15 @@ experience:
     description: |
       # WeLearn - Un outil pour l'apprentissage collectif
       
-      - Responsable de l'architecture et du développement d'API pour un modèle d'apprentissage automatique qui classe les pages web en pages Wikipedia (concepts).
-      - Création d'une visualisation (une carte de concepts) permettant d'afficher efficacement les concepts d'un utilisateur avec des repères spatiaux et la possibilité de trouver d'autres concepts similaires.
-      - Développement d'extensions de navigateur pour ingérer des pages web.
+      J’ai conçu et développé les API qui alimentent un modèle d’apprentissage automatique capable de
+      classer les pages Web selon des concepts Wikipedia, permettant aux utilisateurs de cartographier
+      et d’explorer leur parcours d’apprentissage. J’ai également réalisé une visualisation interactive
+      sous forme de carte conceptuelle qui utilise des repères spatiaux pour afficher le paysage de
+      connaissances de l’utilisateur et mettre en avant des concepts similaires à explorer. Enfin, j’ai
+      développé des extensions de navigateur qui capturent les pages Web au fur et à mesure de la navigation,
+      injectant les données dans le pipeline de classification en temps réel.
 
-      <!-- nemotron-3-nano, "Translate the following to French:" -->
+      <!-- kagi/gpt-oss-120B -->
 
 
   - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI

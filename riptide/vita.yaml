@@ -93,11 +93,14 @@ experience:
     description: |
       # WeLearn - A tool for collective learning
 
-      - Responsible for architecting and developing APIs for a Machine Learning model
-        that classified webpages into Wikipedia Pages (concepts).
-      - Created visualisation (a map of concepts) that efficiently displays a users 
-        concepts with spatial cues and the ability to find other similar concepts.
-      - Developed browser extensions to ingest webpages.
+      I designed and built the APIs that power a machine-learning model capable of classifying web
+      pages into Wikipedia concepts, allowing users to map and explore their learning pathways.
+      I also created an interactive concept‑map visualization that uses spatial cues to display a
+      user’s knowledge landscape and highlight similar concepts for exploration. Finally, I
+      developed browser extensions that capture web pages as users browse, feeding the data into
+      the classification pipeline in real time.
+
+      <!-- kagi/gpt-oss-120B -->
 
 
   - company: Physique et Mécanique des Milieux Hétérogènes, ESPCI
