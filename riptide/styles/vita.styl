@@ -14,6 +14,13 @@ body.vita
   @media print
     background $white
 
+  span.onlyprint
+    display: none
+
+    @media print
+      display: block
+
+
   main
     max-width 800px
     margin 0 auto
@@ -319,9 +326,6 @@ body.vita
           margin-bottom 5px
           ul
             list-style none
-
-          @media print
-            display none
 
       .journal_info
         display flex
