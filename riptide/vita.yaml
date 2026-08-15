@@ -39,10 +39,22 @@ experience:
       from: '2024-01-01'
     position: Lead Developer
     description: |
-      Currently working on infrastructure for Agentic workflows and Feedback analytics.
-      My team worked on AI Chatbots for Business Messaging which led to the creation of
-      a standardised architecture to run said workflows. It is capable of handling large
-      quantities of agentic calls. The underlying framework is Pydantic AI.
+      # Agentic Architecture & AI Chatbots
+
+      Leads a team of three owning Partoo's AI infrastructure. Spec'd and developed Jim, an AI chatbot
+      (OpenAI Chat Completions API) with a custom DSL for tool calling, memory, and context compaction.
+      Authored the company-wide Agentic Architecture spec — framework-agnostic infrastructure for model
+      management, usage tracking, a real-time dashboard, and conversation memory. Built on Pydantic AI,
+      it enabled ~10 agents in production handling 300k requests/week.
+      
+      Currently being reworked into an AI Gateway. Managed sprints, product specs with PM, and team repositories.
+
+      # Feedback Management Analytics
+
+      Spec'd and implemented an analytics dashboard for surveys replacing a third-party tool, powered
+      by ClickHouse. Fixed critical SQL bugs — one fix reduced query memory usage from >4 GB to <300 MB.
+
+      <!-- kagi/quick -->
 
     links:
       - title: Landing Page
@@ -56,7 +68,10 @@ experience:
       till: '2023-12-31'
     position: Full Stack Developer
     description: |
-      My team developed and supported the Business Messaging products at Partoo
+      # Business Messaging
+
+      Developed real-time integrations for Google Maps, Instagram, Messenger, and WhatsApp. Grew from
+      executing sprint tasks to writing technical strategies, with a track record of on-time releases
     website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute

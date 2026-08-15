@@ -47,12 +47,26 @@ experience:
       from: '2024-01-01'
     position: Lead Développeur
     description: |
-      Je travaille actuellement sur l'infrastructure pour les flux de travail agentiques artificielle
-      et l'analyse des retours. Mon équipe a travaillé sur les chatbots d'IA pour les messageries
-      professionnelles, ce qui a conduit à la création d'une architecture standardisée permettant
-      d'exécuter ces flux de travail. Elle est capable de gérer de grandes quantités d'appels.
-      Le cadre sous-jacent est Pydantic AI.
-      <!-- nemotron-3-nano, "Translate the following to French:" -->
+      # Architecture Agentic & Chatbots IA
+
+      Dirige une équipe de trois propriétaire de l'infrastructure IA de Partoo. Spécification
+      et développement de Jim, un chatbot IA (API OpenAI Chat Completions) avec un DSL personnalisé
+      pour l'appel d'outils, la mémoire et la compaction du contexte.
+      
+      Rédaction de la spécification de l'Architecture Agentic à l'échelle de l'entreprise — infrastructure
+      indépendante du framework pour la gestion des modèles, le suivi d'usage, un tableau de bord en temps
+      réel et la mémoire des conversations. Construite sur Pydantic AI, elle a permis la création de ~10 
+      agents en production traitant 300k requêtes/semaine. Actuellement en refonte vers une AI Gateway.
+      
+      Gestion des sprints, des specs produit avec le PM et des dépôts de l'équipe.
+
+      # Analytics de Feedback Management
+
+      Spécification et implémentation d'un dashboard d'analytics pour les enquêtes remplaçant un outil
+      tiers, propulsé par ClickHouse. Correction de bugs SQL critiques — un fix a réduit l'usage
+      mémoire des requêtes de >4 Go à <300 Mo.
+
+      <!-- kagi/quick -->
     links:
       - title: Landing Page
         url: https://www.partoo.co/fr/entreprises/ai-chatbot/
@@ -65,7 +79,12 @@ experience:
       till: '2023-12-31'
     position: Développeur Full-Stack
     description: |
-      Mon équipe a implémenté et assuré le support des produits de Business Messaging chez Partoo.
+      # Business Messaging
+      
+      Développement d'intégrations temps réel pour Google Maps, Instagram, Messenger et WhatsApp.
+      Évolution de l'exécution des tâches de sprint à la rédaction de stratégies techniques, avec
+      un historique de releases dans les temps.
+      <!-- kagi/quick -->
     website: https://www.partoo.co/en/
 
   - company: Learning Planet Institute
