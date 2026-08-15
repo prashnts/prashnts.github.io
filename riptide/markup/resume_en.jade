@@ -54,6 +54,7 @@ block prepend body
           li: +ilink('git', vita_en.info.github)
           //- li: +ilink('twitter', vita_en.info.twitter)
           li: +ilink('link', vita_en.info.printables)
+          li: +title_link('link', 'Google Scholar', vita_en.info.google_scholar)
       div
         h1 Info
         ul
@@ -155,8 +156,17 @@ block prepend body
         li
           div
             h3= pub.title
-            if pub.journal
-              p.subtitle #{pub.journal}, #{pub.year}
+            if pub.authors
+              p= pub.authors
+            div.journal_info
+              if pub.doi
+                p.doi: +ilink('lock', 'https://doi.org/' + pub.doi)
+              if pub.journal
+                p.subtitle #{pub.journal}, #{pub.year}
+            if pub.pdf_closed
+              p: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
+            if pub.pdf
+              p: +title_link('link', 'PDF', pub.pdf)
 
     section.open_source
       div.controls

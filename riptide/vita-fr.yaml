@@ -11,6 +11,7 @@ info:
   location: Paris, France
   twitter: https://twitter.com/prashnts
   printables: https://printables.com/@prashnts
+  google_scholar: https://scholar.google.com/citations?user=dQ3rdCwAAAAJ&hl=fr
 
   spoken_languages:
     - label: Anglais
@@ -444,13 +445,17 @@ skills:
 
 open_source:
   - repo: prashnts/limn
+    links:
+      - https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
+      - https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
     description: |
       # Traceur avec changeur d'outils
 
       Peut calibrer les outils automatiquement.
-      [Publication sur Hackaday](https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger).
     
   - repo: prashnts/disinfo
+    links:
+      - https://www.printables.com/model/1609188-disinfo-128x196-pixel-led-matrix-array
     description: |
       # DisInfo: (Info)rmation (Dis)play
 
@@ -500,18 +505,31 @@ open_source:
 
 
 publications:
-  - title: Investigating the "wisdom of crowds" at scale
-    journal: ACM UIST
-    year: 2015
   - title: Protein engineering and de novo designing of a biocatalyst
     authors: M Kaushik, P Sinha, P Jaiswal, S Mahendru, K Roy, S Kukreti
     journal: Journal of Molecular Recognition
     year: 2016
+    doi: '10.1002/jmr.2546'
+    pdf: https://d1wqtxts1xzle7.cloudfront.net/89311351/jmr.254620220806-1-1wk3p5o-libre.pdf?1659762129=&response-content-disposition=inline%3B+filename%3DProtein_engineering_andde_novodesigning.pdf&Expires=1786796254&Signature=e~cpqXxKakszMOw~JFLsSIE~spdPXtXgrGTqE--GVGKcnzAqOYH0FB6bpHHbQo6JVWjZE0gOMq1ug8hTxsDE5kQ4uWPSCvV-fbYIsdLd2QYGCoI3KfvlEQfsnJV~0Ui8uqDrvq7IP4cOVLKsIc15yIjM1SnpyK1rgsbXvVcjREj56QXq1RZ7s90yqR7tLTI2o-HvhtnYqz4lh9GvgK5Tfyt6Nh8E~BbNTzwjEevrPYhBJRY9~FBriwV2SeoE2SGEjNtEyvWSXDMmtY~cqLawTEAPkPN99cegBBKuCqoxuqZL9YMhAtkPDXBBTfxRqEVhqsKd06T0waFvpVTkWhDSIg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
   - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
     authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
     journal: Gene
     year: 2018
+    doi: '10.1016/j.gene.2018.08.082'
+    pdf_closed: /var/miriam.pdf
   - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
     authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
     journal: Journal of genetics
     year: 2019
+    doi: '10.1007/s12041-019-1101-6'
+    pdf: https://www.ias.ac.in/article/fulltext/jgen/098/0060
+  - title: Investigating the "wisdom of crowds" at scale
+    authors: A Mysore et al.
+    journal: ACM UIST
+    year: 2015
+    doi: 10.1145/2815585.2815725
+    pdf: https://dl.acm.org/doi/pdf/10.1145/2815585.2815725
+  - title: Human Physical Activity Recognition from Acceleration Data under Naturalistic Conditions
+    authors: A Parmar, P Sinha
+    year: 2015
+    pdf: /var/har-paper-draft.pdf

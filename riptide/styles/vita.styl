@@ -46,6 +46,10 @@ body.vita
     @media(max-width 768px)
       padding 20px 30px 0
 
+  @media print
+    .no-print
+      display none
+
   a, span
     position relative
     i
@@ -54,8 +58,10 @@ body.vita
       color $base0
       opacity .5
       &.emoji
-        opacity .8
+        font-style normal
+        opacity .9
         left -1.5em
+        font-size 1em
   a
     color $base03
     border 0
@@ -250,7 +256,6 @@ body.vita
     color $white
     &:before
       content "✓"
-    
 
   li.pro
     h2.company, p.position
@@ -318,6 +323,9 @@ body.vita
           @media print
             display none
 
+      .journal_info
+        display flex
+        gap 20px
 
       @media screen and (max-width 768px)
         display block
