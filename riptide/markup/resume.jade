@@ -104,23 +104,42 @@ block prepend body
                 p.website: +ilink('link', xp.website)
           - prev_xp = xp
 
-    section.talks
+    //- section.talks
+    //-   div.controls
+    //-     h1 Conférences et ateliers
+    //-   ul: each talk in vita.talks_and_workshops
+    //-     li
+    //-       aside
+    //-         h2.conference= talk.conference
+    //-         p.location: +ispan('location', talk.location)
+    //-         p.dates
+    //-           +ispan('calendar', talk.dates.interval)
+    //-         p.position= talk.type
+    //-         //- ul.tags: each tag in talk.tags || []
+    //-         //-   li= tag
+    //-       div.description
+    //-         !{talk.description}
+    //-         if talk.website
+    //-           p.website: +ilink('link', talk.website)
+
+    section.publications
       div.controls
-        h1 Conférences et ateliers
-      ul: each talk in vita.talks_and_workshops
+        h1 Publications
+      ul: each pub in vita.publications
         li
-          aside
-            h2.conference= talk.conference
-            p.location: +ispan('location', talk.location)
-            p.dates
-              +ispan('calendar', talk.dates.interval)
-            p.position= talk.type
-            //- ul.tags: each tag in talk.tags || []
-            //-   li= tag
-          div.description
-            !{talk.description}
-            if talk.website
-              p.website: +ilink('link', talk.website)
+          div
+            h3= pub.title
+            if pub.authors
+              p= pub.authors
+            div.journal_info
+              if pub.doi
+                p.doi: +ilink('lock', 'https://doi.org/' + pub.doi)
+              if pub.journal
+                p.subtitle #{pub.journal}, #{pub.year}
+            if pub.pdf_closed
+              p.no-print: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
+            if pub.pdf
+              p.no-print: +title_link('link', 'PDF', pub.pdf)
 
     section.edu
       div.controls
@@ -151,25 +170,6 @@ block prepend body
                 div
                   dt Grade
                   dd= edu.grade
-
-    section.publications
-      div.controls
-        h1 Publications
-      ul: each pub in vita.publications
-        li
-          div
-            h3= pub.title
-            if pub.authors
-              p= pub.authors
-            div.journal_info
-              if pub.doi
-                p.doi: +ilink('lock', 'https://doi.org/' + pub.doi)
-              if pub.journal
-                p.subtitle #{pub.journal}, #{pub.year}
-            if pub.pdf_closed
-              p.no-print: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
-            if pub.pdf
-              p.no-print: +title_link('link', 'PDF', pub.pdf)
 
     section.open_source
       div.controls
