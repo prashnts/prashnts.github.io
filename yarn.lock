@@ -1429,13 +1429,13 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
 
 ecstatic@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ecstatic/-/ecstatic-2.1.0.tgz#477a4a6b25cecb112f697dbd2c7fa354154ea6be"
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/ecstatic/-/ecstatic-2.2.2.tgz#1c7969b7a8893a04852e9373edeeb1d62809d393"
   dependencies:
-    he "^0.5.0"
+    he "^1.1.1"
     mime "^1.2.11"
     minimist "^1.1.0"
-    url-join "^1.0.0"
+    url-join "^2.0.2"
 
 editor@~1.0.0:
   version "1.0.0"
@@ -2150,9 +2150,9 @@ he@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
-he@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/he/-/he-0.5.0.tgz#2c05ffaef90b68e860f3fd2b54ef580989277ee2"
+he@^1.1.1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
 
 highlight.js@^9.12.0:
   version "9.12.0"
@@ -3061,11 +3061,7 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
-mime@^1.2.11:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
-
-mime@^1.3.4:
+mime@^1.2.11, mime@^1.3.4:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
@@ -5369,9 +5365,9 @@ update-notifier@^2.2.0, update-notifier@~2.3.0:
     semver-diff "^2.0.0"
     xdg-basedir "^3.0.0"
 
-url-join@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
+url-join@^2.0.2:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-2.0.5.tgz#5af22f18c052a000a48d7b82c5e9c2e2feeda728"
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
