@@ -352,22 +352,22 @@ experience:
       design and development of several web portals, graphic designing, media
       and publishing tasks.
 
-talks_and_workshops:
-  - conference: FOSSASIA 2017
-    location: Singapore
-    dates:
-      from: '2017-03-17'
-      till: '2017-03-19'
-    type: Talk
-    tags:
-      - Python
-      - Open Source
-    description: |
-      # Alohomora: Unlocking Magical Bits in Python
+# talks_and_workshops:
+#   - conference: FOSSASIA 2017
+#     location: Singapore
+#     dates:
+#       from: '2017-03-17'
+#       till: '2017-03-19'
+#     type: Talk
+#     tags:
+#       - Python
+#       - Open Source
+#     description: |
+#       # Alohomora: Unlocking Magical Bits in Python
 
-      In this talk at FOSSASIA Summit, I gave a presentation covering several
-      advance patterns in the Python programming language. In the presentation I
-      introduced the audience with Metaclasses, Decorators and Patching.
+#       In this talk at FOSSASIA Summit, I gave a presentation covering several
+#       advance patterns in the Python programming language. In the presentation I
+#       introduced the audience with Metaclasses, Decorators and Patching.
 
   # - conference: West College
   #   location: Glasgow, Scotland
@@ -439,6 +439,8 @@ open_source:
         link: https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
       - title: 3D Printable Project
         link: https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
+      - title: Article on Hackster.io
+        link: https://www.hackster.io/news/someone-finally-put-an-automatic-toolchanger-on-a-pen-plotter-feaafe662e9e
     description: |
       # Pen Plotter with automatic Toolchanger
 

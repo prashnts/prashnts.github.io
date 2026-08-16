@@ -401,24 +401,24 @@ experience:
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
 
-talks_and_workshops:
-  - conference: FOSSASIA 2017
-    location: Singapore
-    dates:
-      from: '2017-03-17'
-      till: '2017-03-19'
-    type: Talk
-    tags:
-      - Python
-      - Open Source
-    description: |
-      # Alohomora : Débloquer les bits magiques en Python
+# talks_and_workshops:
+#   - conference: FOSSASIA 2017
+#     location: Singapore
+#     dates:
+#       from: '2017-03-17'
+#       till: '2017-03-19'
+#     type: Talk
+#     tags:
+#       - Python
+#       - Open Source
+#     description: |
+#       # Alohomora : Débloquer les bits magiques en Python
 
-      Lors de cette présentation au FOSSASIA Summit, j'ai donné une conférence
-      couvrant plusieurs modèles avancés du langage de programmation Python. J'y
-      ai introduit le public aux métaclasses, aux décorateurs et au patching.
+#       Lors de cette présentation au FOSSASIA Summit, j'ai donné une conférence
+#       couvrant plusieurs modèles avancés du langage de programmation Python. J'y
+#       ai introduit le public aux métaclasses, aux décorateurs et au patching.
 
-      <!-- qwen3.8-27b -->
+#       <!-- qwen3.8-27b -->
 
   # - conference: West College
   #   location: Glasgow, Scotland
@@ -485,15 +485,26 @@ open_source:
     links:
       - title: Vidéo YouTube
         link: https://www.youtube.com/watch?v=6deuipWtRt8
-      - title: Hackaday Blog
+      - title: Blog Hackaday
         link: https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
       - title: 3D Printable Project
         link: https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
+      - title: Article sur Hackster.io
+        link: https://www.hackster.io/news/someone-finally-put-an-automatic-toolchanger-on-a-pen-plotter-feaafe662e9e
     description: |
-      # Traceur avec changeur d'outils
+      # Plotter à Stylo avec Changeur d’Outils
 
-      Peut calibrer les outils automatiquement.
-    
+      Ce dispositif représente un système de traçage sophistiqué, dont l'architecture est
+      quasi entièrement réalisable par impression additive (rapid prototyping).
+
+      D'un point de vue fonctionnel, il intègre une gestion modulaire avancée des outils,
+      permettant d'utiliser simultanément jusqu'à cinq modules ou stylos différents.
+      Son élément technologique clé réside dans la calibration totalement automatisée
+      des outils. Ce mécanisme simplifie le workflow opérationnel en garantissant une
+      précision constante sans aucune intervention manuelle de l'utilisateur.
+
+      <!-- gemma-4-31b-qat -->
+
   - repo: prashnts/disinfo
     links:
       - title: 3D Printable Project
