@@ -563,7 +563,7 @@ publications:
     journal: Journal of Molecular Recognition
     year: 2016
     doi: '10.1002/jmr.2546'
-    pdf: https://d1wqtxts1xzle7.cloudfront.net/89311351/jmr.254620220806-1-1wk3p5o-libre.pdf?1659762129=&response-content-disposition=inline%3B+filename%3DProtein_engineering_andde_novodesigning.pdf&Expires=1786796254&Signature=e~cpqXxKakszMOw~JFLsSIE~spdPXtXgrGTqE--GVGKcnzAqOYH0FB6bpHHbQo6JVWjZE0gOMq1ug8hTxsDE5kQ4uWPSCvV-fbYIsdLd2QYGCoI3KfvlEQfsnJV~0Ui8uqDrvq7IP4cOVLKsIc15yIjM1SnpyK1rgsbXvVcjREj56QXq1RZ7s90yqR7tLTI2o-HvhtnYqz4lh9GvgK5Tfyt6Nh8E~BbNTzwjEevrPYhBJRY9~FBriwV2SeoE2SGEjNtEyvWSXDMmtY~cqLawTEAPkPN99cegBBKuCqoxuqZL9YMhAtkPDXBBTfxRqEVhqsKd06T0waFvpVTkWhDSIg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+    pdf: /var/kaushik2016.pdf
   - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
     authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
     journal: Gene

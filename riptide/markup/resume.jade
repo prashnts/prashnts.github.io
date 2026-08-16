@@ -137,9 +137,9 @@ block prepend body
               if pub.journal
                 p.subtitle #{pub.journal}, #{pub.year}
             if pub.pdf_closed
-              p.no-print: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
+              p: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
             if pub.pdf
-              p.no-print: +title_link('link', 'PDF', pub.pdf)
+              p: +title_link('link', 'PDF', pub.pdf)
 
     section.edu
       div.controls
