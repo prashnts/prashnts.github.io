@@ -116,10 +116,18 @@ body.vita
       font-weight 600
 
   a.btn_42
-    background alpha($violet, 0.8)
-    padding 4px 5px
+    background alpha($base4, 0.8)
+    padding 3px 5px
     border-radius 3px
     color #fff
+    border 2px solid transparent
+
+    &:hover, &:focus
+      border: 2px solid $base02
+
+    &.main
+      background $violet
+      font-size 1.3em
 
     &:after
       content unset
@@ -166,13 +174,35 @@ body.vita
       margin 5px 0 0 -12px
       padding-left 10px
   
-  #filtered
-    input
-      position sticky
+  input.filteredinput
+    position sticky
+    display none
+    top 5px
+    left -2000px
+    visibility hidden
+
+  .controls.top
+    position fixed
+    right 2px
+    top unset
+    bottom 8vh
+    z-index 2000
+    padding 8px
+    border-radius 5px
+
+    border 1px solid rgba(0, 0, 0, 0.1)
+
+    > div
+      flex-flow column
+      align-items flex-start
+
+      > span
+        opacity .7
+        text-transform uppercase
+        font-size: .9em
+
+    @media print
       display none
-      top 5px
-      left -2000px
-      visibility hidden
 
   .controls
     position sticky
@@ -232,7 +262,7 @@ body.vita
       opacity 0
       transition all 1s ease
 
-  #filter_checkbox:checked ~ .academic
+  #filter_checkbox:checked ~ .xp .academic
     visibility visible
     height auto
     max-height 900px
@@ -248,7 +278,7 @@ body.vita
     &:before
       content "✓"
 
-  #filter_professional:checked ~ .pro
+  #filter_professional:checked ~ .xp .pro
     visibility visible
     height auto
     max-height 900px
@@ -327,7 +357,7 @@ body.vita
           ul
             list-style none
 
-      .journal_info
+      .inline_info
         display flex
         gap 20px
 
@@ -366,7 +396,7 @@ body.vita
 
   section.cover, section.open_source
     padding-right 30%
-    text-align justify
+    // text-align justify
 
     @media(max-width 768px)
       padding-right 0

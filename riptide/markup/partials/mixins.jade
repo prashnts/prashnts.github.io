@@ -13,3 +13,28 @@ mixin meta(page)
   meta(property='og:title'        content=page.title)
   meta(property='og:description'  content=page.description)
   meta(property='og:image'        content='https://noop.pw/img/icons/spock@3x.png')
+
+
+mixin ilink(icon, url)
+  - var title = url.replace(/https?:\/\//, '')
+  a(rel='noopener noreferrer' href=url title=title)
+    i.icon(class='icon-' + icon)
+    span= title
+    span.onlyprint= url
+
+mixin title_link(icon, title, url)
+  a(rel='noopener noreferrer' href=url title=title target='_blank')
+    i.icon(class='icon-' + icon)
+    span= title
+    span.onlyprint= url
+
+mixin email(email)
+  a(href='mailto:' + email)
+    i.icon.icon-mail
+    span= email
+
+mixin ispan(icon, content)
+  span #[i.icon(class='icon-' + icon)] #{content}
+
+mixin emospan(emo, content)
+  span #[i.icon.emoji= emo] #{content}

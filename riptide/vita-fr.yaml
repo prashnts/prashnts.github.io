@@ -25,18 +25,19 @@ info:
       icon: 🇮🇳
 
 cover: |
-  Je suis développeur à Paris. Mon travail consiste à employer la programmation, les mathematique
-  et le design comme des outils pour résoudre de problèmes complexes et intéressants.
-  Mes projets couvrent une variété des domaines : Intelligence Artificielle, Vision artificielle,
-  Data Visualisation, Applications Web, et Systèmes Intégrés. J'aime aussi concevoir et imprimer
-  des objets 3D fonctionels.
-  <!-- Machine translated text are marked with the model and prompt used.
+  Je suis développeur à Paris. J'gère actuellement l'infrastructure IA de Partoo, où mon équipe
+  conçoit et met en production des systèmes agentiques traitant des centaines de milliers de
+  requêtes par semaine. Mon travail consiste à employer la programmation, les mathematique et le
+  design comme des outils pour résoudre de problèmes complexes et intéressants. Mes projets
+  couvrent une variété des domaines : Agentic AI, Machine Learning, Computer Vision, Calcul
+  scientifique, Applications Web, et Systèmes Intégrés. J'ai publié des recherches peer-reviewed
+  en biologie computationnelle et en génétique, et je maintiens plusieurs projets open source sur
+  mon temps libre. J'aime aussi concevoir et imprimer des objets 3D fonctionels.
 
-  System Prompt:
-  You're a computer science major with vast array of surface-level knowledge.
-  To help you graduate, I'm asking interesting and/or mundane questions. Be humble if you don't
-  quite know the answer. Just like a student goes to a library, you do your research on topics
-  that you're not very good at it yet.-->
+
+  <!-- Machine translated text are marked with the model and prompt used (where applicable). -->
+  <!-- kagi/quick -->
+
 
 
 experience:
@@ -130,7 +131,7 @@ experience:
     website: https://www.pmmh.espci.fr
     links:
       - title: Présentation
-        url: /var/pmmh-poster.pdf
+        url: https://noop.pw/var/pmmh-poster.pdf
     description: |
       # Hydrodynamique des Super-Paramagnetic Micro-Beads
 
@@ -141,7 +142,7 @@ experience:
       En utilisant les outils open source `trackpy` et `scikit-image`, j'ai développé
       un pipeline de traitement d'images pour isoler, suivre et calculer les
       dynamiques du mouvement à partir des images. Nous avons atteint une cadence 
-      moyenne de `~800` fps.
+      moyenne de ~800fps.
 
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
@@ -190,7 +191,7 @@ experience:
     website: http://www.msc.univ-paris-diderot.fr
     links:
       - title: Présentation (24Mo, PDF)
-        url: /var/phylotaxis-presentation.pdf
+        url: https://noop.pw/var/phylotaxis-presentation.pdf
     description: |
       # Étude de la diversité des motifs Phyllotactic
 
@@ -297,7 +298,7 @@ experience:
       - Signal Processing
     links:
       - title: Paper Draft
-        url: /var/har-paper-draft.pdf
+        url: https://noop.pw/var/har-paper-draft.pdf
       - title: Présentation et Repository
         url: https://github.com/prashnts/MPU-9250
     description: |
@@ -309,7 +310,7 @@ experience:
 
       En utilisant une méthode d'apprentissage supervisé, nous avons entraîné 
       un classifieur Random Forest à l'aide de vecteurs de caractéristiques 
-      obtenus via notre modèle, qui nous a permis d'atteindre une précision de `95 %`.
+      obtenus via notre modèle, qui nous a permis d'atteindre une précision de 95%.
       
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
@@ -357,7 +358,8 @@ experience:
 
       Dans le cadre de ce projet, nous avons développé un modèle mathématique pour la 
       régulation de l'expression génique via les micro-ARN (miARN) introniques, basé 
-      sur des données empiriques et des observations expérimentales réalisées à l'IGIB (Institute of Genomics and Integrative Biology).
+      sur des données empiriques et des observations expérimentales réalisées à l'IGIB
+      (Institute of Genomics and Integrative Biology).
 
       Dans le cadre de cette étude, nous avons également généré un réseau de cibles 
       `miARN <=> ARNm` en utilisant diverses bases de données disponibles.
@@ -546,15 +548,15 @@ open_source:
       <!-- nemotron-3-nano, "Translate the following to French:" -->
 
 
-  - repo: agora-team/elasticsearch-synonyms
-    description: |
-      # Elasticsearch-Synonyms : Utilitaires pour travailler avec le Synonym Filter dans Elasticsearch
+  # - repo: agora-team/elasticsearch-synonyms
+  #   description: |
+  #     # Elasticsearch-Synonyms : Utilitaires pour travailler avec le Synonym Filter dans Elasticsearch
 
-      Ce repository contient un curated dataset de synonymes au format `Solr`.
-      Ces synonymes peuvent être utilisés pour la configuration du Elasticsearch Synonym Token Filter. 
-      Il fournit un outil pour linter et valider les fichiers de synonymes.
+  #     Ce repository contient un curated dataset de synonymes au format `Solr`.
+  #     Ces synonymes peuvent être utilisés pour la configuration du Elasticsearch Synonym Token Filter. 
+  #     Il fournit un outil pour linter et valider les fichiers de synonymes.
 
-      <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
+  #     <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
 
 
 publications:
@@ -563,13 +565,13 @@ publications:
     journal: Journal of Molecular Recognition
     year: 2016
     doi: '10.1002/jmr.2546'
-    pdf: /var/kaushik2016.pdf
+    pdf: https://noop.pw/var/kaushik2016.pdf
   - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
     authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
     journal: Gene
     year: 2018
     doi: '10.1016/j.gene.2018.08.082'
-    pdf_closed: /var/miriam.pdf
+    pdf_closed: https://noop.pw/var/miriam.pdf
   - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
     authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
     journal: Journal of genetics

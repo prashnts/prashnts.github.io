@@ -9,44 +9,26 @@ block prepend head
     }
   +meta(page)
 
-mixin ilink(icon, url)
-  - var title = url.replace(/https?:\/\//, '')
-  a(rel='noopener noreferrer' href=url title=title target='_blank')
-    i.icon(class='icon-' + icon)
-    span= title
-
-mixin emospan(emo, content)
-  span #[i.icon.emoji= emo] #{content}
-
-mixin title_link(icon, title, url)
-  a(rel='noopener noreferrer' href=url title=title target='_blank')
-    i.icon(class='icon-' + icon)
-    span= title
-    span.onlyprint= url
-
-mixin email(email)
-  a(href='mailto:' + email)
-    i.icon.icon-mail
-    span= email
-    span.onlyprint= url
-
-mixin ispan(icon, content)
-  span #[i.icon(class='icon-' + icon)] #{content}
-
 block append stylesheets
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla:400,400i,700')
 
 block prepend body
   body.vita.locale_fr: main
+    input(type="checkbox").filteredinput#filter_checkbox
+    input(type="checkbox" checked).filteredinput#filter_professional
+    div.controls.top
+      div
+        span Options
+        a.btn_42.main(href='/resume_en') 🇬🇧 English ➔
+        a.btn_42(href='#' onclick="window.print()") ⌘ Imprimer (PDF)
+        span Filtres
+        label(for="filter_checkbox").fbtn.uni Exp. Academic
+        label(for="filter_professional").fbtn.pro Professionelle
     header
       - var n = vita.personal.name.split(' ')
       div
         h1 #[span= n[0]] #{n[1]}
         p #{vita.personal.title}
-      div.controls
-        div
-          a.btn_42(href='#' onclick="window.print()") ⌘ PDF
-          a.btn_42(href='/resume_en') English Version ➔
 
     section.info
       div
@@ -72,13 +54,8 @@ block prepend body
 
     section.xp
       ul#filtered
-        input(type="checkbox")#filter_checkbox
-        input(type="checkbox" checked)#filter_professional
         div.controls
           h1 Expérience
-          div
-            label(for="filter_checkbox").fbtn.uni Universitaire
-            label(for="filter_professional").fbtn.pro Professionelle
         - var prev_xp = null
         - each xp in vita.experience
           - pro = xp.professional ? 'pro' : 'academic'
@@ -90,8 +67,8 @@ block prepend body
               p.dates
                 +ispan('calendar', xp.dates.interval)
                 //- span.duration #{xp.dates.duration}
-              //- if !(prev_xp && prev_xp.location == xp.location)
-              p.location: +ispan('location', xp.location)
+              if !(prev_xp && prev_xp.location == xp.location)
+                p.location: +ispan('location', xp.location)
               //- ul.tags: each tag in xp.tags || []
               //-   li= tag
             div.description
@@ -131,15 +108,36 @@ block prepend body
             h3= pub.title
             if pub.authors
               p= pub.authors
-            div.journal_info
+            div.inline_info
               if pub.doi
                 p.doi: +ilink('lock', 'https://doi.org/' + pub.doi)
+            div.inline_info
+              if pub.pdf_closed
+                p: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
+              if pub.pdf
+                p: +title_link('link', 'PDF', pub.pdf)
+            div.inline_info
               if pub.journal
                 p.subtitle #{pub.journal}, #{pub.year}
-            if pub.pdf_closed
-              p: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
-            if pub.pdf
-              p: +title_link('link', 'PDF', pub.pdf)
+              if pub.doi
+                span(class="__dimensions_badge_embed__" data-doi=pub.doi data-style="small_rectangle")
+      script(async src="https://badge.dimensions.ai/static/ai/badge.js" charset="utf-8")
+
+    section.open_source
+      div.controls
+        h1 Open Source
+      ul: each package in vita.open_source
+        li
+          div.description
+            !{package.description}
+
+            div.inline_info
+              - pkg_url = 'https://github.com/' + package.repo
+              p: +ilink('git', pkg_url)
+              span: a(href=pkg_url): img(alt="GitHub Repo stars" src="https://img.shields.io/github/stars/" + package.repo)
+            if package.links
+              each link in package.links
+                div: +title_link('link', link.title, link.link)
 
     section.edu
       div.controls
@@ -171,18 +169,6 @@ block prepend body
                   dt Grade
                   dd= edu.grade
 
-    section.open_source
-      div.controls
-        h1 Open Source
-      ul: each package in vita.open_source
-        li
-          div.description
-            !{package.description}
-
-            p: +ilink('git', 'https://github.com/' + package.repo)
-            if package.links
-              each link in package.links
-                div: +title_link('link', link.title, link.link)
 
     section.skills
       div.controls

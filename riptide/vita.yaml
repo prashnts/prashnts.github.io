@@ -25,11 +25,18 @@ info:
       icon: 🇮🇳
 
 cover: |
-  I am a software developer based in Paris. My work focuses on using programming,
-  mathematics, and design as tools to solve interesting and challenging problems.
-  My projects span a wide array of domains: Computer Vision, Machine Learning,
-  Data Visualisation, Web Applications, and Embedded systems. I also enjoy designing
-  and printing functional 3D models.
+  I am a software developer based in Paris. I currently lead Partoo's AI infrastructure,
+  where my team builds and ships agentic systems handling hundreds of thousands of
+  requests per week. My work focuses on using programming, mathematics, and design as 
+  tools to solve interesting and challenging problems across a wide array of 
+  domains: Agentic AI, Machine Learning, Computer Vision, Scientific Computing,
+  Web Applications, and Embedded systems. I have published peer-reviewed research in
+  computational biology and genetics, and I maintain several open-source projects in
+  my spare time. I also enjoy designing and printing functional 3D models.
+
+  <!-- kagi/quick -->
+
+
 
 experience:
   - company: Partoo
@@ -116,7 +123,7 @@ experience:
     website: https://www.pmmh.espci.fr
     links:
       - title: Presentation
-        url: /var/pmmh-poster.pdf
+        url: https://noop.pw/var/pmmh-poster.pdf
     description: |
       # Hydrodynamics of Super-Paramagnetic Micro-Beads
 
@@ -126,7 +133,7 @@ experience:
 
       Using open source tools `trackpy` and `scikit-image`, I developed an
       image processing pipeline to isolate, track, and calculate motion dynamics
-      from the frames. We reached an average frame rate of `~800 fps`.
+      from the frames. We reached an average frame rate of ~800 fps.
 
   - company: Laboratoire Jean Perrin, UPMC
     location: Paris
@@ -166,7 +173,7 @@ experience:
     website: http://www.msc.univ-paris-diderot.fr
     links:
       - title: Presentation
-        url: /var/phylotaxis-presentation.pdf
+        url: https://noop.pw/var/phylotaxis-presentation.pdf
     description: |
       # Study of Diversity in Phyllotactic Patterns
 
@@ -262,7 +269,7 @@ experience:
       - Signal Processing
     links:
       - title: Paper Draft
-        url: /var/har-paper-draft.pdf
+        url: https://noop.pw/var/har-paper-draft.pdf
       - title: Presentation and Repository
         url: https://github.com/prashnts/MPU-9250
     description: |
@@ -485,13 +492,13 @@ open_source:
       sequences. It is built on miRanda, an algorithm for detection and ranking
       of the targets of microRNA.
 
-  - repo: agora-team/elasticsearch-synonyms
-    description: |
-      # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
+  # - repo: agora-team/elasticsearch-synonyms
+  #   description: |
+  #     # Elasticsearch-Synonyms: Utilities for working with Synonym Filter in Elasticsearch
 
-      This repository contains a curated dataset of synonyms in `Solr` Format.
-      These synonyms can be used for Elasticsearch Synonym Token Filter
-      configuration. It provides a tool to lint and validate the synonym files.
+  #     This repository contains a curated dataset of synonyms in `Solr` Format.
+  #     These synonyms can be used for Elasticsearch Synonym Token Filter
+  #     configuration. It provides a tool to lint and validate the synonym files.
 
 
 publications:
@@ -500,13 +507,13 @@ publications:
     journal: Journal of Molecular Recognition
     year: 2016
     doi: '10.1002/jmr.2546'
-    pdf: /var/kaushik2016.pdf
+    pdf: https://noop.pw/var/kaushik2016.pdf
   - title: Intronic miRNA mediated gene expression regulation controls protein crowding inside the cell
     authors: P Sinha, P Jaiswal, AK Jainarayanan, SK Brahmachari
     journal: Gene
     year: 2018
     doi: '10.1016/j.gene.2018.08.082'
-    pdf_closed: /var/miriam.pdf
+    pdf_closed: https://noop.pw/var/miriam.pdf
   - title: Meta-analysis of genomic variants and gene expression data in schizophrenia suggests the potential need for adjunctive therapeutic interventions for neuropsychiatric disorders
     authors: SA Chellappa, AK Pathak, P Sinha, AK Jainarayanan, S Jain, SK Brahmachari
     journal: Journal of genetics
