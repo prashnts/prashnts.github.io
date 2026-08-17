@@ -126,6 +126,10 @@ block prepend body
     section.open_source
       div.controls
         h1 Open Source
+        div
+          - github_url = 'https://github.com/prashnts'
+          span: a(href=github_url): img(alt="prashnts github stars" src="https://img.shields.io/github/stars/prashnts")
+          //- span: a(href=github_url): img(alt="prashnts github followers" src="https://img.shields.io/github/followers/prashnts")
       ul: each package in vita.open_source
         li
           div.description
