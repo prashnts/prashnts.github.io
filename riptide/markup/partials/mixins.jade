@@ -19,7 +19,7 @@ mixin ilink(icon, url)
   - var title = url.replace(/https?:\/\//, '')
   a(rel='noopener noreferrer' href=url title=title)
     i.icon(class='icon-' + icon)
-    span= title
+    span.no-print= title
     span.onlyprint= url
 
 mixin title_link(icon, title, url)

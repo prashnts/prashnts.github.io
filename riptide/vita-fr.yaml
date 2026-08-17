@@ -315,25 +315,25 @@ experience:
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
 
-  - company: University of California and Stanford
-    location: Santa Cruz (Remote)
-    dates:
-      from: '2015-01-01'
-      till: '2015-06-01'
-    position: Assistant de Recherche
-    tags:
-      - Data Scraping
-      - Data Processing
-    description: |
-      # Aspiring Researcher Challenge
+  # - company: University of California and Stanford
+  #   location: Santa Cruz (Remote)
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2015-06-01'
+  #   position: Assistant de Recherche
+  #   tags:
+  #     - Data Scraping
+  #     - Data Processing
+  #   description: |
+  #     # Aspiring Researcher Challenge
 
-      En tant qu'assistant de recherche, j'ai fait partie de l'équipe 
-      responsable du développement d'une vaste expérience en ligne visant 
-      à étudier la sagesse des foules (wisdom of crowd), au cours de laquelle j'ai conçu 
-      l'algorithme d'extraction (scraping) et de formatage des données 
-      brutes provenant de plusieurs plateformes de financement participatif.
+  #     En tant qu'assistant de recherche, j'ai fait partie de l'équipe 
+  #     responsable du développement d'une vaste expérience en ligne visant 
+  #     à étudier la sagesse des foules (wisdom of crowd), au cours de laquelle j'ai conçu 
+  #     l'algorithme d'extraction (scraping) et de formatage des données 
+  #     brutes provenant de plusieurs plateformes de financement participatif.
 
-      <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
+  #     <!-- gemma-4-31b-qat, "Translate the following to French while preserving technical jargons:" -->
 
 
   - company: Cluster Innovation Centre, University of Delhi
@@ -367,40 +367,40 @@ experience:
       <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
 
-  - company: IamSME of India, PHD Chamber of Commerce
-    location: New Delhi
-    dates:
-      from: '2014-05-15'
-      till: '2014-08-20'
-    position: Stagiaire
-    tags:
-    links:
-      - title: Thunderbird Sync Extension
-        url: https://github.com/prashnts/thunder-sync/tree/master
-    description: |
-      Développement d'un système ERP open source et modulaire, ainsi que d'un sous-système API.
+  # - company: IamSME of India, PHD Chamber of Commerce
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-05-15'
+  #     till: '2014-08-20'
+  #   position: Stagiaire
+  #   tags:
+  #   links:
+  #     - title: Thunderbird Sync Extension
+  #       url: https://github.com/prashnts/thunder-sync/tree/master
+  #   description: |
+  #     Développement d'un système ERP open source et modulaire, ainsi que d'un sous-système API.
 
-      <!-- qwen3.8-27b -->
+  #     <!-- qwen3.8-27b -->
 
-  - company: Laboratory for Pattern Engineering, University of Delhi
-    location: New Delhi
-    dates:
-      from: '2014-02-10'
-      till: '2015-12-25'
-    position: Assistant de Recherche
-    tags:
-    links:
-      - title: Archive Page
-        url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
-      - title: ERP System (Repository)
-        url: https://github.com/prashnts/TwoDotSeven
-    description: |
-      Développement d'un système de classification de caractéristiques géospatiales à partir
-      de textes provenant de différents continents. Mes autres missions incluaient la
-      conception et le développement de plusieurs portails web, ainsi que des tâches
-      de graphisme, de média et d'édition.
+  # - company: Laboratory for Pattern Engineering, University of Delhi
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-02-10'
+  #     till: '2015-12-25'
+  #   position: Assistant de Recherche
+  #   tags:
+  #   links:
+  #     - title: Archive Page
+  #       url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
+  #     - title: ERP System (Repository)
+  #       url: https://github.com/prashnts/TwoDotSeven
+  #   description: |
+  #     Développement d'un système de classification de caractéristiques géospatiales à partir
+  #     de textes provenant de différents continents. Mes autres missions incluaient la
+  #     conception et le développement de plusieurs portails web, ainsi que des tâches
+  #     de graphisme, de média et d'édition.
 
-      <!-- gemma-4-31b-qat, "Translate the following to French:" -->
+  #     <!-- gemma-4-31b-qat, "Translate the following to French:" -->
 
 
 # talks_and_workshops:

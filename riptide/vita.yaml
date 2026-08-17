@@ -283,23 +283,23 @@ experience:
       Classifier using feature vectors obtained via our model. We
       were able to produce an accuracy of `95%` through our model.
 
-  - company: University of California and Stanford
-    location: Santa Cruz (Remote)
-    dates:
-      from: '2015-01-01'
-      till: '2015-06-01'
-    position: Research Associate
-    tags:
-      - Data Scraping
-      - Data Processing
-    description: |
-      # Aspiring Researcher Challenge
+  # - company: University of California and Stanford
+  #   location: Santa Cruz (Remote)
+  #   dates:
+  #     from: '2015-01-01'
+  #     till: '2015-06-01'
+  #   position: Research Associate
+  #   tags:
+  #     - Data Scraping
+  #     - Data Processing
+  #   description: |
+  #     # Aspiring Researcher Challenge
 
-      As a research associate, I was part of the team which was
-      responsible for developing a large, online experiment to study
-      the wisdom of the crowd where I formulated the algorithm for
-      scraping and formatting raw data off multiple crowdfunding
-      platforms.
+  #     As a research associate, I was part of the team which was
+  #     responsible for developing a large, online experiment to study
+  #     the wisdom of the crowd where I formulated the algorithm for
+  #     scraping and formatting raw data off multiple crowdfunding
+  #     platforms.
 
   - company: Cluster Innovation Centre, University of Delhi
     location: New Delhi
@@ -328,36 +328,36 @@ experience:
       As a part of study, we've also generated a `miRNA <=> mRNA` target network
       using various available databases.
 
-  - company: IamSME of India, PHD Chamber of Commerce
-    location: New Delhi
-    dates:
-      from: '2014-05-15'
-      till: '2014-08-20'
-    position: Summer Intern
-    tags:
-    links:
-      - title: Thunderbird Sync Extension
-        url: https://github.com/prashnts/thunder-sync/tree/master
-    description: |
-      Developed an open-source and modular `ERP` system and `API` sub-system.
+  # - company: IamSME of India, PHD Chamber of Commerce
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-05-15'
+  #     till: '2014-08-20'
+  #   position: Summer Intern
+  #   tags:
+  #   links:
+  #     - title: Thunderbird Sync Extension
+  #       url: https://github.com/prashnts/thunder-sync/tree/master
+  #   description: |
+  #     Developed an open-source and modular `ERP` system and `API` sub-system.
 
-  - company: Laboratory for Pattern Engineering, University of Delhi
-    location: New Delhi
-    dates:
-      from: '2014-02-10'
-      till: '2015-12-25'
-    position: Research Associate
-    tags:
-    links:
-      - title: Archive Page
-        url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
-      - title: ERP System (Repository)
-        url: https://github.com/prashnts/TwoDotSeven
-    description: |
-      Built a classification system for geospacial features between
-      texts originated in different continents. Other responsibilities included
-      design and development of several web portals, graphic designing, media
-      and publishing tasks.
+  # - company: Laboratory for Pattern Engineering, University of Delhi
+  #   location: New Delhi
+  #   dates:
+  #     from: '2014-02-10'
+  #     till: '2015-12-25'
+  #   position: Research Associate
+  #   tags:
+  #   links:
+  #     - title: Archive Page
+  #       url: https://web.archive.org/web/20150724221814/http://pattern.ducic.ac.in/
+  #     - title: ERP System (Repository)
+  #       url: https://github.com/prashnts/TwoDotSeven
+  #   description: |
+  #     Built a classification system for geospacial features between
+  #     texts originated in different continents. Other responsibilities included
+  #     design and development of several web portals, graphic designing, media
+  #     and publishing tasks.
 
 # talks_and_workshops:
 #   - conference: FOSSASIA 2017
