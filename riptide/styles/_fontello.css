@@ -42,3 +42,35 @@
 .icon-spock:before { content: '\f259'; }
 .icon-twitter:before { content: '\f304'; }
 .icon-linkedin:before { content: '\f30c'; }
+
+
+.icon-link:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-heart:before { content: '\e802'; } /* '' */
+.icon-lock:before { content: '\e803'; } /* '' */
+.icon-calendar:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e805'; } /* '' */
+.icon-beaker:before { content: '\e806'; } /* '' */
+.icon-videocam:before { content: '\e807'; } /* '' */
+.icon-google:before { content: '\e808'; } /* '' */
+.icon-stop-outline:before { content: '\e809'; } /* '' */
+.icon-check:before { content: '\e80a'; } /* '' */
+.icon-videocam-1:before { content: '\e80b'; } /* '' */
+.icon-doc:before { content: '\f04a'; } /* '' */
+.icon-link-ext:before { content: '\f08e'; } /* '' */
+.icon-bookmark-empty:before { content: '\f097'; } /* '' */
+.icon-git:before { content: '\f09b'; } /* '' */
+.icon-suitcase:before { content: '\f0f2'; } /* '' */
+.icon-code:before { content: '\f121'; } /* '' */
+.icon-direction:before { content: '\f124'; } /* '' */
+.icon-unlink:before { content: '\f127'; } /* '' */
+.icon-link-ext-alt:before { content: '\f14c'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-sliders:before { content: '\f1de'; } /* '' */
+.icon-hand-grab-o:before { content: '\f255'; } /* '' */
+.icon-hand-spock-o:before { content: '\f259'; } /* '' */
+.icon-hand-peace-o:before { content: '\f25b'; } /* '' */
+.icon-hashtag:before { content: '\f292'; } /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+.icon-newspaper:before { content: '\f4f0'; } /* '' */

@@ -12,6 +12,7 @@ info:
   twitter: https://twitter.com/prashnts
   printables: https://printables.com/@prashnts
   google_scholar: https://scholar.google.com/citations?user=dQ3rdCwAAAAJ&hl=fr
+  linkedin: https://linkedin.com/in/prashnts/
 
   spoken_languages:
     - label: Anglais
@@ -162,7 +163,7 @@ experience:
         url: https://github.com/prashnts/corvus-drive
       - title: Vidéo YouTube
         url: https://www.youtube.com/watch?v=2gTXb3rWKzA
-    website: http://www.labos.upmc.fr/ljp
+    link_dead: http://www.labos.upmc.fr/ljp
     description: |
       # The Mechanical Sense of Paramecium
 
@@ -217,7 +218,7 @@ experience:
     links:
       - title: Landing Page (Archive)
         url: https://web.archive.org/web/20210622111249/https://agorahealth.org.uk/
-    website: https://agorahealth.org.uk
+    link_dead: https://agorahealth.org.uk
     description: |
       # Recommandation personnalisée d'événements médicaux, de conférences et de cours pour les médecins du NHS au Royaume-Uni
 
@@ -235,7 +236,7 @@ experience:
       from: '2016-07-01'
       till: '2016-09-01'
     position: Chercheur Stagiaire
-    website: http://oxyent.com
+    link_dead: http://oxyent.com
     tags:
       - Computer Vision
       - Information Extraction
@@ -265,7 +266,7 @@ experience:
       from: '2015-01-01'
       till: '2016-02-01'
     position: Développeur et Designer UI/UX 
-    website: http://survaider.com
+    link_dead: http://survaider.com
     links:
       - title: Survey Builder (Repository)
         url: https://github.com/prashnts/survaider-builder
@@ -489,8 +490,8 @@ open_source:
         link: https://www.youtube.com/watch?v=6deuipWtRt8
       - title: Blog Hackaday
         link: https://hackaday.io/project/205431-limn-pen-plotter-with-toolchanger
-      - title: 3D Printable Project
-        link: https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
+      # - title: 3D Printable Project
+      #   link: https://www.printables.com/model/1786450-limn-pen-plotter-with-automatic-tool-changer-parti
       - title: Article sur Hackster.io
         link: https://www.hackster.io/news/someone-finally-put-an-automatic-toolchanger-on-a-pen-plotter-feaafe662e9e
     description: |

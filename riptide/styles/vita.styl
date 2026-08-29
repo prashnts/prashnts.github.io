@@ -19,7 +19,7 @@ body.vita
     display: none
 
     @media print
-      display: block
+      display: unset
 
 
   main
@@ -44,6 +44,7 @@ body.vita
       height 10px
       background $accent
       position absolute
+      border-radius 0 0 4px 4px
       @media(max-width 768px)
         left 30px
         right 30px
@@ -64,14 +65,14 @@ body.vita
       position absolute
       left -1.8em
       color $base0
-      opacity .5
+      opacity .8
       &.emoji
         font-style normal
         opacity .9
         left -1.5em
         font-size 1em
   a
-    color $base03
+    color mix($base03, mix($violet, $blue, 60), 40)
     border 0
     &:after
       content ''
@@ -88,6 +89,12 @@ body.vita
       background alpha($base03, .1)
       &:after
         width 100%
+
+    @media print
+      color $base03
+
+  s.broken_link
+    opacity 0.7
 
   h1, h2, h3
     font-family type-karla
@@ -116,15 +123,17 @@ body.vita
       width 80px
       font-weight 600
 
-  a.btn_42
+  .btn_42
     background $base02
     padding 3px 5px
     border-radius 3px
     color #fff
     border 2px solid transparent
+    font 14px/1.2em type-fira
 
     &:hover, &:focus
       border 2px solid $base1
+      background $base01  
 
     &.main
       background $violet
@@ -241,9 +250,10 @@ body.vita
       cursor pointer
       opacity 1
       background transparent
+      font 14px/1.2em type-karla
 
       &:before
-        content "⎕"
+        content "[ ]"
         margin-right 5px
 
     .fbtn.uni
@@ -273,7 +283,7 @@ body.vita
     opacity 1
 
   
-  #filter_checkbox:checked ~ .controls .fbtn.uni
+  #filter_checkbox:checked ~ .controls button.uni
     opacity 0.8
     background $yellow
     color $white
@@ -289,7 +299,7 @@ body.vita
     opacity 1
 
   
-  #filter_professional:checked ~ .controls .fbtn.pro
+  #filter_professional:checked ~ .controls button.pro
     opacity 0.8
     background $blue
     color $white
@@ -308,14 +318,26 @@ body.vita
     > ul > li
       display flex
       margin-bottom 20px
+      justify-content space-between
       h3
         font-size 1.2em
         letter-spacing .5px
         font-weight 600
+        border-left 3px solid $base2
+        padding-left 10px
+        margin 5px 0 0 -12px
       aside
         width 30%
         margin-right 20px
         flex-shrink 0
+
+        &.right
+          margin-left 30px
+          margin-right 0
+
+          @media screen and (max-width 768px)
+            margin-left 0px
+
         p.location
           margin 5px 0
         p.dates
@@ -341,6 +363,10 @@ body.vita
           opacity .5
       div.description
         // text-align justify
+        width 70%
+        @media screen and (max-width 768px)
+          width auto
+
         h3, p
           margin-bottom 10px
 
@@ -396,7 +422,8 @@ body.vita
       flex 1
       font-family type-karla
 
-  section.cover, section.open_source
+  // section.cover, section.open_source
+  section.cover
     padding-right 30%
     // text-align justify
 

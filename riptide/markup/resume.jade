@@ -17,13 +17,15 @@ block prepend body
     input(type="checkbox").filteredinput#filter_checkbox
     input(type="checkbox" checked).filteredinput#filter_professional
     div.controls.top
-      div
+      div#controls
         span Options
         a.btn_42.main(href='/resume_en') 🇬🇧 English ➔
         a.btn_42(href='#' onclick="window.print()") ⌘ Imprimer (PDF)
         span Filtres
-        label(for="filter_checkbox").fbtn.uni Exp. Academic
-        label(for="filter_professional").fbtn.pro Professionelle
+        button.fbtn.uni(onclick="document.getElementById('filter_checkbox').checked = !document.getElementById('filter_checkbox').checked")
+          span Exp. Academic
+        button.fbtn.pro(onclick="document.getElementById('filter_professional').checked = !document.getElementById('filter_professional').checked")
+          span Professionelle
     header
       - var n = vita.personal.name.split(' ')
       div
@@ -35,14 +37,13 @@ block prepend body
         h1 Web
         ul
           li: +ilink('link', vita.info.homepage)
+          li: +email(vita.info.email)
           li: +ilink('git', vita.info.github)
           //- li: +ilink('twitter', vita.info.twitter)
-          li: +ilink('link', vita.info.printables)
-          li: +title_link('link', 'Google Scholar', vita.info.google_scholar)
+          li: +title_link('linkedin', 'LinkedIn', vita.info.linkedin)
       div
         h1 Info
         ul
-          li: +email(vita.info.email)
           li: +ispan('location', vita.info.location)
         ul: each slang in vita.info.spoken_languages
           - var lang_info = slang.label + ' - ' + slang.level
@@ -66,7 +67,7 @@ block prepend body
               p.position= xp.position
               p.dates
                 +ispan('calendar', xp.dates.interval)
-                //- span.duration #{xp.dates.duration}
+                span.duration #{xp.dates.duration}
               if !(prev_xp && prev_xp.location == xp.location)
                 p.location: +ispan('location', xp.location)
               //- ul.tags: each tag in xp.tags || []
@@ -76,9 +77,11 @@ block prepend body
               if xp.links
                 div.extra_links
                   ul: each link in  xp.links
-                    li: +title_link('link', link.title, link.url)
+                    li: +title_link('link-ext-alt', link.title, link.url)
+              if xp.link_dead
+                p.website: s.broken_link: +ilink('unlink', xp.link_dead)
               if xp.website
-                p.website: +ilink('link', xp.website)
+                p.website: +ilink('link-ext', xp.website)
           - prev_xp = xp
 
     //- section.talks
@@ -102,25 +105,24 @@ block prepend body
     section.publications
       div.controls
         h1 Publications
+        span: +title_link('google', 'Google Scholar', vita_en.info.google_scholar)
       ul: each pub in vita.publications
         li
           div
             h3= pub.title
             if pub.authors
               p= pub.authors
-            div.inline_info
-              if pub.doi
-                p.doi: +ilink('lock', 'https://doi.org/' + pub.doi)
-            div.inline_info
-              if pub.pdf_closed
-                p: +title_link('link', 'PDF (Draft)', pub.pdf_closed)
-              if pub.pdf
-                p: +title_link('link', 'PDF', pub.pdf)
-            div.inline_info
-              if pub.journal
-                p.subtitle #{pub.journal}, #{pub.year}
-              if pub.doi
-                span(class="__dimensions_badge_embed__" data-doi=pub.doi data-style="small_rectangle")
+            if pub.journal
+              p.subtitle #{pub.journal}, #{pub.year}
+          aside.right
+            if pub.doi
+              span.no-print(class="__dimensions_badge_embed__" data-doi=pub.doi data-style="small_rectangle")
+            if pub.pdf_closed
+              p: +title_link('newspaper', 'PDF (Draft)', pub.pdf_closed)
+            if pub.pdf
+              p: +title_link('newspaper', 'PDF', pub.pdf)
+            if pub.doi
+              p.doi: +ispan('hashtag', pub.doi)
       script(async src="https://badge.dimensions.ai/static/ai/badge.js" charset="utf-8")
 
     section.open_source
@@ -128,17 +130,17 @@ block prepend body
         h1 Open Source
         div
           - github_url = 'https://github.com/prashnts'
-          span.no-print: a(href=github_url): img(alt="prashnts github stars" src="https://img.shields.io/github/stars/prashnts")
+          //- span.no-print: a(href=github_url): img(alt="prashnts github stars" src="https://img.shields.io/github/stars/prashnts")
           //- span: a(href=github_url): img(alt="prashnts github followers" src="https://img.shields.io/github/followers/prashnts")
-      ul: each package in vita.open_source
+      ul: each package in vita_en.open_source
         li
           div.description
             !{package.description}
-
             div.inline_info
               - pkg_url = 'https://github.com/' + package.repo
               p: +ilink('git', pkg_url)
-              span.no-print: a(href=pkg_url): img(alt="GitHub Repo stars" src="https://img.shields.io/github/stars/" + package.repo)
+          aside.right
+            span.no-print: a(href=pkg_url): img(alt="GitHub Repo stars" src="https://img.shields.io/github/stars/" + package.repo)
             if package.links
               each link in package.links
                 div: +title_link('link', link.title, link.link)

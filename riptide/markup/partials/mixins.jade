@@ -19,14 +19,17 @@ mixin ilink(icon, url)
   - var title = url.replace(/https?:\/\//, '')
   a(rel='noopener noreferrer' href=url title=title)
     i.icon(class='icon-' + icon)
-    span.no-print= title
-    span.onlyprint= url
+    span= title
 
 mixin title_link(icon, title, url)
+  - var icon = url.indexOf('youtube.com') > 0 ? 'youtube-play' : icon
+  - var icon = url.indexOf('github.com') > 0 ? 'git' : icon
+  - var icon = url.indexOf('printables.com') > 0 ? 'beaker' : icon
   a(rel='noopener noreferrer' href=url title=title target='_blank')
     i.icon(class='icon-' + icon)
+    span.onlyprint [
     span= title
-    span.onlyprint= url
+    span.onlyprint ](#{url})
 
 mixin email(email)
   a(href='mailto:' + email)
