@@ -33,7 +33,7 @@
     "marked": "^0.3.6",
     "moment": "^2.15.1",
     "normalize.css": "^7.0.0",
-    "postcss-brunch": "^2.0.3",
+    "postcss-brunch": "^3.0.0",
     "stylus-brunch": "^2.7.2",
     "typeset-brunch": "^0.1.1",
     "wintersmith": "^2.3.2"
